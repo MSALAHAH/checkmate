@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Non-Pay Documentation Tool</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.optimum.com/themes/custom/optimum/slice/favicon/favicon-16x16.png">
+</head>
+<body>
+    <h1>
+        Non-Pay 
+        <br> 
+        Documentation Tool
+    </h1>
+    
+    <div id="suggestions"></div>
+
+    <section>
+        <div>
+            <input type="checkbox" name="checkbox" value="" id="customerEducated" onchange="toggleCustomerEducatedOptions()"> Customer Education
+                <div class="sub-options" id="customerEducatedOptions" style="display: none;">
+                    <input type="checkbox" name="checkbox" value="Educated about the full balance #FULL_BALANCE_EDUCATION -"> Education - Full Balance<br>
+                    <input type="checkbox" name="checkbox" value=" Educated about the unpaid balance #UNPAID_BALANCE_EDUCATION -"> Education - Unpaid Balance<br>
+                    <input type="checkbox" name="checkbox" value=" Educated about the ACP Program #ACP -"> Education - ACP<br>
+                    <input type="checkbox" name="checkbox" value=" Educated about the Mobile services Discount #MOBILE_EDUCATION -"> Education - Mobile Discount<br>
+                    <input type="checkbox" name="checkbox" value=" Educated about the Auto-Pay discount #AUTO-PAY_EDUCATION -"> Education - Auto-Pay<br>
+                    <input type="checkbox" name="checkbox" value=" Educated about the billing cycle and the due date -"> Education - Due Date(s)<br>
+                    <input type="checkbox" name="checkbox" value=" Educated about the current rate and about the last bill(s) amount in details #BILLING_EXPLANATION -"> Billing Explanation<br>
+                </div>
+    <br>  
+            <input type="checkbox" name="checkbox" value=" Credit Added -" id="creditAdded" onchange="toggleCreditAddedOptions()"> Credit Added
+                <div class="sub-options" id="creditAddedOptions" style="display: none;">
+                    <h5 class="subHeader">Appreciation Credit</h5>
+                    <input type="checkbox" name="checkbox" value=" $5.00 Customer Appreciation Credit -" id="credit5"> $5.00
+                    <input type="checkbox" name="checkbox" value=" $10.00 Customer Appreciation Credit -" id="credit10"> $10.00
+                    <input type="checkbox" name="checkbox" value=" $15.00 Customer Appreciation Credit -" id="credit15"> $15.00
+                    <input type="checkbox" name="checkbox" value=" $20.00 Customer Appreciation Credit -" id="credit20"> $20.00
+                    <br>
+                    <h5 class="subHeader">Collections Fees</h5>
+                    <input type="checkbox" name="checkbox" value=" $10 Late fee waived -" id="lateFee"> Late Fee
+                    <input type="checkbox" name="checkbox" value=" $00.00 Restore fee waived -" id="restoreFee"> Restore Fee
+                </div>
+        <br>
+                <input type="checkbox" name="checkbox" value="" id="temporaryServiceRestoration" onchange="toggletemporaryServiceRestorationOptions()"> Service Restoration Options
+                    <div class="sub-options" id="temporaryServiceRestorationOptions" style="display: none;">
+                        <input type="checkbox" name="checkbox" value=" Payment Extension Granted - educated about the due date after the payment extension #PAYMENT_EXTENSION_GRANTED - "> P2P Extension - Granted<br>
+                        <input type="checkbox" name="checkbox" value=" Educated that the Payment Extension Denied - Educated about the amount required to restore the service #PAYMENT_EXTENSION_DENIED - "> P2P Extension - Denied<br>
+                        <input type="checkbox" name="checkbox" value=" Educated that the Payment Plan Approved, the customer agreed on the terms and the service will be back within 2 hours Max #PAYMENT_PLAN - "> Payment Plan - Approved<br>
+                        <input type="checkbox" name="checkbox" value=" Educated that the Account is not eligible for any Payment Plan #PAYMENT_PLAN_DENIED - "> Payment Plan - Denied<br>
+                    </div>
+                
+        <br>
+                <input type="checkbox" name="checkbox" value="" id="collectionOptions" onchange="toggleCollectionOptionsOptions()"> Collection Options
+                    <div class="sub-options" id="collectionOptionsOptions" style="display: none;">
+                        <input type="checkbox" name="checkbox" value=" Full payment collected #FULL_PAYMENT_COLLECTED - "> Full Payment Collected<br>
+                        <input type="checkbox" name="checkbox" value=" The past due amount collected #PAST_DUE_COLLECTED - "> Past Due Amount Collected<br>
+                        <input type="checkbox" name="checkbox" value=" Partial payment collected ($00.00) - educated about the full balance after the payment #PARTIAL_PAYMENT_COLLECTED -"> Partial Payment Collected<br>
+                        <input type="checkbox" name="checkbox" value=" Write-Off amount collected ($00.00) - educated about the account balance amount after the payment #WRITE-OFF_AMOUNT_COLLECTED -"> Payment Collected - Write-Off <br>
+                    </div>
+        <br>
+                <input type="checkbox" name="checkbox" value="" id="optIdActions" onchange="toggleoptIdActionsOptions()"> Optimum ID Actions
+                    <div class="sub-options" id="optIdActionsOptions" style="display: none;">
+                        <input type="checkbox" name="checkbox" value=" CPNI Passed to create the Optimum ID - created - provided the Temporary password to set the account password - educated about the Online account #OPTIMUM_ONLINE_ACCOUNT - "> Optimum Account - Created
+                        <br>
+                        <input type="checkbox" name="checkbox" value=" CPNI Passed to reset the online account password - the new password provided #OPTIMUM_ONLINE_ACCOUNT_SUPPORT - "> Optimum Account - Password Reset
+                    </div>
+        <br>
+                <input type="checkbox" name="checkbox" value="" id="disconnectionActions" onchange="toggledisconnectionActionsOptions()"> Disconnection Actions
+                    <div class="sub-options" id="disconnectionActionsOptions" style="display: none;">
+                        <input type="checkbox" name="checkbox" value=" Educated about that the account balance or the full past due amount MUST be cleared to be able to transfer the call to Retention for disconnection #TRANSFER_REQUEST_FOR_DICONNECTION_DENIED - "> Disconnection Request - Denied<br>
+                        <input type="checkbox" name="checkbox" value=" Requested the disconnection - payment collected - Xfer to Retention for Disconnection #TRANSFER_REQUEST_DOR_DISCONNETION_GRANTED - "> Disconnection Request - Granted <br>
+                    </div>
+        <br>
+        </div>
+    </section>
+    <br>
+    <div>
+        <button id="newCallBtn" onclick="reloadPage()">New Call</button>
+        <button id="copyBtn" onclick="copyToClipboard()">Copy to Clipboard</button>
+    </div>
+    <br>
+    <textarea id="sentence" rows="6" cols="50" readonly></textarea>
+    <div class="footer">
+        <p>All Rights Reserved.&copy;</p>
+    </div>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;800&display=swap');
+
+        body {
+            display: flex;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 18px;
+            font-family: Roboto Slab;
+            color: #444;
+            background-color: #fefefe;
+            background-image: linear-gradient(#d8e15a 0%, #d83effd6 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 30px 10px;
+            margin: 0;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        section {
+            padding: 1.5em;
+            box-shadow: 1px -1px 8px 0 rgb(0 0 0 / 67%);
+            transition: 0.3s;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 35px;
+        }
+
+        #suggestions{
+            padding: 0.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            max-width: 80%;
+            box-shadow: 1px -1px 8px 0 rgb(0 0 0 / 67%);
+            transition: 0.3s;
+            border-radius: 8px;
+        }
+
+        .subHeader {
+            margin-top: 5px;
+            margin-bottom: 2px;
+        }
+
+        #customerEducated, 
+        #creditAdded, 
+        #temporaryServiceRestoration, 
+        #collectionOptions, 
+        #optIdActions, 
+        #disconnectionActions{
+            margin-bottom: 20px;
+        }
+
+        #customerEducatedOptions, 
+        #creditAddedOptions, 
+        #temporaryServiceRestorationOptions, 
+        #collectionOptionsOptions, 
+        #optIdActionsOptions, 
+        #disconnectionActionsOptions{
+            margin-left: 25px
+        }
+
+        #newCallBtn, #copyBtn {
+            padding: 0.7em 2em;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: Roboto Slab;
+            font-weight: 600;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 4px 4px rgb(0 0 0 / 42%);
+            transition: all 0.1s ease 0s;
+            cursor: pointer;
+            outline: none;
+        }
+
+        #newCallBtn:hover, #copyBtn:hover {
+            background-color: #23c483;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        #newCallBtn:active, #copyBtn:active {
+            transform: translateY(-1px);
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        #sentence {
+            font-family: 'Roboto Slab';
+            border-width: 5px;
+            border-style: outset;
+            border-radius: 22px;
+            border: none;
+            box-shadow: 3px 0px 12px 0px rgb(0 0 0 / 31%);
+            width: 80%;
+            height: 40%;
+            padding: 18px;
+            overflow: hidden;
+        }
+
+        .footer {
+            font-family: 'Roboto Slab';
+            font-size: medium;
+            position: inherit;
+            left: 0;
+            bottom: -30px;
+            width: 100%;
+            color: #00000017;
+            text-align: center;
+        }
+    </style>
+    <script>
+        var sentenceParts = [];
+
+        function updateSentence() {
+            document.getElementById('sentence').value = sentenceParts.join(' ').trim();
+        }
+
+        // function uncheckAll() {
+        //     var checkboxes = document.getElementsByName('checkbox');
+        //     for (var i = 0; i < checkboxes.length; i++) {
+        //         checkboxes[i].checked = false;
+        //     }
+        //     sentenceParts = [];
+        //     updateSentence();
+        // }
+
+        function reloadPage() {
+            window.location.reload();
+        }
+
+
+        function copyToClipboard() {
+            var textarea = document.getElementById('sentence');
+            textarea.select();
+            document.execCommand('copy');
+        }
+
+        // SUB-OPTIONS FUNCTIONS BELOW
+        // creditSubOptionsFunction
+        function toggleCreditAddedOptions() {
+            var creditAddedCheckbox = document.getElementById('creditAdded');
+            var creditAddedOptions = document.getElementById('creditAddedOptions');
+
+            if (creditAddedCheckbox.checked) {
+                creditAddedOptions.style.display = 'block';
+            } else {
+                creditAddedOptions.style.display = 'none';
+            }
+            updateSentence();
+        }
+
+        // customerEducationSubOptionsFunction
+        function toggleCustomerEducatedOptions() {
+            var customerEducatedCheckbox = document.getElementById('customerEducated');
+            var customerEducatedOptions = document.getElementById('customerEducatedOptions');
+
+            if (customerEducatedCheckbox.checked) {
+                customerEducatedOptions.style.display = 'block';
+            } else {
+                customerEducatedOptions.style.display = 'none';
+            }
+            updateSentence();
+        }
+
+        // temporaryServiceRestorationFunction
+        function toggletemporaryServiceRestorationOptions() {
+            var temporaryServiceRestorationCheckbox = document.getElementById('temporaryServiceRestoration');
+            var temporaryServiceRestorationOptions = document.getElementById('temporaryServiceRestorationOptions');
+
+            if (temporaryServiceRestorationCheckbox.checked) {
+                temporaryServiceRestorationOptions.style.display = 'block';
+            } else {
+                temporaryServiceRestorationOptions.style.display = 'none';
+            }
+            updateSentence();
+        }
+
+        // collectionsPaymentsFunction
+        function toggleCollectionOptionsOptions() {
+            var collectionOptionsCheckbox = document.getElementById('collectionOptions');
+            var collectionOptionsOptions = document.getElementById('collectionOptionsOptions');
+
+            if (collectionOptionsCheckbox.checked) {
+                collectionOptionsOptions.style.display = 'block';
+            } else {
+                collectionOptionsOptions.style.display = 'none';
+            }
+            updateSentence();
+        }
+        // optimumIdActionsFunction
+        function toggleoptIdActionsOptions() {
+            var optIdActionsCheckbox = document.getElementById('optIdActions');
+            var optIdActionsOptions = document.getElementById('optIdActionsOptions');
+
+            if (optIdActionsCheckbox.checked) {
+                optIdActionsOptions.style.display = 'block';
+            } else {
+                optIdActionsOptions.style.display = 'none';
+            }
+            updateSentence();
+        }
+
+        function toggledisconnectionActionsOptions() {
+            var disconnectionActionsCheckbox = document.getElementById('disconnectionActions');
+            var disconnectionActionsOptions = document.getElementById('disconnectionActionsOptions');
+
+            if (disconnectionActionsCheckbox.checked) {
+                disconnectionActionsOptions.style.display = 'block';
+            } else {
+                disconnectionActionsOptions.style.display = 'none';
+            }
+            updateSentence();
+        }
+
+        window.onload = function () {
+            var checkboxes = document.getElementsByName('checkbox');
+            for (var i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].addEventListener('change', handleCheckboxChange);
+            }
+        }
+
+        var sentenceParts = [];
+        var suggestions = [
+            "Ensure caller has passed security verification.",
+            "Ask the caller about their recent interactions with our services.",
+            "Remind the caller to check their email for updates.",
+            // Add more suggestions or reminders here
+        ];
+
+        function displayRandomSuggestion() {
+            var suggestionsDiv = document.getElementById('suggestions');
+            var randomIndex = Math.floor(Math.random() * suggestions.length);
+            var randomSuggestion = suggestions[randomIndex];
+            suggestionsDiv.innerHTML = "<strong>_Reminder_<br></strong> " + randomSuggestion;
+        }
+
+        function handleCheckboxChange(event) {
+            var checkbox = event.target;
+            if (checkbox.checked) {
+                if (sentenceParts.indexOf(checkbox.value) === -1) {
+                    sentenceParts.push(checkbox.value);
+                }
+            } else {
+                var index = sentenceParts.indexOf(checkbox.value);
+                if (index !== -1) {
+                    sentenceParts.splice(index, 1);
+                }
+            }
+            updateSentence();
+        }
+
+        window.onload = function () {
+            displayRandomSuggestion();
+            var intervalDuration = 5000;
+            setInterval(function () {
+                displayRandomSuggestion();
+            }, intervalDuration);
+
+            var checkboxes = document.getElementsByName('checkbox');
+            for (var i = 0; i < checkboxes.length; i++) {
+                checkboxes[i].addEventListener('change', handleCheckboxChange);
+            }
+        };
+
+
+
+
+    </script>
+</body>
+</html>
