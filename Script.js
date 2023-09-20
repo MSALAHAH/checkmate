@@ -123,6 +123,18 @@
                                             }
                                             updateSentence();
                                         }
+                                                                      function togglesubDroppedCallNoAnswerOptions() {
+                                                                          var subDroppedCallNoAnswerCheckbox = document.getElementById('subDroppedCallNoAnswer');
+                                                                          var subDroppedCallNoAnswerOptions = document.getElementById('subDroppedCallNoAnswerOptions');
+                                                              
+                                                                          if (subDroppedCallNoAnswerCheckbox.checked) {
+                                                                              subDroppedCallNoAnswerOptions.style.display = 'block';
+                                                                          } else {
+                                                                              subDroppedCallNoAnswerOptions.style.display = 'none';
+                                                                          }
+                                                                          updateSentence();
+                                                                      }
+
         window.onload = function () {
             var checkboxes = document.getElementsByName('checkbox');
             for (var i = 0; i < checkboxes.length; i++) {
