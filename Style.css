@@ -52,7 +52,8 @@
         #temporaryServiceRestoration, 
         #collectionOptions, 
         #optIdActions, 
-        #disconnectionActions{
+        #disconnectionActions,
+        #droppedCallActions{
             margin-bottom: 20px;
         }
 
@@ -61,7 +62,8 @@
         #temporaryServiceRestorationOptions, 
         #collectionOptionsOptions, 
         #optIdActionsOptions, 
-        #disconnectionActionsOptions{
+        #disconnectionActionsOptions,
+        #droppedCallActionsOptions{
             margin-left: 25px
         }
 
