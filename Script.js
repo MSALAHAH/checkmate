@@ -112,7 +112,17 @@
             }
             updateSentence();
         }
-
+                                           function togglesubDroppedCallOptionsOptions() {
+                                            var subDroppedCallOptionsCheckbox = document.getElementById('subDroppedCallOptions');
+                                            var subDroppedCallOptionsOptions = document.getElementById('subDroppedCallOptionsOptions');
+                                
+                                            if (subDroppedCallOptionsCheckbox.checked) {
+                                                subDroppedCallOptionsOptions.style.display = 'block';
+                                            } else {
+                                                subDroppedCallOptionsOptions.style.display = 'none';
+                                            }
+                                            updateSentence();
+                                        }
         window.onload = function () {
             var checkboxes = document.getElementsByName('checkbox');
             for (var i = 0; i < checkboxes.length; i++) {
