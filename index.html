@@ -30,24 +30,15 @@
             <input type="checkbox" name="checkbox" value=" Credit Added -" id="creditAdded" onchange="toggleCreditAddedOptions()"> Credit Added
                 <div class="sub-options" id="creditAddedOptions" style="display: none;">
                     <h5 class="subHeader">Appreciation Credit</h5>
-                    <input type="checkbox" name="checkbox" value=" $5.00 Customer Appreciation Credit -" id="credit5"> $5.00
-                    <input type="checkbox" name="checkbox" value=" $10.00 Customer Appreciation Credit -" id="credit10"> $10.00
-                    <input type="checkbox" name="checkbox" value=" $15.00 Customer Appreciation Credit -" id="credit15"> $15.00
-                    <input type="checkbox" name="checkbox" value=" $20.00 Customer Appreciation Credit -" id="credit20"> $20.00
+                    <input type="checkbox" name="checkbox" value=" $5.00 Customer Appreciation Credit -" id="credit5"> $5.00 <br>
+                    <input type="checkbox" name="checkbox" value=" $10.00 Customer Appreciation Credit -" id="credit10"> $10.00 <br>
+                    <input type="checkbox" name="checkbox" value=" $15.00 Customer Appreciation Credit -" id="credit15"> $15.00 <br>
+                    <input type="checkbox" name="checkbox" value=" $20.00 Customer Appreciation Credit -" id="credit20"> $20.00 <br>
                     <br>
                     <h5 class="subHeader">Collections Fees</h5>
-                    <input type="checkbox" name="checkbox" value=" $10 Late fee waived -" id="lateFee"> Late Fee
+                    <input type="checkbox" name="checkbox" value=" $10 Late fee waived -" id="lateFee"> Late Fee <br>
                     <input type="checkbox" name="checkbox" value=" $00.00 Restore fee waived -" id="restoreFee"> Restore Fee
                 </div>
-        <br>
-                <input type="checkbox" name="checkbox" value="" id="temporaryServiceRestoration" onchange="toggletemporaryServiceRestorationOptions()"> Service Restoration Options
-                    <div class="sub-options" id="temporaryServiceRestorationOptions" style="display: none;">
-                        <input type="checkbox" name="checkbox" value=" Payment Extension Granted - educated about the due date after the payment extension #PAYMENT_EXTENSION_GRANTED - "> P2P Extension - Granted<br>
-                        <input type="checkbox" name="checkbox" value=" Educated that the Payment Extension Denied - Educated about the amount required to restore the service #PAYMENT_EXTENSION_DENIED - "> P2P Extension - Denied<br>
-                        <input type="checkbox" name="checkbox" value=" Educated that the Payment Plan Approved, the customer agreed on the terms and the service will be back within 2 hours Max #PAYMENT_PLAN - "> Payment Plan - Approved<br>
-                        <input type="checkbox" name="checkbox" value=" Educated that the Account is not eligible for any Payment Plan #PAYMENT_PLAN_DENIED - "> Payment Plan - Denied<br>
-                    </div>
-                
         <br>
                 <input type="checkbox" name="checkbox" value="" id="collectionOptions" onchange="toggleCollectionOptionsOptions()"> Collection Options
                     <div class="sub-options" id="collectionOptionsOptions" style="display: none;">
@@ -56,10 +47,21 @@
                         <input type="checkbox" name="checkbox" value=" Partial payment collected ($00.00) - educated about the full balance after the payment #PARTIAL_PAYMENT_COLLECTED -"> Partial Payment Collected<br>
                         <input type="checkbox" name="checkbox" value=" Write-Off amount collected ($00.00) - educated about the account balance amount after the payment #WRITE-OFF_AMOUNT_COLLECTED -"> Payment Collected - Write-Off <br>
                     </div>
+                
+        <br>
+                <input type="checkbox" name="checkbox" value="" id="temporaryServiceRestoration" onchange="toggletemporaryServiceRestorationOptions()"> Service Restoration Options
+                    <div class="sub-options" id="temporaryServiceRestorationOptions" style="display: none;">
+                        <input type="checkbox" name="checkbox" value=" Payment Extension Granted - educated about the due date after the payment extension #PAYMENT_EXTENSION_GRANTED - "> P2P Extension - Granted<br>
+                        <input type="checkbox" name="checkbox" value=" Educated that the Payment Extension Denied - Educated about the amount required to restore the service #PAYMENT_EXTENSION_DENIED - "> P2P Extension - Denied<br>
+                        <input type="checkbox" name="checkbox" value=" Educated that the Payment Plan Approved, the customer agreed on the terms and the service will be back within 2 hours Max #PAYMENT_PLAN - "> Payment Plan - Approved<br>
+                        <input type="checkbox" name="checkbox" value=" Educated that the Account is not eligible for any Payment Plan #PAYMENT_PLAN_DENIED - "> Payment Plan - Denied<br>
+                    </div>
         <br>
                 <input type="checkbox" name="checkbox" value="" id="optIdActions" onchange="toggleoptIdActionsOptions()"> Optimum ID Actions
                     <div class="sub-options" id="optIdActionsOptions" style="display: none;">
                         <input type="checkbox" name="checkbox" value=" CPNI Passed to create the Optimum ID - created - provided the Temporary password to set the account password - educated about the Online account #OPTIMUM_ONLINE_ACCOUNT - "> Optimum Account - Created
+                        <br>
+                         <input type="checkbox" name="checkbox" value=" Can'y pass CPNI to create the Optimum ID - educated about the process to create the Online account #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> Optimum Account - Cannot Pass CPNI
                         <br>
                         <input type="checkbox" name="checkbox" value=" CPNI Passed to reset the online account password - the new password provided #OPTIMUM_ONLINE_ACCOUNT_SUPPORT - "> Optimum Account - Password Reset
                     </div>
@@ -70,6 +72,12 @@
                         <input type="checkbox" name="checkbox" value=" Requested the disconnection - payment collected - Xfer to Retention for Disconnection #TRANSFER_REQUEST_DOR_DISCONNETION_GRANTED - "> Disconnection Request - Granted <br>
                     </div>
         <br>
+                 <input type="checkbox" name="checkbox" value="" id="droppedCallActions" onchange="toggledroppedCallActionsOptions()"> Disconnection Actions
+                    <div class="sub-options" id="droppedCallActionsOptions" style="display: none;">
+                        <input type="checkbox" name="checkbox" value=" Educated about that the account balance or the full past due amount MUST be cleared to be able to transfer the call to Retention for disconnection #TRANSFER_REQUEST_FOR_DICONNECTION_DENIED - "> Disconnection Request - Denied<br>
+                        <input type="checkbox" name="checkbox" value=" Requested the disconnection - payment collected - Xfer to Retention for Disconnection #TRANSFER_REQUEST_DOR_DISCONNETION_GRANTED - "> Disconnection Request - Granted <br>
+                    </div>
+            <br>
         </div>
     </section>
     <br>
