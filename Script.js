@@ -112,28 +112,18 @@
             }
             updateSentence();
         }
-                                           function togglesubDroppedCallOptionsOptions() {
-                                            var subDroppedCallOptionsCheckbox = document.getElementById('subDroppedCallOptions');
-                                            var subDroppedCallOptionsOptions = document.getElementById('subDroppedCallOptionsOptions');
-                                
-                                            if (subDroppedCallOptionsCheckbox.checked) {
-                                                subDroppedCallOptionsOptions.style.display = 'block';
-                                            } else {
-                                                subDroppedCallOptionsOptions.style.display = 'none';
-                                            }
-                                            updateSentence();
-                                        }
-                                                                      function togglesubDroppedCallNoAnswerOptions() {
-                                                                          var subDroppedCallNoAnswerCheckbox = document.getElementById('subDroppedCallNoAnswer');
-                                                                          var subDroppedCallNoAnswerOptions = document.getElementById('subDroppedCallNoAnswerOptions');
-                                                              
-                                                                          if (subDroppedCallNoAnswerCheckbox.checked) {
-                                                                              subDroppedCallNoAnswerOptions.style.display = 'block';
-                                                                          } else {
-                                                                              subDroppedCallNoAnswerOptions.style.display = 'none';
-                                                                          }
-                                                                          updateSentence();
-                                                                      }
+                                       
+                           function togglesubDroppedCallNoAnswerOptions() {
+                               var subDroppedCallNoAnswerCheckbox = document.getElementById('subDroppedCallNoAnswer');
+                               var subDroppedCallNoAnswerOptions = document.getElementById('subDroppedCallNoAnswerOptions');
+                   
+                               if (subDroppedCallNoAnswerCheckbox.checked) {
+                                   subDroppedCallNoAnswerOptions.style.display = 'block';
+                               } else {
+                                   subDroppedCallNoAnswerOptions.style.display = 'none';
+                               }
+                               updateSentence();
+                           }
 
         window.onload = function () {
             var checkboxes = document.getElementsByName('checkbox');
