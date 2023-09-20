@@ -53,7 +53,8 @@
         #collectionOptions, 
         #optIdActions, 
         #disconnectionActions,
-        #droppedCallActions{
+        #droppedCallActions,
+        #subDroppedCallOptions{
             margin-bottom: 20px;
         }
 
@@ -63,7 +64,8 @@
         #collectionOptionsOptions, 
         #optIdActionsOptions, 
         #disconnectionActionsOptions,
-        #droppedCallActionsOptions{
+        #droppedCallActionsOptions
+        #subDroppedCallOptions{
             margin-left: 25px
         }
 
