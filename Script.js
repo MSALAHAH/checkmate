@@ -124,9 +124,14 @@
 
         var sentenceParts = [];
         var suggestions = [
-            "Ensure caller has passed security verification.",
-            "Ask the caller about their recent interactions with our services.",
-            "Remind the caller to check their email for updates.",
+            "a Proper Greeting is Always a Good Start.",
+            "It's Useful To Collect The Best Callback Number.",
+            "If You Pulled The Account Up, Let The Customer Confirm The Address.",
+            "Don't Forget To Run STAT Tool.",
+            "Remember To Run IBA and Follow the Tool.",
+         "Always Updated The CPC, and Ask About the Best Way to send Alerts (Text/E-mail).",
+         "Remember to Use Words Like "Please' and "Thank you".",
+         "Remember to Use Words Like "Please' and "Thank you".",
             // Add more suggestions or reminders here
         ];
 
