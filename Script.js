@@ -101,6 +101,18 @@
             updateSentence();
         }
 
+        function toggledroppedCallActionsOptions() {
+            var droppedCallActionsCheckbox = document.getElementById('droppedCallActions');
+            var droppedCallActionsOptions = document.getElementById('droppedCallActionsOptions');
+
+            if (droppedCallActionsCheckbox.checked) {
+                droppedCallActionsOptions.style.display = 'block';
+            } else {
+                droppedCallActionsOptions.style.display = 'none';
+            }
+            updateSentence();
+        }
+
         window.onload = function () {
             var checkboxes = document.getElementsByName('checkbox');
             for (var i = 0; i < checkboxes.length; i++) {
