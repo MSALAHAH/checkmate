@@ -54,8 +54,7 @@
         #optIdActions, 
         #disconnectionActions,
         #droppedCallActions,
-        #subDroppedCallOptions,
-        #subDroppedCallNoAnswer{
+        {
             margin-bottom: 20px;
         }
 
@@ -66,8 +65,7 @@
         #optIdActionsOptions, 
         #disconnectionActionsOptions,
         #droppedCallActionsOptions
-        #subDroppedCallOptions,
-        #subDroppedCallNoAnswer{
+        {
             margin-left: 25px
         }
 
