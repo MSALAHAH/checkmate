@@ -129,9 +129,8 @@
             "If You Pulled The Account Up, Let The Customer Confirm The Address.",
             "Don't Forget To Run STAT Tool.",
             "Remember To Run IBA and Follow the Tool.",
-         "Always Updated The CPC, and Ask About the Best Way to send Alerts (Text/E-mail).",
-         "Remember to Use Words Like "Please' and "Thank you".",
-         "Remember to Use Words Like "Please' and "Thank you"."
+            "Always Updated The CPC, and Ask About the Best Way to send Alerts (Text/E-mail).",
+            "Remember to Use Words Like .Please. and .Thank you..",
             // Add more suggestions or reminders here
         ];
 
