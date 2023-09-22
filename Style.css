@@ -11,7 +11,7 @@
             font-family: Roboto Slab;
             color: #444;
             background-color: #fefefe;
-            background-image: linear-gradient(#00fff3fa 0%, #000000 150%);
+            background-image: linear-gradient(#9efffafa 0%, #000000 150%);
             background-repeat: no-repeat;
             background-size: cover;
             padding: 30px 10px;
@@ -21,6 +21,8 @@
         }
 
         section {
+                width: 24%;
+                max-width: 50%;
             padding: 1.5em;
             box-shadow: 1px -1px 8px 0 rgb(0 0 0 / 67%);
             transition: 0.3s;
@@ -38,7 +40,7 @@
             padding: 0.8em;
             margin-bottom: 20px;
             text-align: center;
-            background-image: linear-gradient(#00fff3fa 0%, #000000 290%);
+            background-image: linear-gradient(#fffffffa 0%, #000000 290%);
             box-shadow: 1px -1px 8px 0 rgb(0 0 0 / 67%);
             transition: 0.3s;
             border-radius: 8px;
