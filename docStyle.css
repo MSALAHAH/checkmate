@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
         #docToolSectionBody {
+            font-family: Roboto Slab;
             height: 100%;
             margin-top: 3%;
             text-align: center;
