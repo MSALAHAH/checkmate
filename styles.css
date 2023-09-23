@@ -26,7 +26,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: url ("opt_int_bg.png");
+  background-image: url ("/opt_int_bg.png");
   position: relative;
   height: 100%;
   margin: 0;
