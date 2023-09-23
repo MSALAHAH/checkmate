@@ -18,7 +18,7 @@
 
         #styleBox {
         max-width: 800px;
-            min-width: 400px;
+            min-width: 380px;
         border-radius: 8px;
         box-shadow: 3px 0px 20px 7px rgb(0 0 0 / 48%); 
         background-image: radial-gradient(#42c3cb, #2c75a5);
