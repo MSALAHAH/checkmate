@@ -3,6 +3,7 @@
 
         #docToolSectionBody {
             height: 100%;
+            margin-top: 3%;
             text-align: center;
         }
 
@@ -88,7 +89,7 @@
             font-size: 12px;
             font-weight: bold;
             border-width: 5px;
-            margin-bottom: 7%;
+            margin-bottom: 10%;
             border-style: outset;
             border-radius: 8px;
             border: none;
