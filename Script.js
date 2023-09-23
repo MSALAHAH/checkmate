@@ -122,18 +122,18 @@
             }
         }
 
-        var sentenceParts = [];
-        var suggestions = [
-            "a Proper Greeting is Always a Good Start.",
-            "It's Useful To Collect The Best Callback Number.",
-            "Let The Customer Confirm The Address.",
-            "Don't Forget To Run STAT Tool.",
-            "Remember To Run IBA and Follow the Tool.",
-            "Always Updated The CPC.",
-            "Ask About the Best Way to send Alerts (Text/E-mail).",
-            "Use Words Like .Please. and .Thank you..",
-            // Add more suggestions or reminders here
-        ];
+        // var sentenceParts = [];
+        // var suggestions = [
+        //     "a Proper Greeting is Always a Good Start.",
+        //     "It's Useful To Collect The Best Callback Number.",
+        //     "Let The Customer Confirm The Address.",
+        //     "Don't Forget To Run STAT Tool.",
+        //     "Remember To Run IBA and Follow the Tool.",
+        //     "Always Updated The CPC.",
+        //     "Ask About the Best Way to send Alerts (Text/E-mail).",
+        //     "Use Words Like .Please. and .Thank you..",
+        //     // Add more suggestions or reminders here
+        // ];
 
         function displayRandomSuggestion() {
             var suggestionsDiv = document.getElementById('suggestions');
@@ -158,17 +158,17 @@
         }
 
 
-        window.onload = function () {
-            displayRandomSuggestion();
-            var intervalDuration = 5000;
-            setInterval(function () {
-                displayRandomSuggestion();
-            }, intervalDuration);
+        // window.onload = function () {
+        //     displayRandomSuggestion();
+        //     var intervalDuration = 5000;
+        //     setInterval(function () {
+        //         displayRandomSuggestion();
+        //     }, intervalDuration);
 
-            var checkboxes = document.getElementsByName('checkbox');
-            for (var i = 0; i < checkboxes.length; i++) {
-                checkboxes[i].addEventListener('change', handleCheckboxChange);
-            }
-        };
+        //     var checkboxes = document.getElementsByName('checkbox');
+        //     for (var i = 0; i < checkboxes.length; i++) {
+        //         checkboxes[i].addEventListener('change', handleCheckboxChange);
+        //     }
+        // };
 
 
