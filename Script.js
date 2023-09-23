@@ -142,20 +142,34 @@
             suggestionsDiv.innerHTML = "<strong>_Reminder_<br></strong> " + randomSuggestion;
         }
 
-        function handleCheckboxChange(event) {
-            var checkbox = event.target;
-            if (checkbox.checked) {
-                if (sentenceParts.indexOf(checkbox.value) === -1) {
-                    sentenceParts.push(checkbox.value);
-                }
-            } else {
-                var index = sentenceParts.indexOf(checkbox.value);
-                if (index !== -1) {
-                    sentenceParts.splice(index, 1);
-                }
-            }
-            updateSentence();
+        // function handleCheckboxChange(event) {
+        //     var checkbox = event.target;
+        //     if (checkbox.checked) {
+        //         if (sentenceParts.indexOf(checkbox.value) === -1) {
+        //             sentenceParts.push(checkbox.value);
+        //         }
+        //     } else {
+        //         var index = sentenceParts.indexOf(checkbox.value);
+        //         if (index !== -1) {
+        //             sentenceParts.splice(index, 1);
+        //         }
+        //     }
+        //     updateSentence();
+        // }
+function handleCheckboxChange(subCheckbox) {
+    if (subCheckbox.checked) {
+        if (sentenceParts.indexOf(subCheckbox.value) === -1) {
+            sentenceParts.push(subCheckbox.value);
         }
+    } else {
+        var index = sentenceParts.indexOf(subCheckbox.value);
+        if (index !== -1) {
+            sentenceParts.splice(index, 1);
+        }
+    }
+    updateSentence();
+}
+
 
         window.onload = function () {
             displayRandomSuggestion();
