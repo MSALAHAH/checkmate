@@ -27,6 +27,8 @@
 }
 body{
   background-image: url (opt_int_bg.png);
+  background-repeat: no-repeat;
+  background-size: 4200px 2300px;
   position: relative;
   height: 100%;
   margin: 0;
