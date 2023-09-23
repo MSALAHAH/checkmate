@@ -1,97 +1,146 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Non-Pay Documentation Tool</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="https://www.optimum.com/themes/custom/optimum/slice/favicon/favicon-16x16.png">
-    <link rel="stylesheet" href="Style.css">
-</head>
-<body>
-    <h1>
-        Non-Pay 
-        <br> 
-        Documentation Tool
-    </h1>
-    
-    <div id="suggestions"></div>
+<html lang="en">
 
-    <section>
-        <div>
-            <input type="checkbox" name="checkbox" value="" id="customerEducated" onchange="toggleCustomerEducatedOptions()"> Customer Education
-                <div class="sub-options" id="customerEducatedOptions" style="display: none;">
-                    <input type="checkbox" name="checkbox" value=" Educated about the full balance #FULL_BALANCE_EDUCATION -"> Education - Full Balance<br>
-                    <input type="checkbox" name="checkbox" value=" Educated about the unpaid balance #UNPAID_BALANCE_EDUCATION -"> Education - Unpaid Balance<br>
-                    <input type="checkbox" name="checkbox" value=" Educated about the ACP Program #ACP -"> Education - ACP<br>
-                    <input type="checkbox" name="checkbox" value=" Educated about the Mobile services Discount #MOBILE_EDUCATION -"> Education - Mobile Discount<br>
-                    <input type="checkbox" name="checkbox" value=" Educated about the Auto-Pay discount #AUTO-PAY_EDUCATION -"> Education - Auto-Pay<br>
-                    <input type="checkbox" name="checkbox" value=" Educated about the billing cycle and the due date -"> Education - Due Date(s)<br>
-                    <input type="checkbox" name="checkbox" value=" Educated about the current rate and about the last bill(s) amount in details #BILLING_EXPLANATION -"> Billing Explanation<br>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./docStyle.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" type="image/png" sizes="16x16" href="https://www.optimum.com/themes/custom/optimum/slice/favicon/favicon-16x16.png">
+
+        
+        <title>Get Ket Tools</title>
+    </head>
+
+    <body>
+        <div class="l-navbar" id="navbar">
+            <nav class="nav">
+                <div>
+                    <div class="nav__brand">
+                        <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                        <a href="#" class="nav__logo">Get Ket Tools</a>
+                    </div>
+
+                    <div class="nav__list">
+                    
+                        <a href="#" class="nav__link active">
+                            <ion-icon name="cash-outline" class="nav__icon"></ion-icon>
+                            <span class="nav__name">Non-Pay Documentation Tool</span>
+                        </a>
+
+                        <div  class="nav__link collapse">
+                            <ion-icon name="finger-print-outline" class="nav__icon"></ion-icon>
+                            <span class="nav__name">Projects - Coming Soon</span>
+
+                            <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+
+                            <ul class="collapse__menu">
+                                <a href="./projects/clock001/index.html" class="collapse__sublink">Beta.Clock</a>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-    <br>  
-            <input type="checkbox" name="checkbox" value=" Credit Added -" id="creditAdded" onchange="toggleCreditAddedOptions()"> Credit Added
-                <div class="sub-options" id="creditAddedOptions" style="display: none;">
-                    <h5 class="subHeader">Appreciation Credit</h5>
-                    <input type="checkbox" name="checkbox" value=" $5.00 Customer Appreciation Credit -" id="credit5"> $5.00 <br>
-                    <input type="checkbox" name="checkbox" value=" $10.00 Customer Appreciation Credit -" id="credit10"> $10.00 <br>
-                    <input type="checkbox" name="checkbox" value=" $15.00 Customer Appreciation Credit -" id="credit15"> $15.00 <br>
-                    <input type="checkbox" name="checkbox" value=" $20.00 Customer Appreciation Credit -" id="credit20"> $20.00 <br>
-                    <br>
-                    <h5 class="subHeader">Collections Fees</h5>
-                    <input type="checkbox" name="checkbox" value=" $10 Late fee waived -" id="lateFee"> Late Fee <br>
-                    <input type="checkbox" name="checkbox" value=" $00.00 Restore fee waived -" id="restoreFee"> Restore Fee
-                </div>
-        <br>
-                <input type="checkbox" name="checkbox" value="" id="collectionOptions" onchange="toggleCollectionOptionsOptions()"> Collection Options
-                    <div class="sub-options" id="collectionOptionsOptions" style="display: none;">
-                        <input type="checkbox" name="checkbox" value=" Full payment collected #FULL_PAYMENT_COLLECTED - "> Full Payment Collected<br>
-                        <input type="checkbox" name="checkbox" value=" The past due amount collected #PAST_DUE_COLLECTED - "> Past Due Amount Collected<br>
-                        <input type="checkbox" name="checkbox" value=" Partial payment collected ($00.00) - educated about the full balance after the payment #PARTIAL_PAYMENT_COLLECTED -"> Partial Payment Collected<br>
-                        <input type="checkbox" name="checkbox" value=" Write-Off amount collected ($00.00) - educated about the account balance amount after the payment #WRITE-OFF_AMOUNT_COLLECTED -"> Payment Collected - Write-Off <br>
+            </nav>
+        </div>
+
+        <div id="docToolSectionBody">
+            <div id="checkboxesDiv">
+                <h2>Non-Pay Call Sammary Tool</h2>
+                <br>
+                <input type="checkbox" name="checkbox" value="" id="customerEducated" onchange="toggleCustomerEducatedOptions()"> Call Flow
+                    <div class="sub-options" id="customerEducatedOptions" style="display: none;">
+                        <input type="checkbox" name="checkbox" value=" Ensured that the Contact information on file is updated -"> Updated CPC<br>
+                        <input type="checkbox" name="checkbox" value=" Educated about the full balance #FULL_BALANCE_EDUCATION -"> Education - Full Balance<br>
+                        <input type="checkbox" name="checkbox" value=" Educated about the unpaid balance #UNPAID_BALANCE_EDUCATION -"> Education - Unpaid Balance<br>
+                        <input type="checkbox" name="checkbox" value=" Educated about the ACP Program #ACP -"> Education - ACP<br>
+                        <input type="checkbox" name="checkbox" value=" Educated about the Mobile services Discount #MOBILE_EDUCATION -"> Education - Mobile Discount<br>
+                        <input type="checkbox" name="checkbox" value=" Educated about the Auto-Pay discount #AUTO-PAY_EDUCATION -"> Education - Auto-Pay<br>
+                        <input type="checkbox" name="checkbox" value=" Educated about the billing cycle and the due date -"> Education - Due Date(s)<br>
+                        <input type="checkbox" name="checkbox" value=" Educated about the current rate and about the last bill(s) amount in details #BILLING_EXPLANATION -"> Billing Explanation<br>
                     </div>
-                
-        <br>
-                <input type="checkbox" name="checkbox" value="" id="temporaryServiceRestoration" onchange="toggletemporaryServiceRestorationOptions()"> Service Restoration Options
-                    <div class="sub-options" id="temporaryServiceRestorationOptions" style="display: none;">
-                        <input type="checkbox" name="checkbox" value=" Payment Extension Granted - educated about the due date after the payment extension #PAYMENT_EXTENSION_GRANTED - "> P2P Extension - Granted<br>
-                        <input type="checkbox" name="checkbox" value=" Educated that the Payment Extension Denied - Educated about the amount required to restore the service #PAYMENT_EXTENSION_DENIED - "> P2P Extension - Denied<br>
-                        <input type="checkbox" name="checkbox" value=" Educated that the Payment Plan Approved, the customer agreed on the terms and the service will be back within 2 hours Max #PAYMENT_PLAN - "> Payment Plan - Approved<br>
-                        <input type="checkbox" name="checkbox" value=" Educated that the Account is not eligible for any Payment Plan #PAYMENT_PLAN_DENIED - "> Payment Plan - Denied<br>
-                    </div>
-        <br>
-                <input type="checkbox" name="checkbox" value="" id="optIdActions" onchange="toggleoptIdActionsOptions()"> Optimum ID Actions
-                    <div class="sub-options" id="optIdActionsOptions" style="display: none;">
-                        <input type="checkbox" name="checkbox" value=" CPNI Passed to create the Optimum ID - created - provided the Temporary password to set the account password - educated about the Online account #OPTIMUM_ONLINE_ACCOUNT - "> Optimum Account - Created
+            <br>  
+                <input type="checkbox" name="checkbox" value=" Credit Added -" id="creditAdded" onchange="toggleCreditAddedOptions()"> Credit Added
+                    <div class="sub-options" id="creditAddedOptions" style="display: none;">
+                        <h5 class="subHeader">Appreciation Credit</h5>
+                        <input type="checkbox" name="checkbox" value=" $5.00 Customer Appreciation Credit -" id="credit5"> $5.00 <br>
+                        <input type="checkbox" name="checkbox" value=" $10.00 Customer Appreciation Credit -" id="credit10"> $10.00 <br>
+                        <input type="checkbox" name="checkbox" value=" $15.00 Customer Appreciation Credit -" id="credit15"> $15.00 <br>
+                        <input type="checkbox" name="checkbox" value=" $20.00 Customer Appreciation Credit -" id="credit20"> $20.00 <br>
                         <br>
-                         <input type="checkbox" name="checkbox" value=" Can'y pass CPNI to create the Optimum ID - educated about the process to create the Online account #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> Optimum Account - Cannot Pass CPNI
-                        <br>
-                        <input type="checkbox" name="checkbox" value=" CPNI Passed to reset the online account password - the new password provided #OPTIMUM_ONLINE_ACCOUNT_SUPPORT - "> Optimum Account - Password Reset
+                        <h5 class="subHeader">Collections Fees</h5>
+                        <input type="checkbox" name="checkbox" value=" $10 Late fee waived -" id="lateFee"> Late Fee <br>
+                        <input type="checkbox" name="checkbox" value=" $00.00 Restore fee waived -" id="restoreFee"> Restore Fee
                     </div>
-        <br>
-                <input type="checkbox" name="checkbox" value="" id="disconnectionActions" onchange="toggledisconnectionActionsOptions()"> Disconnection Actions
-                    <div class="sub-options" id="disconnectionActionsOptions" style="display: none;">
-                        <input type="checkbox" name="checkbox" value=" Educated about that the account balance or the full past due amount MUST be cleared to be able to transfer the call to Retention for disconnection #TRANSFER_REQUEST_FOR_DICONNECTION_DENIED - "> Disconnection Request - Denied<br>
-                        <input type="checkbox" name="checkbox" value=" Requested the disconnection - payment collected - Xfer to Retention for Disconnection #TRANSFER_REQUEST_DOR_DISCONNETION_GRANTED - "> Disconnection Request - Granted <br>
-                    </div>
-        <br>
-                 <input type="checkbox" name="checkbox" value="" id="droppedCallActions" onchange="toggledroppedCallActionsOptions()" value="the call dropped -"> Dropped Call Actions
-                    <div class="sub-options" id="droppedCallActionsOptions" style="display: none;">
-                        <input type="checkbox" name="checkbox" value=" called the customer back - the Customer answered #CALLED_BACK_CONNECTED -"> Called back - Connected<br>
-                        <input type="checkbox" name="checkbox" value=" called the customer back - No Answer - Left a Voicemail #CALLED_BACK_NO_ANSWER -"> No Answer - Left Voicemail<br>
-                        <input type="checkbox" name="checkbox" value=" called the customer back - No Answer - The Voicemail box not set yet #CALLED_BACK_NOT_REACHABLE -"> No Answer - No Voicemail<br>
-                        <input type="checkbox" name="checkbox" value=" called the customer back - Line Busy #CALLED_BACK_LINE_BUSY -">Line Busy
-                    </div>
+            <br>
+                    <input type="checkbox" name="checkbox" value="" id="collectionOptions" onchange="toggleCollectionOptionsOptions()"> Payment Collected
+                        <div class="sub-options" id="collectionOptionsOptions" style="display: none;">
+                            <input type="checkbox" name="checkbox" value=" Full payment collected #FULL_PAYMENT_COLLECTED - "> Full Payment Collected<br>
+                            <input type="checkbox" name="checkbox" value=" The past due amount collected #PAST_DUE_COLLECTED - "> Past Due Amount Collected<br>
+                            <input type="checkbox" name="checkbox" value=" Partial payment collected ($00.00) - educated about the full balance after the payment #PARTIAL_PAYMENT_COLLECTED -"> Partial Payment Collected<br>
+                            <input type="checkbox" name="checkbox" value=" Write-Off amount collected ($00.00) - educated about the account balance amount after the payment #WRITE-OFF_AMOUNT_COLLECTED -"> Payment Collected - Write-Off <br>
+                        </div>
+                    
+            <br>
+                    <input type="checkbox" name="checkbox" value="" id="temporaryServiceRestoration" onchange="toggletemporaryServiceRestorationOptions()"> Service Restoration Options
+                        <div class="sub-options" id="temporaryServiceRestorationOptions" style="display: none;">
+                            <input type="checkbox" name="checkbox" value=" Payment Extension Granted - educated about the due date after the payment extension #PAYMENT_EXTENSION_GRANTED - "> P2P Extension - Granted<br>
+                            <input type="checkbox" name="checkbox" value=" Educated that the Payment Extension Denied - Educated about the amount required to restore the service #PAYMENT_EXTENSION_DENIED - "> P2P Extension - Denied<br>
+                            <input type="checkbox" name="checkbox" value=" Educated that the Payment Plan Approved, the customer agreed on the terms and the service will be back within 2 hours Max #PAYMENT_PLAN - "> Payment Plan - Approved<br>
+                            <input type="checkbox" name="checkbox" value=" Educated that the Account is not eligible for any Payment Plan #PAYMENT_PLAN_DENIED - "> Payment Plan - Denied<br>
+                        </div>
+            <br>
+                    <input type="checkbox" name="checkbox" value="" id="optIdActions" onchange="toggleoptIdActionsOptions()"> Optimum ID Actions
+                        <div class="sub-options" id="optIdActionsOptions" style="display: none;">
+                            <input type="checkbox" name="checkbox" value=" CPNI Passed to create the Optimum ID - created - provided the Temporary password to set the account password - educated about the Online account #OPTIMUM_ONLINE_ACCOUNT - "> Optimum Account - Created
+                            <br>
+                             <input type="checkbox" name="checkbox" value=" Can'y pass CPNI to create the Optimum ID - educated about the process to create the Online account #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> Optimum Account - Cannot Pass CPNI
+                            <br>
+                            <input type="checkbox" name="checkbox" value=" CPNI Passed to reset the online account password - the new password provided #OPTIMUM_ONLINE_ACCOUNT_SUPPORT - "> Optimum Account - Password Reset
+                        </div>
+            <br>
+                    <input type="checkbox" name="checkbox" value="" id="disconnectionActions" onchange="toggledisconnectionActionsOptions()"> Disconnection Actions
+                        <div class="sub-options" id="disconnectionActionsOptions" style="display: none;">
+                            <input type="checkbox" name="checkbox" value=" Educated about that the account balance or the full past due amount MUST be cleared to be able to transfer the call to Retention for disconnection #TRANSFER_REQUEST_FOR_DICONNECTION_DENIED - "> Disconnection Request - Denied<br>
+                            <input type="checkbox" name="checkbox" value=" Requested the disconnection - payment collected - Xfer to Retention for Disconnection #TRANSFER_REQUEST_DOR_DISCONNETION_GRANTED - "> Disconnection Request - Granted <br>
+                        </div>
+            <br>
+                     <input type="checkbox" name="checkbox" value="" id="droppedCallActions" onchange="toggledroppedCallActionsOptions()"> Dropped Call Actions
+                        <div class="sub-options" id="droppedCallActionsOptions" style="display: none;">
+                            <input type="checkbox" name="checkbox" value=" call dropped - called the customer back - Answered #CALLED_BACK_CONNECTED -"> Called back - Connected<br>
+                            <input type="checkbox" name="checkbox" value=" call dropped - called the customer back - No Answer - Left a Voicemail #CALLED_BACK_NO_ANSWER -"> No Answer - Left Voicemail<br>
+                            <input type="checkbox" name="checkbox" value=" call dropped - called the customer back - No Answer - The Voicemail box not set yet #CALLED_BACK_NOT_REACHABLE -"> No Answer - No Voicemail<br>
+                            <input type="checkbox" name="checkbox" value=" call dropped - called the customer back - Line Busy #CALLED_BACK_LINE_BUSY -">Line Busy
+                        </div>
             </div>
-        <br>
-    </section>
-    <br>
-    <div>
-        <button id="newCallBtn" onclick="reloadPage()">New Call</button>
-        <button id="copyBtn" onclick="copyToClipboard()">Copy to Clipboard</button>
-    </div>
-    <br>
-    <textarea id="sentence" rows="6" cols="50" readonly></textarea>
-    <div class="footer">
-        <p>All Rights Reserved.&copy;</p>
-    </div>
-    <script src="Script.js"></script>
-</body>
+
+            <br>
+            <br>
+                        <div>
+                            <button id="newCallBtn" onclick="reloadPage()">New Call</button>
+                            <button id="copyBtn" onclick="copyToClipboard()">Copy Text</button>
+                        </div>
+            <br>
+                        <textarea id="sentence" rows="6" cols="50" readonly></textarea>
+
+                        <div class="footer">
+                            <p>All Rights Reserved.&copy;</p>
+                        </div>
+        </div>
+
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="./scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="./menuScript.js"></script>
+        <script src="./docScript.js"></script>
+
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        
+        <!-- ===== MAIN JS ===== -->
+    </body>
 </html>

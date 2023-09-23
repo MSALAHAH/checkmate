@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+        #docToolSectionBody {
+            height: 100%;
+            text-align: center;
+        }
+
+        #checkboxesDiv {
+            display: inline-block;
+            text-align: left;
+        }
+
+
+        #suggestions{
+                width: 350px;
+                height: 86px;
+                padding-top: 35px;
+            padding: 0.8em;
+            margin-bottom: 20px;
+            text-align: center;
+            background-image: linear-gradient(#fffffffa 0%, #000000 290%);
+            box-shadow: 1px -1px 8px 0 rgb(0 0 0 / 67%);
+            transition: 0.3s;
+            border-radius: 8px;
+        }
+
+        .subHeader {
+            margin-top: 5px;
+            margin-bottom: 2px;
+        }
+
+        #customerEducated, 
+        #creditAdded, 
+        #temporaryServiceRestoration, 
+        #collectionOptions, 
+        #optIdActions, 
+        #disconnectionActions,
+        #droppedCallActions{
+            margin-bottom: 18px;
+        }
+
+        #customerEducatedOptions, 
+        #creditAddedOptions, 
+        #temporaryServiceRestorationOptions, 
+        #collectionOptionsOptions, 
+        #optIdActionsOptions, 
+        #disconnectionActionsOptions,
+        #droppedCallActionsOptions{
+            margin-left: 25px
+        }
+
+        #newCallBtn, #copyBtn {
+            padding: 0.7em 2em;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: Roboto Slab;
+            font-weight: 600;
+            color: #000;
+            background-color: #fff;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0px 4px 4px rgb(0 0 0 / 42%);
+            transition: all 0.1s ease 0s;
+            cursor: pointer;
+            outline: none;
+        }
+
+        #newCallBtn:hover, #copyBtn:hover {
+            background-color: #23c483;
+            box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        #newCallBtn:active, #copyBtn:active {
+            transform: translateY(-1px);
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        #sentence {
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            border-width: 5px;
+            margin-bottom: 7%;
+            border-style: outset;
+            border-radius: 8px;
+            border: none;
+            box-shadow: 3px 0px 12px 0px rgb(0 0 0 / 31%);
+            width: 80%;
+            height: 40%;
+            padding: 18px;
+            overflow: hidden;
+        }
+
+        .footer {
+            font-family: 'Roboto Slab';
+            font-size: medium;
+            position: inherit;
+            left: 0;
+            bottom: -30px;
+            width: 100%;
+            color: #00000017;
+            text-align: center;
+        }
