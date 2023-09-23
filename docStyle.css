@@ -11,8 +11,12 @@
         #checkboxesDiv {
             display: inline-block;
             text-align: left;
-            border-radius: 8px;
-            box-shadow: 3px 0px 20px 7px rgb(0 0 0 / 48%);
+           
+        }
+
+        #styleBox {
+                border-radius: 8px;
+                box-shadow: 3px 0px 20px 7px rgb(0 0 0 / 48%);    
         }
 
 
