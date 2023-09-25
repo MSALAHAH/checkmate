@@ -112,6 +112,7 @@ a{
   font-size: 1.25rem;
 }
 .nav__name{
+  padding-left: 2px;
   font-size: var(--small-font-size);
 }
 
