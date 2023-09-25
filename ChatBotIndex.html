@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="ChatBotCSS.css">
+    <script src="ChatBotScript.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.optimum.com/themes/custom/optimum/slice/favicon/favicon-16x16.png">
+    <title>Optimum Agent Assistant</title>
+</head>
+<body>
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+            </li>
+
+            <li class="chat ongoing">
+            </li>
+        </ul>
+
+        <div class="chat-Input">
+            <textarea placeholder="Ask, how can I help?" required></textarea>
+            <span id="sendBtn"><ion-icon name="send-outline"></ion-icon></span>
+        </div>
+    </div>
+</body>
+</html>

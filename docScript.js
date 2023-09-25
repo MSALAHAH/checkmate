@@ -27,93 +27,97 @@ function copyToClipboard() {
 // SUB-OPTIONS FUNCTIONS BELOW
 // SUBs=======================================================================
 
-// creditSubOptionsFunction
-function toggleCreditAddedOptions() {
-    var creditAddedCheckbox = document.getElementById('creditAdded');
-    var creditAddedOptions = document.getElementById('creditAddedOptions');
+// MAIN BOX 1 FUNCTION
+function togglemainCheckbox1Options() {
+    var mainCheckbox1Checkbox = document.getElementById('mainCheckbox1');
+    var mainCheckbox1Options = document.getElementById('mainCheckbox1Options');
 
-    if (creditAddedCheckbox.checked) {
-        creditAddedOptions.style.display = 'block';
+    if (mainCheckbox1Checkbox.checked) {
+        mainCheckbox1Options.style.display = 'block';
     } else {
-        creditAddedOptions.style.display = 'none';
+        mainCheckbox1Options.style.display = 'none';
     }
     updateSentence();
 }
 
-// customerEducationSubOptionsFunction
-function toggleCustomerEducatedOptions() {
-    var customerEducatedCheckbox = document.getElementById('customerEducated');
-    var customerEducatedOptions = document.getElementById('customerEducatedOptions');
+// MAIN BOX 2 FUNCTION
+function togglemainCheckbox2Options() {
+    var mainCheckbox2Checkbox = document.getElementById('mainCheckbox2');
+    var mainCheckbox2Options = document.getElementById('mainCheckbox2Options');
 
-    if (customerEducatedCheckbox.checked) {
-        customerEducatedOptions.style.display = 'block';
+    if (mainCheckbox2Checkbox.checked) {
+        mainCheckbox2Options.style.display = 'block';
     } else {
-        customerEducatedOptions.style.display = 'none';
+        mainCheckbox2Options.style.display = 'none';
     }
     updateSentence();
 }
 
-// temporaryServiceRestorationFunction
-function toggletemporaryServiceRestorationOptions() {
-    var temporaryServiceRestorationCheckbox = document.getElementById('temporaryServiceRestoration');
-    var temporaryServiceRestorationOptions = document.getElementById('temporaryServiceRestorationOptions');
+// MAIN BOX 3 FUNCTION
+function togglemainCheckbox3Options() {
+    var mainCheckbox3Checkbox = document.getElementById('mainCheckbox3');
+    var mainCheckbox3Options = document.getElementById('mainCheckbox3Options');
 
-    if (temporaryServiceRestorationCheckbox.checked) {
-        temporaryServiceRestorationOptions.style.display = 'block';
+    if (mainCheckbox3Checkbox.checked) {
+        mainCheckbox3Options.style.display = 'block';
     } else {
-        temporaryServiceRestorationOptions.style.display = 'none';
+        mainCheckbox3Options.style.display = 'none';
     }
     updateSentence();
 }
 
-// collectionsPaymentsFunction
-function toggleCollectionOptionsOptions() {
-    var collectionOptionsCheckbox = document.getElementById('collectionOptions');
-    var collectionOptionsOptions = document.getElementById('collectionOptionsOptions');
+// MAIN BOX 4 FUNCTION
+function togglemainCheckbox4Options() {
+    var mainCheckbox4Checkbox = document.getElementById('mainCheckbox4');
+    var mainCheckbox4Options = document.getElementById('mainCheckbox4Options');
 
-    if (collectionOptionsCheckbox.checked) {
-        collectionOptionsOptions.style.display = 'block';
+    if (mainCheckbox4Checkbox.checked) {
+        mainCheckbox4Options.style.display = 'block';
     } else {
-        collectionOptionsOptions.style.display = 'none';
-    }
-    updateSentence();
-}
-// optimumIdActionsFunction
-function toggleoptIdActionsOptions() {
-    var optIdActionsCheckbox = document.getElementById('optIdActions');
-    var optIdActionsOptions = document.getElementById('optIdActionsOptions');
-
-    if (optIdActionsCheckbox.checked) {
-        optIdActionsOptions.style.display = 'block';
-    } else {
-        optIdActionsOptions.style.display = 'none';
+        mainCheckbox4Options.style.display = 'none';
     }
     updateSentence();
 }
 
-function toggledisconnectionActionsOptions() {
-    var disconnectionActionsCheckbox = document.getElementById('disconnectionActions');
-    var disconnectionActionsOptions = document.getElementById('disconnectionActionsOptions');
+// MAIN BOX 5 FUNCTION
+function togglemainCheckbox5Options() {
+    var mainCheckbox5Checkbox = document.getElementById('mainCheckbox5');
+    var mainCheckbox5Options = document.getElementById('mainCheckbox5Options');
 
-    if (disconnectionActionsCheckbox.checked) {
-        disconnectionActionsOptions.style.display = 'block';
+    if (mainCheckbox5Checkbox.checked) {
+        mainCheckbox5Options.style.display = 'block';
     } else {
-        disconnectionActionsOptions.style.display = 'none';
+        mainCheckbox5Options.style.display = 'none';
     }
     updateSentence();
 }
 
-function toggledroppedCallActionsOptions() {
-    var droppedCallActionsCheckbox = document.getElementById('droppedCallActions');
-    var droppedCallActionsOptions = document.getElementById('droppedCallActionsOptions');
+// MAIN BOX 6 FUNCTION
+function togglemainCheckbox6Options() {
+    var mainCheckbox6Checkbox = document.getElementById('mainCheckbox6');
+    var mainCheckbox6Options = document.getElementById('mainCheckbox6Options');
 
-    if (droppedCallActionsCheckbox.checked) {
-        droppedCallActionsOptions.style.display = 'block';
+    if (mainCheckbox6Checkbox.checked) {
+        mainCheckbox6Options.style.display = 'block';
     } else {
-        droppedCallActionsOptions.style.display = 'none';
+        mainCheckbox6Options.style.display = 'none';
     }
     updateSentence();
 }
+
+// MAIN BOX 7 FUNCTION
+function togglemainCheckbox7Options() {
+    var mainCheckbox7Checkbox = document.getElementById('mainCheckbox7');
+    var mainCheckbox7Options = document.getElementById('mainCheckbox7Options');
+
+    if (mainCheckbox7Checkbox.checked) {
+        mainCheckbox7Options.style.display = 'block';
+    } else {
+        mainCheckbox7Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
 // SUBs=======================================================================
 window.onload = function () {
     var checkboxes = document.getElementsByName('checkbox');

@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+
+
+        /* CHATBOT ABOVE */
+
         #docToolSectionBody {
             display: flex;
             font-family: Roboto Slab;
@@ -52,23 +56,23 @@
             margin-bottom: 2px;
         }
 
-        #customerEducated, 
-        #creditAdded, 
-        #temporaryServiceRestoration, 
-        #collectionOptions, 
-        #optIdActions, 
-        #disconnectionActions,
-        #droppedCallActions{
+        #mainCheckbox1, 
+        #mainCheckbox2, 
+        #mainCheckbox3, 
+        #mainCheckbox4, 
+        #mainCheckbox5, 
+        #mainCheckbox6,
+        #mainCheckbox7{
             margin-bottom: 18px;
         }
 
-        #customerEducatedOptions, 
-        #creditAddedOptions, 
-        #temporaryServiceRestorationOptions, 
-        #collectionOptionsOptions, 
-        #optIdActionsOptions, 
-        #disconnectionActionsOptions,
-        #droppedCallActionsOptions{
+        #mainCheckbox1Options, 
+        #mainCheckbox2Options, 
+        #mainCheckbox3Options, 
+        #mainCheckbox4Options, 
+        #mainCheckbox5Options, 
+        #mainCheckbox6Options,
+        #mainCheckbox7Options{
             margin-left: 25px
         }
 
