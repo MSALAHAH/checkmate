@@ -177,7 +177,7 @@
         }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 425px) {
         #headSubject {
         font-size: 23px;
         width: 255px;
@@ -197,7 +197,7 @@
         }
 }
 
-@media(max-width: 425px)425 {
+@media(max-width: 768px) {
         #headSubject {
         font-size: 24px;
         width: 285px;
@@ -217,22 +217,22 @@
         }
 }
 
-@media(max-width: 1440px) {
+@media(min-width: 1440px) {
         #headSubject {
-        font-size: 25px;
-        width: 310px;
+        font-size: 24px;
+        width: 295px;
         background-color: rgb(253 249 249 / 86%);
         border-radius: 8px;
         box-shadow: 3px 0px 20px 7px rgb(0 0 0 / 26%);
         text-shadow: 0px 1px 13px;
         }
        #styleBox {
-        max-width: 500px;
+        width: 445px;
        }
         #checkboxesDiv {
-        font-size: 22px;
+        font-size: 20px;
         }
         #newCallBtn, #copyBtn {
-        font-size: 17px;
+        font-size: 15px;
         }
 }
