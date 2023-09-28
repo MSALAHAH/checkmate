@@ -16,7 +16,7 @@
         }
 
         #headSubject {
-                font-size: 275px;
+                font-size: 26px;
                 width: 275px;
                 min-width: 260px;
                 background-color: rgb(253 249 249 / 86%);
@@ -137,7 +137,7 @@
             text-align: center;
         }
 
-@media(max-width: 320px) {
+@media(max-width: 1440px) {
         #headSubject {
         font-size: large;
         width: 205px;
@@ -197,7 +197,7 @@
         }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 425px)425 {
         #headSubject {
         font-size: 24px;
         width: 285px;
@@ -217,9 +217,9 @@
         }
 }
 
-@media(max-width: 1440px) {
+@media(max-width: 320px) {
         #headSubject {
-        font-size: 26px;
+        font-size: 25px;
         width: 310px;
         background-color: rgb(253 249 249 / 86%);
         border-radius: 8px;
