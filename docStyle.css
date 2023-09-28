@@ -32,7 +32,6 @@
 
         #styleBox {
         max-width: 800px;
-            min-width: 380px;
         border-radius: 8px;
         box-shadow: 3px 0px 20px 7px rgb(0 0 0 / 48%); 
         background-image: radial-gradient(#2c75a5, #ffffffe0);
@@ -147,13 +146,35 @@
         text-shadow: 0px 1px 13px;
         }
        #styleBox {
-        max-width: 305px;
+        width: 250px;
        }
         #checkboxesDiv {
-        font-size: 15px;
+        font-size: 14px;
+        padding: 0px 3px 0px 3px;
         }
         #newCallBtn, #copyBtn {
-        font-size: 13px;
+        font-size: 12px;
+        }
+}
+
+@media(max-width: 425px) {
+        #headSubject {
+        font-size: 24;
+        width: 270px;
+        background-color: rgb(253 249 249 / 86%);
+        border-radius: 8px;
+        box-shadow: 3px 0px 20px 7px rgb(0 0 0 / 26%);
+        text-shadow: 0px 1px 13px;
+        }
+       #styleBox {
+        width: 345px;
+       }
+        #checkboxesDiv {
+        font-size: 17px;
+        padding: 0px 3px 0px 3px;
+        }
+        #newCallBtn, #copyBtn {
+        font-size: 14px;
         }
 }
 
