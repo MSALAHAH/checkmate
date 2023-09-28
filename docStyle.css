@@ -137,9 +137,9 @@
             text-align: center;
         }
 
-@media(max-width: 1440px) {
+@media(max-width: 320px) {
         #headSubject {
-        font-size: large;
+        font-size: 21;
         width: 205px;
         background-color: rgb(253 249 249 / 86%);
         border-radius: 8px;
@@ -159,7 +159,7 @@
 
 @media(max-width: 425px) {
         #headSubject {
-        font-size: larger;
+        font-size: 22;
         width: 225px;
         background-color: rgb(253 249 249 / 86%);
         border-radius: 8px;
@@ -179,7 +179,7 @@
 
 @media(max-width: 768px) {
         #headSubject {
-        font-size: 22px;
+        font-size: 23px;
         width: 255px;
         background-color: rgb(253 249 249 / 86%);
         border-radius: 8px;
@@ -217,7 +217,7 @@
         }
 }
 
-@media(max-width: 320px) {
+@media(max-width: 1440px) {
         #headSubject {
         font-size: 25px;
         width: 310px;
