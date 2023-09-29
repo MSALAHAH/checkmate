@@ -59,6 +59,8 @@
                             <div class="sub-options" id="mainCheckbox1Options" style="display: none;">
                                 <input type="checkbox" name="checkbox" value=" Ensured that the Contact information on file is updated -"> Updated CPC
                                 <br>
+                                <input type="checkbox" name="checkbox" value=" mentioned the customer loyalty and assured that I'll do my best to help him #LOYALTY #ASSURANCE -"> Mention Loyalty - Assurance
+                                <br>
                                 <input type="checkbox" name="checkbox" value=" Educated about the full balance #FULL_BALANCE_EDUCATION -"> Education - Full Balance
                                 <br>
                                 <input type="checkbox" name="checkbox" value=" Educated about the unpaid balance #UNPAID_BALANCE_EDUCATION -"> Education - Unpaid Balance
@@ -69,9 +71,12 @@
                                 <br>
                                 <input type="checkbox" name="checkbox" value=" Educated about the Auto-Pay discount #AUTO-PAY_EDUCATION -"> Education - Auto-Pay
                                 <br>
+                                <input type="checkbox" name="checkbox" value=" Educated about the online account Optimum.net #SELF_HELP -"> Education - Self Help
+                                <br>
                                 <input type="checkbox" name="checkbox" value=" Educated about the billing cycle and the due date -"> Education - Due Date(s)
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated about the current rate and about the last bill(s) amount in details #BILLING_EXPLANATION -"> Billing Explanation<br>
+                                <input type="checkbox" name="checkbox" value=" Educated about the current rate and about the last bill(s) amount in details #BILLING_EXPLANATION -"> Billing Explanation
+                                <br>
                             </div>
                         <br>  
                         <input type="checkbox" name="checkbox" value=" Credit Added -" id="mainCheckbox2" onchange="togglemainCheckbox2Options()"> Credit Added
@@ -115,31 +120,37 @@
                         <br>
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox4" onchange="togglemainCheckbox4Options()"> Service Restoration Options
                             <div class="sub-options" id="mainCheckbox4Options" style="display: none;">
-                                <input type="checkbox" name="checkbox" value=" Payment Extension Granted - educated about the due date after the payment extension #PAYMENT_EXTENSION_GRANTED - "> P2P Extension - Granted
+                                <input type="checkbox" name="checkbox" value=" Payment Extension Granted - educated about the due date after the payment extension #PAYMENT_EXTENSION_GRANTED - "> P2P - Granted
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated that the Payment Extension Denied - Educated about the amount required to restore the service #PAYMENT_EXTENSION_DENIED - "> P2P Extension - Denied
+                                <input type="checkbox" name="checkbox" value=" Educated that the Payment Extension Denied - Educated about the amount required to restore the service #PAYMENT_EXTENSION_DENIED - "> P2P - Denied
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated that the Payment Plan Approved, the customer agreed on the terms and the service will be back within 2 hours Max #PAYMENT_PLAN - "> Payment Plan - Approved
+                                <input type="checkbox" name="checkbox" value=" Educated that the Payment Plan Approved, the customer agreed on the terms and the service will be back within 2 hours Max #PAYMENT_PLAN - "> PP - Approved - Applied
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated that the Account is not eligible for any Payment Plan #PAYMENT_PLAN_DENIED - "> Payment Plan - Denied
+                                <input type="checkbox" name="checkbox" value=" Educated that the Account is not eligible for any Payment Plan #PAYMENT_PLAN_DENIED - "> PP - Not Eligible
+                                <br>
+                                <input type="checkbox" name="checkbox" value=" The account is eligible for a payment plan but the customer rejected the offer #CUSTOMER_REJECTED_PP - "> PP Approved - Customer Denied
                                 <br>
                             </div>
                         <br>
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox5" onchange="togglemainCheckbox5Options()"> Optimum ID Actions
                             <div class="sub-options" id="mainCheckbox5Options" style="display: none;">
-                                <input type="checkbox" name="checkbox" value=" CPNI Passed to create the Optimum ID - created - provided the Temporary password to set the account password - educated about the Online account #OPTIMUM_ONLINE_ACCOUNT - "> Optimum Account - Created
+                                <input type="checkbox" name="checkbox" value=" CPNI Passed to disclose the Optimum ID - provided the ID and educated about the Online account #OPTIMUM_ONLINE_ACCOUNT - "> Opt-ID - Disclose
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Can'y pass CPNI to create the Optimum ID - educated about the process to create the Online account #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> Optimum Account - Cannot Pass CPNI
+                                <input type="checkbox" name="checkbox" value=" CPNI Passed to create the Optimum ID - created - provided the Temporary password to set the account password - educated about the Online account #OPTIMUM_ONLINE_ACCOUNT - "> Create Opt-ID - Created
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" CPNI Passed to reset the online account password - the new password provided #OPTIMUM_ONLINE_ACCOUNT_SUPPORT - "> Optimum Account - Password Reset
+                                <input type="checkbox" name="checkbox" value=" CPNI Failed to create the Optimum ID - educated about the process to create the Online account #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> Create Opt-ID - CPNI Failed
+                                <br>
+                                <input type="checkbox" name="checkbox" value=" CPNI Passed to reset the online account password - the new password provided #OPTIMUM_ONLINE_ACCOUNT_SUPPORT - "> Password Reset - Opt-ID - Done
+                                <br>
+                                <input type="checkbox" name="checkbox" value=" CPNI Failed to reset the online account password - educated the customer that we cannot reset the password without passing CPNI #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> Password Reset - Opt-ID - CPNI Failed
                                 <br>
                             </div>
                         <br>
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox6" onchange="togglemainCheckbox6Options()"> Disconnection Actions
                             <div class="sub-options" id="mainCheckbox6Options" style="display: none;">
-                                <input type="checkbox" name="checkbox" value=" Educated about that the account balance or the full past due amount MUST be cleared to be able to transfer the call to Retention for disconnection #TRANSFER_REQUEST_FOR_DICONNECTION_DENIED - "> Disconnection Request - Denied
+                                <input type="checkbox" name="checkbox" value=" Educated about that the account balance or the full past due amount MUST be cleared to be able to transfer the call to Retention for disconnection #TRANSFER_REQUEST_FOR_DICONNECTION_DENIED - "> Disconnection - NoPayment
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Requested the disconnection - payment collected - Xfer to Retention for Disconnection #TRANSFER_REQUEST_DOR_DISCONNETION_GRANTED - "> Disconnection Request - Granted
+                                <input type="checkbox" name="checkbox" value=" Requested the disconnection - payment collected - Xfer to Retention for Disconnection #TRANSFER_REQUEST_DOR_DISCONNETION_GRANTED - "> Disconnection - XferToRet
                                 <br>
                             </div>
                         <br>
