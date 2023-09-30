@@ -31,7 +31,7 @@
         }
 
         #styleBox {
-        max-width: 800px;
+        width: 365px;
         border-radius: 8px;
         box-shadow: 3px 0px 20px 7px rgb(0 0 0 / 48%); 
         background-image: radial-gradient(#2c75a5, #ffffffe0);
@@ -137,6 +137,16 @@
         }
 
 @media(max-width: 320px) {
+        body {
+        padding-left: 0px;
+        }
+        
+        .l-navbar {
+        visibility: hidden;
+        width: 0px;
+        padding: 0px;
+        }
+        
         #headSubject {
         font-size: 21;
         width: 205px;
@@ -158,8 +168,18 @@
 }
 
 @media(max-width: 425px) {
+        body {
+        padding-left: 0px;
+        }
+        
+        .l-navbar {
+        visibility: hidden;
+        width: 0px;
+        padding: 0px;
+        }
+        
         #headSubject {
-        font-size: 24;
+        font-size: 23px;
         width: 270px;
         background-color: rgb(253 249 249 / 86%);
         border-radius: 8px;
@@ -167,10 +187,10 @@
         text-shadow: 0px 1px 13px;
         }
        #styleBox {
-        width: 345px;
+        width: 320px;
        }
         #checkboxesDiv {
-        font-size: 17px;
+        font-size: 16px;
         padding: 0px 3px 0px 3px;
         }
         #newCallBtn, #copyBtn {
