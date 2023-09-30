@@ -118,6 +118,32 @@ function togglemainCheckbox7Options() {
     updateSentence();
 }
 
+// MAIN BOX 8 FUNCTION
+function togglemainCheckbox8Options() {
+    var mainCheckbox8Checkbox = document.getElementById('mainCheckbox8');
+    var mainCheckbox8Options = document.getElementById('mainCheckbox8Options');
+
+    if (mainCheckbox8Checkbox.checked) {
+        mainCheckbox8Options.style.display = 'block';
+    } else {
+        mainCheckbox8Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+                            // MAIN BOX 8 FUNCTION
+                            function togglesubMainCheckbox1Options() {
+                                var subMainCheckbox1Checkbox = document.getElementById('subMainCheckbox1');
+                                var subMainCheckbox1Options = document.getElementById('subMainCheckbox1Options');
+                            
+                                if (subMainCheckbox1Checkbox.checked) {
+                                    subMainCheckbox1Options.style.display = 'block';
+                                } else {
+                                    subMainCheckbox1Options.style.display = 'none';
+                                }
+                                updateSentence();
+                            }
+
 // SUBs=======================================================================
 window.onload = function () {
     var checkboxes = document.getElementsByName('checkbox');
