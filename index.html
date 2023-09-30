@@ -78,7 +78,31 @@
                                 <input type="checkbox" name="checkbox" value=" Educated about the current rate and about the last bill(s) amount in details #BILLING_EXPLANATION -"> Billing Explanation
                                 <br>
                             </div>
+                    
                         <br>  
+
+                        <input type="checkbox" name="checkbox" value="" id="mainCheckbox8" onchange="togglemainCheckbox8Options()"> COS Actions
+                            <div class="sub-options" id="mainCheckbox8Options" style="display: none;">
+                                <input type="checkbox" name="checkbox" value="" id="subMainCheckbox1" onchange="togglesubMainCheckbox1Options()"> TV Package Upgrade
+                                    <div class="sub-options" id="subMainCheckbox1Options" style="display: none;">
+                                        <input type="checkbox" name="checkbox" value="Upgraded the TV package to Core #UPGRADE_TO_CORE"> To Core
+                                        <input type="checkbox" name="checkbox" value="Upgraded the TV package to Value #UPGRADE_TO_VALUE"> To Value
+                                        <input type="checkbox" name="checkbox" value="Upgraded the TV package to Select #UPGRADE_TO_SELECT"> To Select
+                                        <input type="checkbox" name="checkbox" value="Upgraded the TV package to Premier #UPGRADE_TO_PREMIER"> To Premier
+                                    </div>
+                                <br>
+                                <input type="checkbox" name="checkbox" value=" CPNI Passed to create the Optimum ID - created - provided the Temporary password to set the account password - educated about the Online account #OPTIMUM_ONLINE_ACCOUNT - "> Create Opt-ID - Created
+                                <br>
+                                <input type="checkbox" name="checkbox" value=" CPNI Failed to create the Optimum ID - educated about the process to create the Online account #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> Create Opt-ID - CPNI Failed
+                                <br>
+                                <input type="checkbox" name="checkbox" value=" CPNI Passed to reset the online account password - the new password provided #OPTIMUM_ONLINE_ACCOUNT_SUPPORT - "> Password Reset - Opt-ID - Done
+                                <br>
+                                <input type="checkbox" name="checkbox" value=" CPNI Failed to reset the online account password - educated the customer that we cannot reset the password without passing CPNI #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> Password - Opt-ID - CPNI Failed
+                                <br>
+                            </div>
+                    
+                        <br>
+                    
                         <input type="checkbox" name="checkbox" value=" Credit Added -" id="mainCheckbox2" onchange="togglemainCheckbox2Options()"> Credit Added
                             <div class="sub-options" id="mainCheckbox2Options" style="display: none;">
                                 <h5 class="subHeader">Appreciation Credit</h5>
@@ -104,7 +128,9 @@
                                 <br>
                             <br>
                             </div>
+                    
                         <br>
+                    
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox3" onchange="togglemainCheckbox3Options()"> Payment Collected
                             <div class="sub-options" id="mainCheckbox3Options" style="display: none;">
                                 <input type="checkbox" name="checkbox" value=" Full payment collected #FULL_PAYMENT_COLLECTED - "> Full Payment Collected
@@ -116,8 +142,9 @@
                                 <input type="checkbox" name="checkbox" value=" Write-Off amount collected ($00.00) - educated about the account balance amount after the payment #WRITE-OFF_AMOUNT_COLLECTED -"> Payment Collected - Write-Off
                                 <br>
                             </div>
-
+                    
                         <br>
+                    
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox4" onchange="togglemainCheckbox4Options()"> Service Restoration Options
                             <div class="sub-options" id="mainCheckbox4Options" style="display: none;">
                                 <input type="checkbox" name="checkbox" value=" Payment Extension Granted - educated about the due date after the payment extension #PAYMENT_EXTENSION_GRANTED - "> P2P - Granted
@@ -131,7 +158,9 @@
                                 <input type="checkbox" name="checkbox" value=" The account is eligible for a payment plan but the customer rejected the offer #CUSTOMER_REJECTED_PP - "> PP Approved - Customer Denied
                                 <br>
                             </div>
+                    
                         <br>
+                    
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox5" onchange="togglemainCheckbox5Options()"> Optimum ID Actions
                             <div class="sub-options" id="mainCheckbox5Options" style="display: none;">
                                 <input type="checkbox" name="checkbox" value=" CPNI Passed to disclose the Optimum ID - provided the ID and educated about the Online account #OPTIMUM_ONLINE_ACCOUNT - "> Opt-ID - Disclose
@@ -145,7 +174,9 @@
                                 <input type="checkbox" name="checkbox" value=" CPNI Failed to reset the online account password - educated the customer that we cannot reset the password without passing CPNI #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> Password - Opt-ID - CPNI Failed
                                 <br>
                             </div>
+                    
                         <br>
+                    
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox6" onchange="togglemainCheckbox6Options()"> Disconnection Actions
                             <div class="sub-options" id="mainCheckbox6Options" style="display: none;">
                                 <input type="checkbox" name="checkbox" value=" Educated about that the account balance or the full past due amount MUST be cleared to be able to transfer the call to Retention for disconnection #TRANSFER_REQUEST_FOR_DICONNECTION_DENIED - "> Disconnection - NoPayment
@@ -153,7 +184,9 @@
                                 <input type="checkbox" name="checkbox" value=" Requested the disconnection - payment collected - Xfer to Retention for Disconnection #TRANSFER_REQUEST_DOR_DISCONNETION_GRANTED - "> Disconnection - XferToRet
                                 <br>
                             </div>
+                    
                         <br>
+                    
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox7" onchange="togglemainCheckbox7Options()"> Dropped Call Actions
                             <div class="sub-options" id="mainCheckbox7Options" style="display: none;">
                                 <input type="checkbox" name="checkbox" value=" call dropped - called the customer back - Answered #CALLED_BACK_CONNECTED -"> Called back - Connected
@@ -165,7 +198,9 @@
                                 <input type="checkbox" name="checkbox" value=" call dropped - called the customer back - Line Busy #CALLED_BACK_LINE_BUSY -">Line Busy
                                 <br>
                             </div>
+                    
                         <br>
+                    
                 </div>
             </div>
 
