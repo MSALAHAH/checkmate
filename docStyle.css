@@ -62,7 +62,9 @@
         #mainCheckbox4, 
         #mainCheckbox5, 
         #mainCheckbox6,
-        #mainCheckbox7{
+        #mainCheckbox7,
+        #mainCheckbox8,
+                #subMainCheckbox1{
             margin-bottom: 18px;
         }
 
@@ -72,7 +74,9 @@
         #mainCheckbox4Options, 
         #mainCheckbox5Options, 
         #mainCheckbox6Options,
-        #mainCheckbox7Options{
+        #mainCheckbox7Options,
+        #mainCheckbox8Options,
+        #subMainCheckbox1Options{
             margin-left: 25px
         }
 
