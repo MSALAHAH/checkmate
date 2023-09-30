@@ -64,8 +64,13 @@
         #mainCheckbox6,
         #mainCheckbox7,
         #mainCheckbox8,
-                #subMainCheckbox1{
-            margin-bottom: 18px;
+        #subMainCheckbox1,
+        #subMainCheckbox2,
+        #subMainCheckbox3,
+        #subMainCheckbox4,
+        #subMainCheckbox5,
+        {
+            margin-bottom: 15px;
         }
 
         #mainCheckbox1Options, 
@@ -76,8 +81,13 @@
         #mainCheckbox6Options,
         #mainCheckbox7Options,
         #mainCheckbox8Options,
-        #subMainCheckbox1Options{
-            margin-left: 25px
+        #subMainCheckbox1Options,
+        #subMainCheckbox2Options,
+        #subMainCheckbox3Options,
+        #subMainCheckbox4Options,
+        #subMainCheckbox5Options,
+        {
+            margin-left: 22px
         }
 
         #newCallBtn, #copyBtn {
