@@ -136,6 +136,7 @@ body {
         .chatbox .chat p {
             font-size: 13px;
             padding: 5px 15px;
+            max-width: 95%;
         }
     
         .chat-Input textarea {
@@ -171,11 +172,40 @@ body {
         }
 
         .chatbox .chat p {
-            font-size: 13px;
             padding: 5px 15px;
+            font-size: 14px;
+            max-width: 95%;
         }
     
         .chat-Input textarea {
             font-size: 14px;
+        }
+}
+
+@media(max-width: 768px) {
+        .chatbot header h2 {
+            font-size: 16px;
+        }
+       .chatbot {
+            position: fixed;
+            height: 93%;
+            width: 95%;
+            overflow: hidden;
+            background: #dfdfdfe3;
+            border-radius: 15px;
+        }
+
+        .chatbot .chatbox {
+            height: 90%;
+        }
+
+        .chatbox .chat p {
+            padding: 5px 15px;
+            font-size: 15px;
+            max-width: 95%;
+        }
+    
+        .chat-Input textarea {
+            font-size: 15px;
         }
 }
