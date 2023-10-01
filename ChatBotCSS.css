@@ -211,7 +211,7 @@ body {
         }
 }
 
-@media(max-width: 1440px) {
+@media(min-width: 1440px) {
         .chatbot header h2 {
             font-size: 18px;
         }
