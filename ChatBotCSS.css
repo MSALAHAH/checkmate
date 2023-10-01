@@ -129,6 +129,9 @@ body {
             background: #dfdfdfe3;
             border-radius: 15px;
         }
+        .chatbot .chatbox {
+            height: 90%;
+        }
 
         .chatbox .chat p {
             font-size: 13px;
@@ -161,6 +164,10 @@ body {
             overflow: hidden;
             background: #dfdfdfe3;
             border-radius: 15px;
+        }
+
+        .chatbot .chatbox {
+            height: 90%;
         }
 
         .chatbox .chat p {
