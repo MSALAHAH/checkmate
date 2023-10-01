@@ -9,8 +9,6 @@ body {
     position: fixed;
     height: 80%;
     width: 900px;
-    max-width: 1000px;
-    min-width: 400px;
     overflow: hidden;
     background: #dfdfdfe3;
     border-radius: 15px;
@@ -65,7 +63,6 @@ body {
 
 .chatbox .chat p {
     color: #fff;
-    max-width: 75%;
     font-size: 15px;
     padding: 12px 16px;
     border-radius: 10px 5px 10px 5px;
@@ -112,24 +109,66 @@ body {
 
 @media(max-width: 320px) {
         body {
-        padding-left: 0px;
+            padding-left: 0px;
         }
         
         .l-navbar {
-        visibility: hidden;
-        width: 0px;
-        padding: 0px;
+            visibility: hidden;
+            width: 0px;
+            padding: 0px;
         }
         
         .chatbot header h2 {
-        font-size: 14px;
+            font-size: 14px;
         }
        .chatbot {
-        position: fixed;
-        height: 93%;
-        width: 80%;
-        overflow: hidden;
-        background: #dfdfdfe3;
-        border-radius: 15px;
+            position: fixed;
+            height: 93%;
+            width: 95%;
+            overflow: hidden;
+            background: #dfdfdfe3;
+            border-radius: 15px;
+        }
+
+        .chatbox .chat p {
+            font-size: 13px;
+            padding: 5px 15px;
+        }
+    
+        .chat-Input textarea {
+            font-size: 14px;
+        }
 }
+
+@media(max-width: 425px) {
+        body {
+            padding-left: 0px;
+        }
+        
+        .l-navbar {
+            visibility: hidden;
+            width: 0px;
+            padding: 0px;
+        }
+        
+        .chatbot header h2 {
+            font-size: 14px;
+        }
+       .chatbot {
+            position: fixed;
+            height: 93%;
+            width: 95%;
+            overflow: hidden;
+            background: #dfdfdfe3;
+            border-radius: 15px;
+        }
+
+        .chatbox .chat p {
+            font-size: 13px;
+            padding: 5px 15px;
+        }
+    
+        .chat-Input textarea {
+            font-size: 14px;
+        }
 }
