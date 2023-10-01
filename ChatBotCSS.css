@@ -184,6 +184,15 @@ body {
 }
 
 @media(max-width: 768px) {
+         body {
+            padding-left: 0px;
+        }
+        
+        .l-navbar {
+            visibility: hidden;
+            width: 0px;
+            padding: 0px;
+        }
         .chatbot header h2 {
             font-size: 16px;
         }
