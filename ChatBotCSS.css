@@ -111,142 +111,25 @@ body {
 
 
 @media(max-width: 320px) {
-    .chatbot {
-    position: fixed;
-    height: 93%;
-    width: 77%;
-    overflow: hidden;
-    background: #dfdfdfe3;
-    border-radius: 15px;
-    } 
-
-    .chatbox .chat p {
-        font-size: 13px;
-    }
-
-    .chatbot header h2{
-        font-size: small;
-    }
-
-    .chat-Input textarea {
-        font-size: smaller;
-    }
-
-    .chatbot .chatbox {
-        height: 81%;
-        padding: 0px 20px 0px;
-    }
-} 
-
-
-@media(max-width: 375px) {
-    .chatbot {
-    position: fixed;
-    height: 93%;
-    width: 80%;
-    overflow: hidden;
-    background: #dfdfdfe3;
-    border-radius: 15px;
-    } 
-
-    .chatbox .chat p {
-        font-size: 13px;
-    }
-
-    .chatbot header h2{
-        font-size: small;
-    }
-
-    .chat-Input textarea {
-        font-size: smaller;
-    }
-
-    .chatbot .chatbox {
-        height: 81%;
-        padding: 0px 20px 0px;
-    }
-}
-
-@media(max-width: 768px) {
-    .chatbot {
-    position: fixed;
-    height: 93%;
-    width: 80%;
-    overflow: hidden;
-    background: #dfdfdfe3;
-    border-radius: 15px;
-    } 
-
-    .chatbox .chat p {
+        body {
+        padding-left: 0px;
+        }
+        
+        .l-navbar {
+        visibility: hidden;
+        width: 0px;
+        padding: 0px;
+        }
+        
+        .chatbot header h2 {
         font-size: 14px;
-    }
-
-    .chatbot header h2{
-        font-size: medium;
-    }
-
-    .chat-Input textarea {
-        font-size: small;
-    }
-
-    .chatbot .chatbox {
-        height: 81%;
-        padding: 0px 20px 0px;
-    }
+        }
+       .chatbot {
+        position: fixed;
+        height: 93%;
+        width: 80%;
+        overflow: hidden;
+        background: #dfdfdfe3;
+        border-radius: 15px;
 }
-
-@media(max-width: 1024px) {
-    .chatbot {
-    position: fixed;
-    height: 93%;
-    width: 90%;
-    overflow: hidden;
-    background: #dfdfdfe3;
-    border-radius: 15px;
-    } 
-
-    .chatbox .chat p {
-        font-size: 15px;
-    }
-
-    .chatbot header h2{
-        font-size: medium;
-    }
-
-    .chat-Input textarea {
-        font-size: small;
-    }
-
-    .chatbot .chatbox {
-        height: 81%;
-        padding: 0px 20px 0px;
-    }
-}
-
-@media(max-width: 1440px) {
-    .chatbot {
-    position: fixed;
-    height: 93%;
-    width: 90%;
-    overflow: hidden;
-    background: #dfdfdfe3;
-    border-radius: 15px;
-    } 
-
-    .chatbox .chat p {
-        font-size: 16px;
-    }
-
-    .chatbot header h2{
-        font-size: large;
-    }
-
-    .chat-Input textarea {
-        font-size: medium;
-    }
-
-    .chatbot .chatbox {
-        height: 81%;
-        padding: 0px 20px 0px;
-    }
 }
