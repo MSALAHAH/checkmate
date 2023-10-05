@@ -197,6 +197,7 @@
     #checkboxesDiv {
         font-size: 14px;
         padding: 0px 3px 0px 3px;
+        padding-bottom: 20px;
     }
 
     #newCallBtn,
@@ -232,6 +233,7 @@
     #checkboxesDiv {
         font-size: 16px;
         padding: 0px 3px 0px 3px;
+        padding-bottom: 20px;
     }
 
     #newCallBtn,
@@ -268,6 +270,7 @@
 
     #checkboxesDiv {
         font-size: 20px;
+        padding-bottom: 20px;
     }
 
     #newCallBtn,
