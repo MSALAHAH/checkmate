@@ -10,7 +10,6 @@
         <link rel="icon" type="image/png" sizes="16x16" href="https://www.optimum.com/themes/custom/optimum/slice/favicon/favicon-16x16.png">
         <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
-
         <title>Non-Pay Documentation Tool</title>
     </head>
 
@@ -25,11 +24,12 @@
 
                     <div class="nav__list">
                         <a href="index.html" class="nav__link active">
-                        <ion-icon name="cash-outline" class="nav__icon"></ion-icon>
+                        <!-- <ion-icon name="cash-outline" class="nav__icon"></ion-icon> -->
+                        <img class="nav__icon" src="./cash-outline.svg">
                         <span class="nav__name">Non-Pay Documentation Tool</span>
                         </a>
 
-                     <!--   <a href="ChatBotIndex.html" class="nav__link active">
+                       <!-- <a href="ChatBotIndex.html" class="nav__link active">
                             <ion-icon name="code-slash-outline"></ion-icon>
                             <span class="nav__name"> Optimum Agent Assistant</span>
                             </a>
@@ -42,8 +42,8 @@
 
                                 <ul class="collapse__menu">
                                 <a href="./projects/clock001/index.html" class="collapse__sublink">Beta.Clock</a>
-                                </ul>  -->
-                            </div>
+                                </ul> 
+                            </div> -->
                     </div>
                 </div>
             </nav>
@@ -55,199 +55,392 @@
             <div id="styleBox">
                 <div id="checkboxesDiv">
                     <br>
+                        <label for="mainCheckbox1" class="custom-checkbox">
                         <input type="checkbox" name="checkbox" value="**Non-Pay**" id="mainCheckbox1" onchange="togglemainCheckbox1Options()"> Call Flow
+                        <span class="checkmark"></span>
+                        </label>
                             <div class="sub-options" id="mainCheckbox1Options" style="display: none;">
-                                <input type="checkbox" name="checkbox" value=" Ensured that the Contact information on file is updated -"> Updated CPC
+                                <label for="mainCheckbox1-1" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox1-1" value=" Ensured that the Contact information on file is updated -"> Updated CPC
+                                <span class="checkmark"></span>
+                                </label>    
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" mentioned the customer loyalty and assured that I'll do my best to help #LOYALTY #ASSURANCE -"> Loyalty - Assurance
+                                <label for="mainCheckbox1-2" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox1-2" value=" mentioned the customer loyalty and assured that I'll do my best to help #LOYALTY #ASSURANCE -"> Loyalty - Assurance
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated about the full balance #FULL_BALANCE_EDUCATION -"> Education - Full Balance
+                                <label for="mainCheckbox1-3" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox1-3" value=" Educated about the full balance #FULL_BALANCE_EDUCATION -"> Education - Full Balance
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated about the unpaid balance #UNPAID_BALANCE_EDUCATION -"> Education - Unpaid Balance
+                                <label for="mainCheckbox1-4" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox1-4" value=" Educated about the unpaid balance #UNPAID_BALANCE_EDUCATION -"> Education - Unpaid Balance
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated about the ACP Program #ACP -"> Education - ACP
+                                <label for="mainCheckbox1-5" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox1-5" value=" Educated about the ACP Program #ACP -"> Education - ACP
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated about the Mobile services Discount #MOBILE_EDUCATION -"> Education - Mobile Discount
+                                <label for="mainCheckbox1-6" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox1-6" value=" Educated about the Mobile services Discount #MOBILE_EDUCATION -"> Education - Mobile Discount
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated about the Auto-Pay discount #AUTO-PAY_EDUCATION -"> Education - Auto-Pay
+                                <label for="mainCheckbox1-7" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox1-7" value=" Educated about the Auto-Pay discount #AUTO-PAY_EDUCATION -"> Education - Auto-Pay
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated about the online account Optimum.net #SELF_HELP -"> Education - Self Help
+                                <label for="mainCheckbox1-8" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox1-8" value=" Educated about the online account Optimum.net #SELF_HELP -"> Education - Self Help
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated about the billing cycle and the due date -"> Education - Due Date(s)
+                                <label for="mainCheckbox1-9" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox1-9" value=" Educated about the billing cycle and the due date -"> Education - Due Date(s)
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated about the current rate and about the last bill(s) amount in details #BILLING_EXPLANATION -"> Billing Explanation
-                                <br>
+                                <label for="mainCheckbox1-10" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox1-10" value=" Educated about the current rate and about the last bill(s) amount in details #BILLING_EXPLANATION -"> Billing Explanation
+                                <span class="checkmark"></span>
+                                </label>
                             </div>
-                    
-                        <br>  
-
+                            <hr>
+                        <label for="mainCheckbox8" class="custom-checkbox">
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox8" onchange="togglemainCheckbox8Options()"> COS Actions
+                        <span class="checkmark"></span>
+                        </label>
                             <div class="sub-options" id="mainCheckbox8Options" style="display: none;">
+                                <label for="subMainCheckbox1" class="custom-checkbox">
                                 <input type="checkbox" name="checkbox" value="" id="subMainCheckbox1" onchange="togglesubMainCheckbox1Options()"> TV Package Upgrade
+                                <span class="checkmark"></span>
+                                </label>
                                     <div class="sub-options" id="subMainCheckbox1Options" style="display: none;">
-                                        <input type="checkbox" name="checkbox" value="Upgraded the TV package to Core #TV_UPGRADE_TO_CORE -"> UPG To Core
+                                        <label for="subMainCheckbox1-1" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox1-1" value="Upgraded the TV package to Core #TV_UPGRADE_TO_CORE -"> UPG To Core
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Upgraded the TV package to Value #TV_UPGRADE_TO_VALUE -"> UPG To Value
+                                        <label for="subMainCheckbox1-2" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox1-2" value="Upgraded the TV package to Value #TV_UPGRADE_TO_VALUE -"> UPG To Value
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Upgraded the TV package to Select #TV_UPGRADE_TO_SELECT -"> UPG To Select
+                                        <label for="subMainCheckbox1-3" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox1-3" value="Upgraded the TV package to Select #TV_UPGRADE_TO_SELECT -"> UPG To Select
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Upgraded the TV package to Premier #TV_UPGRADE_TO_PREMIER -"> UPG To Premier
+                                        <label for="subMainCheckbox1-4" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox1-4" value="Upgraded the TV package to Premier #TV_UPGRADE_TO_PREMIER -"> UPG To Premier
+                                        <span class="checkmark"></span>
+                                        </label>
                                     </div>
-                                
-                                <br>
-
+                                    <hr id="Divider">
+                                <label for="subMainCheckbox2" class="custom-checkbox">
                                 <input type="checkbox" name="checkbox" value="" id="subMainCheckbox2" onchange="togglesubMainCheckbox2Options()"> TV Package Downgrade
+                                <span class="checkmark"></span>
+                                </label>
                                     <div class="sub-options" id="subMainCheckbox2Options" style="display: none;">
-                                        <input type="checkbox" name="checkbox" value="Downgraded the TV package to Select #TV_DOWNGRADE_TO_SELECT -"> Down To Select
+                                        <label for="subMainCheckbox2-1" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox2-1" value="Downgraded the TV package to Select #TV_DOWNGRADE_TO_SELECT -"> Down To Select
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Downgraded the TV package to Value #TV_DOWNGRADE_TO_VALUE -"> Down To Value
+                                        <label for="subMainCheckbox2-2" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox2-2" value="Downgraded the TV package to Value #TV_DOWNGRADE_TO_VALUE -"> Down To Value
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Downgraded the TV package to Core #TV_DOWNGRADE_TO_CORE -"> Down To Core
+                                        <label for="subMainCheckbox2-3" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox2-3" value="Downgraded the TV package to Core #TV_DOWNGRADE_TO_CORE -"> Down To Core
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Upgraded the TV package to Basic #UPGRADE_TO_BISIC -"> Down To Basic
+                                        <label for="subMainCheckbox2-4" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox2-4" value="Upgraded the TV package to Basic #UPGRADE_TO_BISIC -"> Down To Basic
+                                        <span class="checkmark"></span>
+                                        </label>
                                     </div>
-
-                                <br>
-
+                                    <hr id="Divider">
+                                <label for="subMainCheckbox3" class="custom-checkbox">
                                 <input type="checkbox" name="checkbox" value="" id="subMainCheckbox3" onchange="togglesubMainCheckbox3Options()"> OOL Package Upgrade
+                                <span class="checkmark"></span>
+                                </label>
                                     <div class="sub-options" id="subMainCheckbox3Options" style="display: none;">
-                                        <input type="checkbox" name="checkbox" value="Upgraded the OOL Speed to 50 Mb/s #OOL_UPGRADE_TO_50 -"> UPG to 50 Mb/s 
+                                        <label for="subMainCheckbox3-1" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox3-1" value="Upgraded the OOL Speed to 50 Mb/s #OOL_UPGRADE_TO_50 -"> UPG to 50 Mb/s 
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Upgraded the OOL Speed to 75 Mb/s #OOL_UPGRADE_TO_200 -"> UPG to 75 Mb/s 
+                                        <label for="subMainCheckbox3-2" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox3-2" value="Upgraded the OOL Speed to 75 Mb/s #OOL_UPGRADE_TO_200 -"> UPG to 75 Mb/s 
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Upgraded the OOL Speed to 100 Mb/s #OOL_UPGRADE_TO_100 -"> UPG to 100 Mb/s 
+                                        <label for="subMainCheckbox3-3" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox3-3" value="Upgraded the OOL Speed to 100 Mb/s #OOL_UPGRADE_TO_100 -"> UPG to 100 Mb/s 
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Upgraded the OOL Speed to 200 Mb/s #OOL_UPGRADE_TO_200 -"> UPG to 200 Mb/s 
+                                        <label for="subMainCheckbox3-4" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox3-4" value="Upgraded the OOL Speed to 200 Mb/s #OOL_UPGRADE_TO_200 -"> UPG to 200 Mb/s 
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Upgraded the OOL Speed to 300 Mb/s #OOL_UPGRADE_TO_300 -"> UPG to 300 Mb/s
+                                        <label for="subMainCheckbox3-5" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox3-5" value="Upgraded the OOL Speed to 300 Mb/s #OOL_UPGRADE_TO_300 -"> UPG to 300 Mb/s
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Upgraded the OOL Speed to 400 Mb/s #OOL_UPGRADE_TO_400 -"> UPG to 400 Mb/s
+                                        <label for="subMainCheckbox3-6" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox3-6" value="Upgraded the OOL Speed to 400 Mb/s #OOL_UPGRADE_TO_400 -"> UPG to 400 Mb/s
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Upgraded the OOL Speed to 500 Mb/s #OOL_UPGRADE_TO_500 -"> UPG to 500 Mb/s
+                                        <label for="subMainCheckbox3-7" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox3-7" value="Upgraded the OOL Speed to 500 Mb/s #OOL_UPGRADE_TO_500 -"> UPG to 500 Mb/s
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Upgraded the OOL Speed to 1 Gig #OOL_UPGRADE_TO_1GIG -"> UPG to 1 Gig
+                                        <label for="subMainCheckbox3-8" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox3-8" value="Upgraded the OOL Speed to 1 Gig #OOL_UPGRADE_TO_1GIG -"> UPG to 1 Gig
+                                        <span class="checkmark"></span>
+                                        </label>
                                     </div>
-
-                                <br>
-
+                                    <hr id="Divider">
+                                <label for="subMainCheckbox4" class="custom-checkbox">
                                 <input type="checkbox" name="checkbox" value="" id="subMainCheckbox4" onchange="togglesubMainCheckbox4Options()"> OOL Package Downgrade
+                                <span class="checkmark"></span>
+                                </label>
                                     <div class="sub-options" id="subMainCheckbox4Options" style="display: none;">
-                                        <input type="checkbox" name="checkbox" value="Downgraded the OOL Speed to 500 Mb/s #OOL_DOWNGRADE_TO_500 -"> Down to 500 Mb/s 
+                                        <label for="subMainCheckbox4-1" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox4-1" value="Downgraded the OOL Speed to 500 Mb/s #OOL_DOWNGRADE_TO_500 -"> Down to 500 Mb/s 
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Downgraded the OOL Speed to 400 Mb/s #OOL_DOWNGRADE_TO_400 -"> Down to 400 Mb/s
+                                        <label for="subMainCheckbox4-2" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox4-2" value="Downgraded the OOL Speed to 400 Mb/s #OOL_DOWNGRADE_TO_400 -"> Down to 400 Mb/s
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Downgraded the OOL Speed to 300 Mb/s #OOL_DOWNGRADE_TO_300 -"> Down to 300 Mb/s
+                                        <label for="subMainCheckbox4-3" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox4-3" value="Downgraded the OOL Speed to 300 Mb/s #OOL_DOWNGRADE_TO_300 -"> Down to 300 Mb/s
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Downgraded the OOL Speed to 200 Mb/s #OOL_DOWNGRADE_TO_200 -"> Down to 200 Mb/s
+                                        <label for="subMainCheckbox4-4" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox4-4" value="Downgraded the OOL Speed to 200 Mb/s #OOL_DOWNGRADE_TO_200 -"> Down to 200 Mb/s
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Downgraded the OOL Speed to 150 Mb/s #OOL_DOWNGRADE_TO_150 -"> Down to 150 Mb/s
+                                        <label for="subMainCheckbox4-5" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox4-5" value="Downgraded the OOL Speed to 150 Mb/s #OOL_DOWNGRADE_TO_150 -"> Down to 150 Mb/s
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Downgraded the OOL Speed to 100 Mb/s #OOL_DOWNGRADE_TO_100 -"> Down to 100 Mb/s
+                                        <label for="subMainCheckbox4-6" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox4-6" value="Downgraded the OOL Speed to 100 Mb/s #OOL_DOWNGRADE_TO_100 -"> Down to 100 Mb/s
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Downgraded the OOL Speed to 75 Mb/s #OOL_DOWNGRADE_TO_75 -"> Down to 75 Mb/s
+                                        <label for="subMainCheckbox4-7" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox4-7" value="Downgraded the OOL Speed to 75 Mb/s #OOL_DOWNGRADE_TO_75 -"> Down to 75 Mb/s
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Downgraded the OOL Speed to 50 Mb/s #OOL_DOWNGRADE_TO_50 -"> Down to 50 Mb/s
+                                        <label for="subMainCheckbox4-8" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox4-8" value="Downgraded the OOL Speed to 50 Mb/s #OOL_DOWNGRADE_TO_50 -"> Down to 50 Mb/s
+                                        <span class="checkmark"></span>
+                                        </label>
                                         <br>
-                                        <input type="checkbox" name="checkbox" value="Downgraded the OOL Speed to 20 Mb/s #OOL_DOWNGRADE_TO_20 -"> Down to 20 Mb/s
+                                        <label for="subMainCheckbox4-9" class="custom-checkbox">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox4-9" value="Downgraded the OOL Speed to 20 Mb/s #OOL_DOWNGRADE_TO_20 -"> Down to 20 Mb/s
+                                        <span class="checkmark"></span>
+                                        </label>
+                                        <br>
                                     </div>
-                                <br>
                             </div>
-                    
-                        <br>
-                    
+                            <hr>
+                        <label for="mainCheckbox2" class="custom-checkbox">
                         <input type="checkbox" name="checkbox" value=" Credit Added -" id="mainCheckbox2" onchange="togglemainCheckbox2Options()"> Credit Added
+                        <span class="checkmark"></span>
+                        </label>
                             <div class="sub-options" id="mainCheckbox2Options" style="display: none;">
                                 <h5 class="subHeader">Appreciation Credit</h5>
-                                <input type="checkbox" name="checkbox" value=" $5.00 Customer Appreciation Credit -" id="credit5"> $5.00
+                                <label for="mainCheckbox2-1" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox2-1" value=" $5.00 Customer Appreciation Credit -" id="credit5"> $5.00
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" $10.00 Customer Appreciation Credit -" id="credit10"> $10.00
+                                <label for="mainCheckbox2-2" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox2-2" value=" $10.00 Customer Appreciation Credit -" id="credit10"> $10.00
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" $15.00 Customer Appreciation Credit -" id="credit15"> $15.00
+                                <label for="mainCheckbox2-3" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox2-3" value=" $15.00 Customer Appreciation Credit -" id="credit15"> $15.00
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" $20.00 Customer Appreciation Credit -" id="credit20"> $20.00
-                                <br>
-                            <br>
+                                <label for="mainCheckbox2-4" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox2-4" value=" $20.00 Customer Appreciation Credit -" id="credit20"> $20.00
+                                <span class="checkmark"></span>
+                                </label>
+                            <hr id="Divider">
                                 <h5 class="subHeader">Collections Fees</h5>
-                                <input type="checkbox" name="checkbox" value=" $10 Late fee waived -" id="lateFee"> Late Fee
+                                <label for="mainCheckbox2-5" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox2-5" value=" $10 Late fee waived -" id="lateFee"> Late Fee
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" $00.00 Restore fee waived -" id="restoreFee"> Restore Fee
+                                <label for="mainCheckbox2-6" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox2-6" value=" $00.00 Restore fee waived -" id="restoreFee"> Restore Fee
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                            <br>
+                            <hr id="Divider">
                                 <h5 class="subHeader">Verified Credit</h5>
-                                <input type="checkbox" name="checkbox" value=" $00.00 waived as a Verified Billing Error -" id="billingErorr"> Billing Error
+                                <label for="mainCheckbox2-7" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox2-7" value=" $00.00 waived as a Verified Billing Error -" id="billingErorr"> Billing Error
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <!--                         <input type="checkbox" name="checkbox" value=" $00.00 Restore fee waived -" id="restoreFee"> Promotional Dispute -->
-                                <br>
-                            <br>
                             </div>
-                    
-                        <br>
-                    
+                            <hr>
+                        <label for="mainCheckbox3" class="custom-checkbox">
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox3" onchange="togglemainCheckbox3Options()"> Payment Collected
+                        <span class="checkmark"></span>
+                        </label>
                             <div class="sub-options" id="mainCheckbox3Options" style="display: none;">
-                                <input type="checkbox" name="checkbox" value=" Full payment collected #FULL_PAYMENT_COLLECTED - "> Full Payment Collected
+                                <label for="mainCheckbox3-1" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox"  id="mainCheckbox3-1" value=" Full payment collected #FULL_PAYMENT_COLLECTED - "> Full Payment Collected
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" The past due amount collected #PAST_DUE_COLLECTED - "> Past Due Amount Collected
+                                <label for="mainCheckbox3-2" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox3-2" value=" The past due amount collected #PAST_DUE_COLLECTED - "> Past Due Amount Collected
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Partial payment collected ($00.00) - educated about the full balance after the payment #PARTIAL_PAYMENT_COLLECTED -"> Partial Payment Collected
+                                <label for="mainCheckbox3-3" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox3-3" value=" Partial payment collected ($00.00) - educated about the full balance after the payment #PARTIAL_PAYMENT_COLLECTED -"> Partial Payment Collected
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Write-Off amount collected ($00.00) - educated about the account balance amount after the payment #WRITE-OFF_AMOUNT_COLLECTED -"> Payment Collected - Write-Off
-                                <br>
+                                <label for="mainCheckbox3-4" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox3-4" value=" Write-Off amount collected ($00.00) - educated about the account balance amount after the payment #WRITE-OFF_AMOUNT_COLLECTED -"> Payment Collected - Write-Off
+                                <span class="checkmark"></span>
+                                </label>
                             </div>
-                    
-                        <br>
-                    
+                            <hr>
+                        <label for="mainCheckbox4" class="custom-checkbox">
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox4" onchange="togglemainCheckbox4Options()"> Service Restoration Options
+                        <span class="checkmark"></span>
+                        </label>
                             <div class="sub-options" id="mainCheckbox4Options" style="display: none;">
-                                <input type="checkbox" name="checkbox" value=" Payment Extension Granted - educated about the due date after the payment extension #PAYMENT_EXTENSION_GRANTED - "> P2P - Granted
+                                <label for="mainCheckbox4-1" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox4-1" value=" Payment Extension Granted - educated about the due date after the payment extension #PAYMENT_EXTENSION_GRANTED - "> P2P - Granted
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated that the Payment Extension Denied - Educated about the amount required to restore the service #PAYMENT_EXTENSION_DENIED - "> P2P - Denied
+                                <label for="mainCheckbox4-2" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox4-2" value=" Educated that the Payment Extension Denied - Educated about the amount required to restore the service #PAYMENT_EXTENSION_DENIED - "> P2P - Denied
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated that the Payment Plan Approved, the customer agreed on the terms and the service will be back within 2 hours Max #PAYMENT_PLAN - "> PP - Approved - Applied
+                                <label for="mainCheckbox4-3" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox4-3" value=" Educated that the Payment Plan Approved, the customer agreed on the terms and the service will be back within 2 hours Max #PAYMENT_PLAN - "> PP - Approved - Applied
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Educated that the Account is not eligible for any Payment Plan #PAYMENT_PLAN_DENIED - "> PP - Not Eligible
+                                <label for="mainCheckbox4-4" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox4-4" value=" Educated that the Account is not eligible for any Payment Plan #PAYMENT_PLAN_DENIED - "> PP - Not Eligible
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" The account is eligible for a payment plan but the customer rejected the offer #CUSTOMER_REJECTED_PP - "> PP Approved - Customer Denied
-                                <br>
+                                <label for="mainCheckbox4-5" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox4-5" value=" The account is eligible for a payment plan but the customer rejected the offer #CUSTOMER_REJECTED_PP - "> PP Approved - Customer Denied
+                                <span class="checkmark"></span>
+                                </label>
                             </div>
-                    
-                        <br>
-                    
+                            <hr>
+                        <label for="mainCheckbox5" class="custom-checkbox">
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox5" onchange="togglemainCheckbox5Options()"> Optimum ID Actions
+                        <span class="checkmark"></span>
+                        </label>
                             <div class="sub-options" id="mainCheckbox5Options" style="display: none;">
-                                <input type="checkbox" name="checkbox" value=" CPNI Passed to disclose the Optimum ID - provided the ID and educated about the Online account #OPTIMUM_ONLINE_ACCOUNT - "> Opt-ID - Disclose
+                                <label for="mainCheckbox5-1" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox5-1" value=" CPNI Passed to disclose the Optimum ID - provided the ID and educated about the Online account #OPTIMUM_ONLINE_ACCOUNT - "> Opt-ID - Disclose
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" CPNI Passed to create the Optimum ID - created - provided the Temporary password to set the account password - educated about the Online account #OPTIMUM_ONLINE_ACCOUNT - "> Create Opt-ID - Created
+                                <label for="mainCheckbox5-2" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox5-2" value=" CPNI Passed to create the Optimum ID - created - provided the Temporary password to set the account password - educated about the Online account #OPTIMUM_ONLINE_ACCOUNT - "> Create Opt-ID - Created
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" CPNI Failed to create the Optimum ID - educated about the process to create the Online account #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> Create Opt-ID - CPNI Failed
+                                <label for="mainCheckbox5-3" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox5-3" value=" CPNI Failed to create the Optimum ID - educated about the process to create the Online account #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> Create Opt-ID - CPNI Failed
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" CPNI Passed to reset the online account password - the new password provided #OPTIMUM_ONLINE_ACCOUNT_SUPPORT - "> Password Reset - Opt-ID - Done
+                                <label for="mainCheckbox5-4" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox5-4" value=" CPNI Passed to reset the online account password - the new password provided #OPTIMUM_ONLINE_ACCOUNT_SUPPORT - "> Password Reset - Opt-ID - Done
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" CPNI Failed to reset the online account password - educated the customer that we cannot reset the password without passing CPNI #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> Password - Opt-ID - CPNI Failed
-                                <br>
+                                <label for="mainCheckbox5-5" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox5-5" value=" CPNI Failed to reset the online account password - educated the customer that we cannot reset the password without passing CPNI #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> Password - Opt-ID - CPNI Failed
+                                <span class="checkmark"></span>
+                                </label>
                             </div>
-                    
-                        <br>
-                    
+                            <hr>
+                        <label for="mainCheckbox6" class="custom-checkbox">
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox6" onchange="togglemainCheckbox6Options()"> Disconnection Actions
+                        <span class="checkmark"></span>
+                        </label>
                             <div class="sub-options" id="mainCheckbox6Options" style="display: none;">
-                                <input type="checkbox" name="checkbox" value=" Educated about that the account balance or the full past due amount MUST be cleared to be able to transfer the call to Retention for disconnection #TRANSFER_REQUEST_FOR_DICONNECTION_DENIED - "> Disconnection - NoPayment
+                                <label for="mainCheckbox6-1" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox6-1" value=" Educated about that the account balance or the full past due amount MUST be cleared to be able to transfer the call to Retention for disconnection #TRANSFER_REQUEST_FOR_DICONNECTION_DENIED - "> Disconnection - NoPayment
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" Requested the disconnection - payment collected - Xfer to Retention for Disconnection #TRANSFER_REQUEST_DOR_DISCONNETION_GRANTED - "> Disconnection - XferToRet
-                                <br>
+                                <label for="mainCheckbox6-2" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox6-2" value=" Requested the disconnection - payment collected - Xfer to Retention for Disconnection #TRANSFER_REQUEST_DOR_DISCONNETION_GRANTED - "> Disconnection - XferToRet
+                                <span class="checkmark"></span>
+                                </label>
                             </div>
-                    
-                        <br>
-                    
+                            <hr>
+                        <label for="mainCheckbox7" class="custom-checkbox">
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox7" onchange="togglemainCheckbox7Options()"> Dropped Call Actions
+                        <span class="checkmark"></span>
+                        </label>
                             <div class="sub-options" id="mainCheckbox7Options" style="display: none;">
-                                <input type="checkbox" name="checkbox" value=" call dropped - called the customer back - Answered #CALLED_BACK_CONNECTED -"> Called back - Connected
+                                <label for="mainCheckbox7-1" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox7-1" value=" call dropped - called the customer back - Answered #CALLED_BACK_CONNECTED -"> Called back - Connected
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" call dropped - called the customer back - No Answer - Left a Voicemail #CALLED_BACK_NO_ANSWER -"> No Answer - Left Voicemail
+                                <label for="mainCheckbox7-2" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox7-2" value=" call dropped - called the customer back - No Answer - Left a Voicemail #CALLED_BACK_NO_ANSWER -"> No Answer - Left Voicemail
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" call dropped - called the customer back - No Answer - The Voicemail box not set yet #CALLED_BACK_NOT_REACHABLE -"> No Answer - No Voicemail
+                                <label for="mainCheckbox7-3" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox7-3" value=" call dropped - called the customer back - No Answer - The Voicemail box not set yet #CALLED_BACK_NOT_REACHABLE -"> No Answer - No Voicemail
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
-                                <input type="checkbox" name="checkbox" value=" call dropped - called the customer back - Line Busy #CALLED_BACK_LINE_BUSY -">Line Busy
+                                <label for="mainCheckbox7-4" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox7-4" value=" call dropped - called the customer back - Line Busy #CALLED_BACK_LINE_BUSY -">Line Busy
+                                <span class="checkmark"></span>
+                                </label>
                                 <br>
                             </div>
                     

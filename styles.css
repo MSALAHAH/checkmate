@@ -10,6 +10,7 @@
   --bg-color: #09173d;
   --sub-color: #B6CEFC;
   --white-color: #FFF;
+  --theme: linear-gradient(45deg, #2c75a5, #bfbfbfeb);
   
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
@@ -28,7 +29,7 @@
 body{
   background-image: url(opt_int_bg.png);
   background-repeat: no-repeat;
-  background-size: 4200px 2300px;
+  background-size: 100 100%;
   position: relative;
   height: 100%;
   margin: 0;
@@ -50,14 +51,19 @@ a{
   text-decoration: none;
 }
 
+.icon-inner {
+  margin-top: -5px;
+}
+
 /*===== l NAV =====*/
 .l-navbar{
   position: fixed;
   top: 0;
   left: 0;
   width: var(--nav-width);
-  height: 100%;
-  background-color: var(--bg-color);
+  height: 55px;
+  border-radius: 50%;
+  background-color: transparent;
   color: var(--white-color);
   padding-left: 4px;
   padding-right: 4px;
@@ -109,7 +115,7 @@ a{
   background-color: var(--first-color);
 }
 .nav__icon{
-  font-size: 1.25rem;
+  width: 24px;
 }
 .nav__name{
   padding-left: 4px;
@@ -119,6 +125,9 @@ a{
 /*Expander menu*/
 .expander{
   width: calc(var(--nav-width) + 230px);
+  height: 100%;
+  border-radius: 0;
+  background: var(--theme);
 }
 
 /* Add padding body
