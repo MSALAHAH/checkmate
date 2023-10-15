@@ -92,6 +92,19 @@
             line-height: 2;
         }
 
+        .footer{
+            position: absolute;
+            bottom: -38px;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            padding: 1rem 1rem;
+            font-weight: normal;
+            color:#fff;
+            border-top: .1rem solid rgba(255,255,255,.2);
+        }
+
         #csr {
             background-image: url('https://msalahah.github.io/checkmate/attach/clashBarbarian.png');
             background-size: 26%;
