@@ -92,6 +92,11 @@
             line-height: 2;
         }
 
+        #spanBold{
+            color: #14b3b3;
+            font-weight: 500;
+        }
+
         .footer{
             position: absolute;
             bottom: -38px;
