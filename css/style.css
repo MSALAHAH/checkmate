@@ -23,8 +23,8 @@
 
         body {
             opacity: 0;
-            animation: fadeIn 1.5s ease-in-out forwards;
-            background: linear-gradient(to right, #06004B, #847373, #1b7771, #BF0173);
+            animation: fadeIn 1.5s linear(0 0%, 0.68 12.07%, 0.26 80.46%, 1 100%) forwards;
+            background: linear-gradient(to right, #06004B, #198375, #134945, #89185c);
             overflow-x: hidden;
         }
 
@@ -162,5 +162,9 @@
         @media (max-width: 450px) {
         html {
             font-size: 50%;
+        }
+
+        .footer{
+            bottom:-333px
         }
         }
