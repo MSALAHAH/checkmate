@@ -93,35 +93,35 @@
         }
 
         #csr {
-            background-image: url('/attach/clashBarbarian.png');
+            background-image: url('./attach/clashBarbarian.png');
             background-size: 26%;
             background-repeat: no-repeat;
             background-position: right;
         }
 
         #tsr {
-            background-image: url('/attach/clashNightBuilder.png');
+            background-image: url('./attach/clashNightBuilder.png');
             background-size: 36%;
             background-repeat: no-repeat;
             background-position: right;
         }
 
         #escalations {
-            background-image: url('/attach/clachWizard.png');
+            background-image: url('./attach/clachWizard.png');
             background-size: 27%;
             background-repeat: no-repeat;
             background-position: right;
         }
 
         #non-pay {
-            background-image: url('/attach/clashGoblin.png');
+            background-image: url('./attach/clashGoblin.png');
             background-size: 60%;
             background-repeat: no-repeat;
             background-position: right;
         }
 
         #ss {
-            background-image: url('/attach/clachP.E.K.A.png');
+            background-image: url('./attach/clachP.E.K.A.png');
             background-size: 27%;
             background-repeat: no-repeat;
             background-position: right;
