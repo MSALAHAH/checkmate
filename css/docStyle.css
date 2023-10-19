@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   body{
-    background: linear-gradient(to right, #06004B, #847373, #1b7771, #BF0173);
+    background: linear-gradient(to right, #06004B, #118981d6, #BF0173);
     margin: 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -49,6 +49,7 @@
 }
 
 #checkboxesDiv {
+    font-weight: 500;
     display: inline-block;
     text-align: left;
     line-height: 28px;
