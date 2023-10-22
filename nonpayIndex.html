@@ -11,29 +11,72 @@
 
     <body>
         <div id="docToolSectionBody">
-            <h2 id="headSubject">Non-Pay <br>Documentation Tool</h2>
+            <h2 id="headSubject">Non-Pay <br><span class="headSpan">Documentation Tool</span></h2>
             <div id="styleBox">
                 <div id="checkboxesDiv">
-                    <br>
+                    <div class="selectionStyle"> 
                     <label for="mainCheckbox1" class="custom-checkbox">
                         <input type="checkbox" name="checkbox" title="Step by Step to get your %100 Quality score" value="" id="mainCheckbox1" onchange="togglemainCheckbox1Options()"> Call Flow
                         <span class="checkmark"></span>
                     </label>
+                    </div>
                         <div class="sub-options" id="mainCheckbox1Options" style="display: none;">
                             <label for="mainCheckbox1-1" class="custom-checkbox">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-1" title="good greeting with something like 'Thank You for choosing Optimum' and the Quality score for this point is granted" value="" > Appropriate Greeting
+                                <input type="checkbox" name="checkbox" id="mainCheckbox1-1" value="">
                                 <span class="checkmark"></span>
-                            </label>    
+                                Appropriate Greeting
+                            </label>
+                            <i class="tooltip-icon" title="Good greeting with something like 'Thank You for choosing Optimum.' The Quality score for this point is granted."></i>
                             <br>
                             <label for="mainCheckbox1-2" class="custom-checkbox">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-2" title="as a part of the opening, it's importatnt to let the customer confirm the full name and the address" value=""> Name and Address Validation
+                                <input type="checkbox" name="checkbox" id="mainCheckbox1-2" value="">
                                 <span class="checkmark"></span>
+                                Name and Address Validation
                             </label>
+                            <i class="tooltip-icon" title="As a part of the opening, it's important to let the customer confirm the full name and address."></i>
                             <br>
                             <label for="mainCheckbox1-3" class="custom-checkbox">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-3" title="one of the mst importatnt things ever is to ask the customer about a number to call him back if the call dropped for any reason" value=""> Confirm CallBack Number
+                                <input type="checkbox" name="checkbox" id="mainCheckbox1-3" value="">
                                 <span class="checkmark"></span>
+                                Confirm CallBack Number
                             </label>
+                            <i class="tooltip-icon" title="One of the most important things ever is to ask the customer about a number to call him back if the call dropped for any reason."></i>
+                            <style>
+                                .tooltip-icon {
+                                display: inline-block;
+                                border: 2px solid;
+                                border-radius: 10px;
+                                width: 18px;
+                                height: 18px;
+                                background: url('/attach/information-outline.svg') no-repeat;
+                                background-size: cover;
+                                cursor: help;
+                                transform: translateX(-50%);
+                                margin-left: 5px; /* Add space between the text and the icon */
+                            }
+
+                            /* Tooltip styles */
+                            .tooltip-icon::after {
+                                content: attr(title);
+                                position: absolute;
+                                background: rgba(0, 0, 0, 0.8);
+                                color: #fff;
+                                padding: 5px;
+                                border-radius: 4px;
+                                width: 120px;
+                                font-size: 10px;
+                                bottom: 100%;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                opacity: 0;
+                                transition: opacity 0.3s;
+                            }
+
+                            .tooltip-icon:hover::after {
+                                opacity: 1;
+                            }
+
+                            </style>                        
                             <br>
                             <label for="mainCheckbox1-4" class="custom-checkbox">
                                 <input type="checkbox" name="checkbox" id="mainCheckbox1-4" title="remember to update the phone number and the E-mail, also ask what is the best way to send the alerts ==E-MAIL OR TEXT==" value=" Ensured that the customer contact preferences on file is updated -"> Update CPC
@@ -103,10 +146,12 @@
 
                             <hr>
 
+                        <div class="selectionStyle"> 
                         <label for="mainCheckbox8" class="custom-checkbox">
                             <input type="checkbox" name="checkbox" title="Change Of Service Actions" value="" id="mainCheckbox8" onchange="togglemainCheckbox8Options()"> COS Actions
                             <span class="checkmark"></span>
                         </label>
+                        </div>
                             <div class="sub-options" id="mainCheckbox8Options" style="display: none;">
                                 <label for="subMainCheckbox0" class="custom-checkbox">
                                     <input type="checkbox" name="checkbox" title="a shortcut if you added a promo to reduce the bill amount" value="" id="subMainCheckbox0" onchange="togglesubMainCheckbox0Options()"> Price Reduction
@@ -285,11 +330,13 @@
                             </div>
 
                             <hr>
-
+                        
+                        <div class="selectionStyle"> 
                         <label for="mainCheckbox2" class="custom-checkbox">
                             <input type="checkbox" name="checkbox" value=" Credit Added -" id="mainCheckbox2" onchange="togglemainCheckbox2Options()"> Credit Added
                             <span class="checkmark"></span>
                         </label>
+                        </div>
                             <div class="sub-options" id="mainCheckbox2Options" style="display: none;">
                                 <h5 class="subHeader">Appreciation Credit</h5>
                                 <label for="mainCheckbox2-1" class="custom-checkbox">
@@ -334,10 +381,12 @@
 
                             <hr>
 
+                        <div class="selectionStyle"> 
                         <label for="mainCheckbox3" class="custom-checkbox">
                             <input type="checkbox" name="checkbox" value="" id="mainCheckbox3" onchange="togglemainCheckbox3Options()"> Payment Collected
                             <span class="checkmark"></span>
                         </label>
+                        </div>
                             <div class="sub-options" id="mainCheckbox3Options" style="display: none;">
                                 <label for="mainCheckbox3-1" class="custom-checkbox">
                                     <input type="checkbox" name="checkbox"  id="mainCheckbox3-1" value=" Full payment collected #FULL_PAYMENT_COLLECTED - "> Full Payment Collected
@@ -362,10 +411,12 @@
 
                             <hr>
 
+                        <div class="selectionStyle"> 
                         <label for="mainCheckbox4" class="custom-checkbox">
                             <input type="checkbox" name="checkbox" value="" id="mainCheckbox4" onchange="togglemainCheckbox4Options()"> Service Restoration Options
                             <span class="checkmark"></span>
                         </label>
+                        </div>
                             <div class="sub-options" id="mainCheckbox4Options" style="display: none;">
                                 <label for="mainCheckbox4-1" class="custom-checkbox">
                                     <input type="checkbox" name="checkbox" id="mainCheckbox4-1" title="Promis To Pay - the customer is eligible and the extension applied." value=" Payment Extension Granted - educated about the due date after the payment extension #PAYMENT_EXTENSION_GRANTED - "> Promise to Pay - Granted
@@ -395,10 +446,12 @@
 
                             <hr>
 
+                        <div class="selectionStyle"> 
                         <label for="mainCheckbox5" class="custom-checkbox" >
                             <input type="checkbox" name="checkbox" value="" id="mainCheckbox5" onchange="togglemainCheckbox5Options()"> Optimum ID Actions
                             <span class="checkmark"></span>
                         </label>
+                        </div>
                             <div class="sub-options" id="mainCheckbox5Options" style="display: none;">
                                 <h5 class="subHeader">Create Optimum ID</h5>
                                 <label for="mainCheckbox5-1" class="custom-checkbox">
@@ -450,10 +503,12 @@
 
                             <hr>
 
+                        <div class="selectionStyle"> 
                         <label for="mainCheckbox6" class="custom-checkbox">
                             <input type="checkbox" name="checkbox" value="" id="mainCheckbox6" onchange="togglemainCheckbox6Options()"> Transfer for Resolution
                             <span class="checkmark"></span>
                         </label>
+                        </div>
                             <div class="sub-options" id="mainCheckbox6Options" style="display: none;">
                                 <h5 class="subHeader">Technical Support</h5>
                                 <label for="mainCheckbox6-1" class="custom-checkbox">
@@ -476,10 +531,12 @@
 
                             <hr>
 
+                            <div class="selectionStyle"> 
                             <label for="mainCheckbox7" class="custom-checkbox">
                                 <input type="checkbox" name="checkbox" value="" id="mainCheckbox7" onchange="togglemainCheckbox7Options()"> Dropped Call Actions
                                 <span class="checkmark"></span>
                             </label>
+                            </div>
                                 <div class="sub-options" id="mainCheckbox7Options" style="display: none;">
                                     <label for="mainCheckbox7-1" class="custom-checkbox">
                                         <input type="checkbox" name="checkbox" id="mainCheckbox7-1" value=" call dropped - called the customer back - Answered #DROPPED_CONNECTED -"> Called back - Connected
@@ -506,9 +563,6 @@
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
-                    
-                        <br>
-                    
                 </div>
             </div>
 
@@ -522,7 +576,7 @@
 
             <br>
 
-            <textarea id="sentence" rows="6" cols="50" readonly></textarea>
+            <textarea id="sentence" rows="12" cols="50" readonly></textarea>
 
             <br>
 
