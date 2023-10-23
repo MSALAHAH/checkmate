@@ -1,9 +1,6 @@
             /* بِسْم اللَّه الرَّحْمن الرَّحِيم */
 /* وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا */
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap'); */
         * {
-            font-family: "Regular";
             margin: 0;
             padding: 0;
             -webkit-box-sizing: border-box;
@@ -18,22 +15,43 @@
 
         @font-face {
             font-family: "Regular";
-            src: url(https://optimum.com/themes/custom/optimum/slice/dist/css/blocks/../../fonts/Regular-Regular.woff2) format("woff2"),url(https://optimum.com/themes/custom/optimum/slice/dist/css/blocks/../../fonts/Regular-Regular.woff) format("woff");
-            font-weight: 400;
+            src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Light.woff') format('woff'),url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Light.woff2') format('woff2');
+            font-weight: 300;
             font-style: normal;
-            font-display: swap
         }
 
-        html {
-            
+        @font-face {
+            font-family: "Regular";
+            src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Regular.woff') format('woff'),url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Regular";
+            src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Medium.woff') format('woff'),url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Medium.woff2') format('woff2');
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "Regular";
+            src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Bold.woff') format('woff'),url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+        
+        html { 
             font-size: 62.5%;
-            background: linear-gradient(90deg, rgb(0, 0, 0), #0000004b);
+            background: linear-gradient(90deg, #002864, #f66608);
             overflow-x: hidden;
             scroll-behavior: smooth;
             scroll-padding-top: 9rem;
         }
 
         body {
+            font-family: "Regular", sans-serif;
+            font-weight: 500;
             opacity: 0;
             animation: fadeIn 1.5s ease-in-out forwards;
             overflow-x: hidden;
@@ -57,10 +75,12 @@
         .heading span {
             color: #29d9d5;
             font-size: 2rem;
+            font-weight: 400;
         }
 
         .heading h1 {
             font-size: 4rem;
+            font-weight: 700;
             color: #fff;
         }
 
@@ -105,7 +125,7 @@
 
         .button {
             display: inline-block;
-            background-color: #077a78;
+            background-color: #002864;
             color: #fff;
             padding: 1.15rem 2.75rem;
             left: -250%;
@@ -120,14 +140,13 @@
         }
         
         .button:hover {
-            background-color: #0047a5;
+            background-color: #f66608;
         }
 
         #spanBold{
             color: #14b3b3;
-            font-weight: 500;
+            font-weight: 700;
         }
-
 
         /*==================CSR STYLEING================ */
 

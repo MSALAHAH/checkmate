@@ -1,19 +1,46 @@
             /* بِسْم اللَّه الرَّحْمن الرَّحِيم */
 /* وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;800&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap'); */
 
 *,::before,::after{
     box-sizing: border-box;
   }
   body{
-    background: linear-gradient(90deg, rgba(123,123,123,1) 0%, rgba(0,0,5,1) 100%);
+    background: linear-gradient(277deg, #002864, #f66608 100%);
     margin: 0;
-    font-family: 'Regular';
-    font-size: var(--normal-font-size);
+    font-family: "Regular", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
     transition: .5s;
   }
 
+  @font-face {
+    font-family: "Regular";
+    src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Light.woff') format('woff'),url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Regular.woff') format('woff'),url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Medium.woff') format('woff'),url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Regular";
+    src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Bold.woff') format('woff'),url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
 
   h1{
     margin: 0;
@@ -41,12 +68,13 @@
     text-align: left;
     padding: 15px 0px 5px 30px;
     font-size: 24px;
+    font-weight: 700;
     line-height: 22px;
     width: 100%;
     margin-top: 0px;
     background-color: rgba(253, 249, 249, 0);
     color: #000;
-    text-shadow: 0px 1px 13px;
+    text-shadow: 0px 0px 14px;
 }
 
 .headSpan {
@@ -58,7 +86,7 @@
 }
 
 #checkboxesDiv {
-    font-weight: 500;
+    font-weight: bold;
     display: inline-block;
     text-align: left;
     text-transform: capitalize;
@@ -70,8 +98,8 @@
 #styleBox {
     width: 365px;
     border-radius: 8px;
-    box-shadow: 1px 1px 14px 0px rgba(0, 0, 0, 0.48);
-    background: linear-gradient(270deg, rgb(173 173 173 / 83%), #0000007a);
+    box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
+    background: #ffffff5c;
 }
 .selectionStyle {
     padding-bottom: 3px;
@@ -102,11 +130,12 @@
 #newCallBtn,
 #copyBtn {
     padding: 0.7em 2em;
+    font-family: 'Roboto Slab';
+
     font-size: 14px;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-family: 'Roboto Slab', sans-serif;
-    font-weight: 600;
     color: #000;
     background-color: #fff;
     border: none;
@@ -182,8 +211,8 @@
 }
 
 #sentence {
-    font-family: 'Roboto Slab', sans-serif;
     font-size: 12px;
+    font-family: "Regular", sans-serif;
     font-weight: bold;
     text-transform: capitalize;
     border-width: 5px;
@@ -196,6 +225,11 @@
     height: 40%;
     padding: 18px;
     overflow: hidden;
+}
+
+#spanBold{
+    color: #14b3b3;
+    font-weight: 700;
 }
 
 @media (max-width: 320px) {
