@@ -131,7 +131,6 @@
 #copyBtn {
     padding: 0.7em 2em;
     font-family: 'Roboto Slab';
-
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -220,7 +219,7 @@
     border-style: outset;
     border-radius: 8px;
     border: none;
-    box-shadow: 3px 0px 12px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: inset 0px 0px 10px 5px rgb(0 0 0 / 50%);
     width: 80%;
     height: 40%;
     padding: 18px;
