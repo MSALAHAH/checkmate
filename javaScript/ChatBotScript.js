@@ -1,4 +1,5 @@
-// Sample error database
+//              بِسْم اللَّه الرَّحْمن الرَّحِيم
+//  وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا
 const errorDatabase = [
     {
         errorMessage: "Error code ABC123: Database connection failed",

@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;800&display=swap');
-
+            /* بِسْم اللَّه الرَّحْمن الرَّحِيم */
+/* وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap'); */
         * {
-            font-family: 'Roboto Slab';
+            font-family: "Regular";
             margin: 0;
             padding: 0;
             -webkit-box-sizing: border-box;
@@ -14,7 +16,16 @@
             transition: all .2s linear;
         }
 
+        @font-face {
+            font-family: "Regular";
+            src: url(https://optimum.com/themes/custom/optimum/slice/dist/css/blocks/../../fonts/Regular-Regular.woff2) format("woff2"),url(https://optimum.com/themes/custom/optimum/slice/dist/css/blocks/../../fonts/Regular-Regular.woff) format("woff");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap
+        }
+
         html {
+            
             font-size: 62.5%;
             background: linear-gradient(90deg, rgb(0, 0, 0), #0000004b);
             overflow-x: hidden;
@@ -117,18 +128,6 @@
             font-weight: 500;
         }
 
-        .footer{
-            position: absolute;
-            bottom: -38px;
-            width: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            padding: 1rem 1rem;
-            font-weight: normal;
-            color:#fff;
-            border-top: .1rem solid rgba(255,255,255,.2);
-        }
 
         /*==================CSR STYLEING================ */
 
