@@ -233,9 +233,9 @@
             opacity: 1;
         }
         
-        /*==================ESCALATIONS STYLEING================ */
+        /*==================Voice STYLEING================ */
 
-        #escalations {
+        #voice {
             position: relative;
             background-size: 10%;
             background-repeat: no-repeat;
@@ -244,7 +244,7 @@
             text-align: center;
         }
         
-        #escalations::before {
+        #voice::before {
             content: "";
             position: absolute;
             top: 0;
@@ -261,16 +261,16 @@
             z-index: 1;
         }
         
-        #escalations:hover::before {
+        #voice:hover::before {
             transform: translateY(0);
             opacity: 1;
         }
         
-        #escalations:hover {
+        #voice:hover {
             text-align: left;
         }
 
-        #escalations:hover .button {
+        #voice:hover .button {
             left: 0px;
             opacity: 1;
         }
