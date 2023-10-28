@@ -102,8 +102,15 @@
     background: #ffffff5c;
 }
 .selectionStyle {
-    padding-bottom: 3px;
+    padding: 3px;
 }
+
+input[type="checkbox"]:checked + .checkmark {
+  box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
+  background: #ffffff5c;
+  border-radius: 6px;
+}
+
 
 .subHeader {
     margin-top: 5px;
