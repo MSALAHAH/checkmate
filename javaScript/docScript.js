@@ -7,19 +7,6 @@ function updateSentence() {
 }
 
 
-function togglemainCheckbox1Options() {
-    const checkbox = document.getElementById("mainCheckbox1");
-    const div = document.querySelector(".selectionStyle");
-
-    if (checkbox.checked) {
-        div.classList.add("checked");
-    } else {
-        div.classList.remove("checked");
-    }
-}
-
-
-
 // function uncheckAll() {
 //     var checkboxes = document.getElementsByName('checkbox');
 //     for (var i = 0; i < checkboxes.length; i++) {
