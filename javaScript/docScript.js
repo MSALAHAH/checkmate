@@ -8,15 +8,16 @@ function updateSentence() {
 
 
 function togglemainCheckbox1Options() {
-    var div = document.getElementById("styledDiv");
-    var checkbox = document.getElementById("mainCheckbox1");
+    const checkbox = document.getElementById("mainCheckbox1");
+    const div = document.querySelector(".selectionStyle");
 
     if (checkbox.checked) {
-        div.classList.add("selected"); // Apply the styles when the checkbox is checked
+        div.classList.add("checked");
     } else {
-        div.classList.remove("selected"); // Remove the styles when the checkbox is unchecked
+        div.classList.remove("checked");
     }
 }
+
 
 
 // function uncheckAll() {
