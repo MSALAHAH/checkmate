@@ -86,7 +86,7 @@
 }
 
 #checkboxesDiv {
-    width: 90%
+    width: 80%
     font-weight: bold;
     display: inline-block;
     text-align: left;
@@ -254,7 +254,6 @@ input[type="checkbox"]:checked + .checkmark {
 
     #checkboxesDiv {
         font-size: 14px;
-        width: 90%
         padding: 20px 3px 20px 3px;
     }
 
@@ -275,7 +274,6 @@ input[type="checkbox"]:checked + .checkmark {
 
     #checkboxesDiv {
         font-size: 16px;
-        width: 90%
         padding: 20px 3px 20px 3px;
     }
 
@@ -296,7 +294,6 @@ input[type="checkbox"]:checked + .checkmark {
 
     #checkboxesDiv {
         font-size: 14px;
-        width: 90%
         padding: 20px 3px 20px 3px;
     }
 
@@ -314,7 +311,6 @@ input[type="checkbox"]:checked + .checkmark {
 
     #checkboxesDiv {
         font-size: 20px;
-        width: 90%
         padding: 20px 3px 20px 3px;
     }
 
