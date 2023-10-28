@@ -118,8 +118,12 @@ input[type="checkbox"]:checked + .checkmark {
 
 
 .subHeader {
+    text-align: center;
     margin-top: 5px;
     margin-bottom: 2px;
+    padding: 1px;
+    box-shadow: inset 1px 1px 4px 1px rgba(0, 0, 0, 0.48);
+    border-radius: 6px;
 }
 
 #mainCheckbox1Options,
