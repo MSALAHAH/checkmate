@@ -6,6 +6,19 @@ function updateSentence() {
     document.getElementById('sentence').value = sentenceParts.join(' ').trim();
 }
 
+
+function togglemainCheckbox1Options() {
+    var div = document.getElementById("styledDiv");
+    var checkbox = document.getElementById("mainCheckbox1");
+
+    if (checkbox.checked) {
+        div.classList.add("selected"); // Apply the styles when the checkbox is checked
+    } else {
+        div.classList.remove("selected"); // Remove the styles when the checkbox is unchecked
+    }
+}
+
+
 // function uncheckAll() {
 //     var checkboxes = document.getElementsByName('checkbox');
 //     for (var i = 0; i < checkboxes.length; i++) {
