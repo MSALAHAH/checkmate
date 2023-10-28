@@ -9,7 +9,7 @@
     background: linear-gradient(277deg, #002864, #f66608 100%);
     margin: 0;
     font-family: "Regular", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1rem;
     transition: .5s;
   }
@@ -86,7 +86,7 @@
 }
 
 #checkboxesDiv {
-    width: 80%
+    width: 80%;
     font-weight: bold;
     display: inline-block;
     text-align: left;
