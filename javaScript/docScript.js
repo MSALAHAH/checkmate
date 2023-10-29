@@ -9,38 +9,37 @@ function updateSentence() {
 
 
 
-  // Function to update the textarea with user input
-function updateTextarea() {
-    var userInput = document.getElementById("userInput").value;
-    var textarea = document.getElementById("sentence");
-    var updatedSentenceParts = [...sentenceParts];
+  var sentenceParts = [];
 
-    // Check if the user input is already in the sentenceParts array
-    if (userInput && sentenceParts.indexOf(userInput) === -1) {
-        updatedSentenceParts.push(userInput);
-    }
-
-    // Update the textarea content only if checkboxes are checked
-    var checkboxes = document.getElementsByName("checkbox");
-    for (var i = 0; i < checkboxes.length; i++) {
-        if (checkboxes[i].checked) {
-            updatedSentenceParts.push(checkboxes[i].value);
-        }
-    }
-
-    textarea.value = updatedSentenceParts.join(' ').trim();
+function updateSentence() {
+    document.getElementById('sentence').value = sentenceParts.join(' ').trim();
 }
 
+function updateSentenceWithUserInput() {
+    var userInput = document.getElementById('userInput').value;
+
+    // Remove the user input from sentenceParts if it's already there
+    var userInputIndex = sentenceParts.indexOf(userInput);
+    if (userInputIndex !== -1) {
+        sentenceParts.splice(userInputIndex, 1);
+    }
+
+    // Add the user input to the beginning of sentenceParts
+    sentenceParts.unshift(userInput);
+    
+    updateSentence();
+}
+
+// Rest of your existing code for checkboxes and textarea
+
 // Add an event listener to the user input element
-document.getElementById("userInput").addEventListener("input", updateTextarea);
+document.getElementById("userInput").addEventListener("input", updateSentence);
 
 // Add event listeners to checkboxes
 var checkboxes = document.getElementsByName("checkbox");
 for (var i = 0; i < checkboxes.length; i++) {
-    checkboxes[i].addEventListener("change", updateTextarea);
+    checkboxes[i].addEventListener("change", updateSentence);
 }
-
-
 
 
 
