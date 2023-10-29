@@ -13,7 +13,6 @@ function updateSentence() {
 function updateTextarea() {
     var userInput = document.getElementById("userInput").value;
     var textarea = document.getElementById("sentence");
-
     var updatedSentenceParts = [...sentenceParts];
 
     // Replace the user input if it's already in sentenceParts
@@ -35,12 +34,18 @@ function updateSentenceWithUserInput() {
     var sentence = textarea.value;
 
     // Replace all occurrences of user input in the sentence
-    sentence = sentence.replace(new RegExp(userInput, 'g'), userInput);
+    sentence = sentence.split(' ');
+    for (var i = 0; i < sentence.length; i++) {
+        if (sentence[i] === userInput) {
+            sentence[i] = userInput;
+        }
+    }
 
-    textarea.value = sentence;
+    textarea.value = sentence.join(' ');
 }
 
 // Rest of your existing code for checkboxes and textarea
+
 
 
 
