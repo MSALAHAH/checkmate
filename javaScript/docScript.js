@@ -6,23 +6,18 @@ function updateSentence() {
     document.getElementById('sentence').value = sentenceParts.join(' ').trim();
 }
 
-
-
-
-  function updateSentenceWithUserInput() {
+function updateSentenceWithUserInput() {
     var userInput = document.getElementById('userInput').value;
     var textarea = document.getElementById('sentence');
     var sentence = textarea.value;
 
     // Replace all occurrences of user input in the sentence
-    sentence = sentence.replace(new RegExp(userInput, 'g'), userInput);
+    sentence = sentence.split(' ').map(function (word) {
+        return word === userInput ? userInput : word;
+    }).join(' ');
 
     textarea.value = sentence;
 }
-
-
-
-
 
 
 
