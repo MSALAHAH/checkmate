@@ -106,7 +106,7 @@
     overflow: hidden;
 }
 
-#updateButton {
+#updateButton, #clearButton {
     padding: 5px 8px;
     margin: 0px 0px 5% 0px;
     font-family: 'Roboto Slab';
