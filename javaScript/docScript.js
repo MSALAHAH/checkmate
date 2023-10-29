@@ -7,10 +7,7 @@ function updateSentence() {
 }
 
 
-
-
-
-
+// the user input push button
 
 
 var sentenceParts = [];
@@ -46,6 +43,16 @@ for (var i = 0; i < checkboxes.length; i++) {
 }
 
 
+// the user input clear button
+// Function to clear the user input
+function clearUserInput() {
+    var userInput = document.getElementById('userInput');
+    userInput.value = '';
+    updateSentence();
+}
+
+// Add an event listener to the clear button
+document.getElementById("clearButton").addEventListener("click", clearUserInput);
 
 
 
