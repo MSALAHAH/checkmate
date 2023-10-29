@@ -332,6 +332,10 @@ input[type="checkbox"]:checked + .checkmark {
         width: 320px;
     }
 
+    #updateButton, #clearButton {
+        font-size: 11px;
+    }
+
     #checkboxesDiv {
         font-size: 14px;
         padding: 20px 3px 20px 3px;
