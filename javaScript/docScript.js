@@ -9,37 +9,38 @@ function updateSentence() {
 
 
 
-  var sentenceParts = [];
+  // Function to update the textarea with user input
+function updateTextarea() {
+    var userInput = document.getElementById("userInput").value;
+    var textarea = document.getElementById("sentence");
 
-function updateSentence() {
-    document.getElementById('sentence').value = sentenceParts.join(' ').trim();
-}
+    var updatedSentenceParts = [...sentenceParts];
 
-function updateSentenceWithUserInput() {
-    var userInput = document.getElementById('userInput').value;
-
-    // Remove the user input from sentenceParts if it's already there
-    var userInputIndex = sentenceParts.indexOf(userInput);
-    if (userInputIndex !== -1) {
-        sentenceParts.splice(userInputIndex, 1);
+    // Replace the user input if it's already in sentenceParts
+    if (userInput) {
+        for (var i = 0; i < updatedSentenceParts.length; i++) {
+            if (updatedSentenceParts[i] === userInput) {
+                updatedSentenceParts[i] = userInput;
+            }
+        }
     }
 
-    // Add the user input to the beginning of sentenceParts
-    sentenceParts.unshift(userInput);
-    
-    updateSentence();
+    textarea.value = updatedSentenceParts.join(' ').trim();
+}
+
+// Function to update the user input in the sentence
+function updateSentenceWithUserInput() {
+    var userInput = document.getElementById('userInput').value;
+    var textarea = document.getElementById('sentence');
+    var sentence = textarea.value;
+
+    // Replace all occurrences of user input in the sentence
+    sentence = sentence.replace(new RegExp(userInput, 'g'), userInput);
+
+    textarea.value = sentence;
 }
 
 // Rest of your existing code for checkboxes and textarea
-
-// Add an event listener to the user input element
-document.getElementById("userInput").addEventListener("input", updateSentence);
-
-// Add event listeners to checkboxes
-var checkboxes = document.getElementsByName("checkbox");
-for (var i = 0; i < checkboxes.length; i++) {
-    checkboxes[i].addEventListener("change", updateSentence);
-}
 
 
 
