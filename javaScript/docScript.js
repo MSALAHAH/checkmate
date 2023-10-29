@@ -9,21 +9,25 @@ function updateSentence() {
 
 
 
-    // Function to update the textarea with user input
+   // Function to update the textarea with user input
 function updateTextarea() {
     var userInput = document.getElementById("userInput").value;
     var textarea = document.getElementById("sentence");
 
-    // Check if the user input is not already in the sentenceParts array
+    // Create a copy of the sentenceParts array
+    var updatedSentenceParts = [...sentenceParts];
+
+    // Check if the user input is already in the sentenceParts array
     if (userInput && sentenceParts.indexOf(userInput) === -1) {
-        sentenceParts.push(userInput);
+        updatedSentenceParts.push(userInput);
     }
 
-    textarea.value = sentenceParts.join(' ').trim();
+    textarea.value = updatedSentenceParts.join(' ').trim();
 }
 
 // Add an event listener to the user input element
 document.getElementById("userInput").addEventListener("input", updateTextarea);
+
 
 
 
