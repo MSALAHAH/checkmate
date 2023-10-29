@@ -17,6 +17,12 @@
             <div id="styleBox">
                 <div id="checkboxesDiv">
                     <div class="selectionStyle"> 
+                      
+                      <div class="UserInput">
+                        <input type="text" id="userInput" oninput="updateTextarea()" placeholder="Type something...">
+                        <button id="updateButton" onclick="updateSentenceWithUserInput()">Update Sentence</button>
+                    </div>
+                      
                     <label for="mainCheckbox1" class="custom-checkbox" title="Step by Step to get your %100 Quality score">
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox1" onchange="togglemainCheckbox1Options()"> Call Flow
                         <span class="checkmark"></span>
