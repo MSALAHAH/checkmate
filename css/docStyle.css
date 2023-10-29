@@ -85,6 +85,13 @@
     width: 230px;
 }
 
+.UserInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #checkboxesDiv {
     width: 80%;
     font-weight: bold;
