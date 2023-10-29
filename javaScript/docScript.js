@@ -7,10 +7,6 @@ function updateSentence() {
 }
 
 
-<!-- Add this button to your HTML -->
-<button id="updateButton" onclick="updateSentenceWithUserInput()">Update Sentence</button>
-
-<script>
 var sentenceParts = [];
 
 function updateSentence() {
@@ -42,7 +38,8 @@ var checkboxes = document.getElementsByName("checkbox");
 for (var i = 0; i < checkboxes.length; i++) {
     checkboxes[i].addEventListener("change", updateSentence);
 }
-</script>
+
+
 
 
 
