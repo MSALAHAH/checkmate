@@ -7,6 +7,12 @@ function updateSentence() {
 }
 
 
+
+
+
+
+
+
 var sentenceParts = [];
 
 function updateSentence() {
@@ -22,8 +28,8 @@ function updateSentenceWithUserInput() {
         sentenceParts.splice(userInputIndex, 1);
     }
 
-    // Add the user input to the beginning of sentenceParts
-    sentenceParts.unshift(userInput);
+    // Add the user input to sentenceParts
+    sentenceParts.push(userInput);
     
     updateSentence();
 }
@@ -38,6 +44,11 @@ var checkboxes = document.getElementsByName("checkbox");
 for (var i = 0; i < checkboxes.length; i++) {
     checkboxes[i].addEventListener("change", updateSentence);
 }
+
+
+
+
+
 
 
 
