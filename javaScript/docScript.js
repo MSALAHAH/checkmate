@@ -7,14 +7,26 @@ function updateSentence() {
 }
 
 
-// function uncheckAll() {
-//     var checkboxes = document.getElementsByName('checkbox');
-//     for (var i = 0; i < checkboxes.length; i++) {
-//         checkboxes[i].checked = false;
-//     }
-//     sentenceParts = [];
-//     updateSentence();
-// }
+
+
+    // Function to update the textarea with user input
+    function updateTextarea() {
+        // Get the user input element (e.g., a text input field)
+        const userInput = document.getElementById("userInput");
+
+        // Get the textarea element
+        const textarea = document.getElementById("sentence");
+
+        // Update the textarea's content with the user input
+        textarea.value = userInput.value;
+    }
+
+    // Add an event listener to the user input element
+    document.getElementById("userInput").addEventListener("input", updateTextarea);
+
+
+
+
 
 function reloadPage() {
     window.location.reload();
