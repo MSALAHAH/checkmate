@@ -9,12 +9,10 @@ function updateSentence() {
 
 
 
-   // Function to update the textarea with user input
+  // Function to update the textarea with user input
 function updateTextarea() {
     var userInput = document.getElementById("userInput").value;
     var textarea = document.getElementById("sentence");
-
-    // Create a copy of the sentenceParts array
     var updatedSentenceParts = [...sentenceParts];
 
     // Check if the user input is already in the sentenceParts array
@@ -22,11 +20,26 @@ function updateTextarea() {
         updatedSentenceParts.push(userInput);
     }
 
+    // Update the textarea content only if checkboxes are checked
+    var checkboxes = document.getElementsByName("checkbox");
+    for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+            updatedSentenceParts.push(checkboxes[i].value);
+        }
+    }
+
     textarea.value = updatedSentenceParts.join(' ').trim();
 }
 
 // Add an event listener to the user input element
 document.getElementById("userInput").addEventListener("input", updateTextarea);
+
+// Add event listeners to checkboxes
+var checkboxes = document.getElementsByName("checkbox");
+for (var i = 0; i < checkboxes.length; i++) {
+    checkboxes[i].addEventListener("change", updateTextarea);
+}
+
 
 
 
