@@ -12,12 +12,16 @@ function updateSentenceWithUserInput() {
     var sentence = textarea.value;
 
     // Replace all occurrences of user input in the sentence
-    sentence = sentence.split(' ').map(function (word) {
-        return word === userInput ? userInput : word;
-    }).join(' ');
+    sentence = sentence.split(' ');
+    for (var i = 0; i < sentence.length; i++) {
+        if (sentence[i] === userInput) {
+            sentence[i] = userInput;
+        }
+    }
 
-    textarea.value = sentence;
+    textarea.value = sentence.join(' ');
 }
+
 
 
 
