@@ -6,21 +6,41 @@ function updateSentence() {
     document.getElementById('sentence').value = sentenceParts.join(' ').trim();
 }
 
+
+
+// Function to update the textarea with user input
+function updateTextarea() {
+    var userInput = document.getElementById("userInput").value;
+    var textarea = document.getElementById("sentence");
+
+    var updatedSentenceParts = [...sentenceParts];
+
+    // Replace the user input if it's already in sentenceParts
+    if (userInput) {
+        for (var i = 0; i < updatedSentenceParts.length; i++) {
+            if (updatedSentenceParts[i] === userInput) {
+                updatedSentenceParts[i] = userInput;
+            }
+        }
+    }
+
+    textarea.value = updatedSentenceParts.join(' ').trim();
+}
+
+// Function to update the user input in the sentence
 function updateSentenceWithUserInput() {
     var userInput = document.getElementById('userInput').value;
     var textarea = document.getElementById('sentence');
     var sentence = textarea.value;
 
     // Replace all occurrences of user input in the sentence
-    sentence = sentence.split(' ');
-    for (var i = 0; i < sentence.length; i++) {
-        if (sentence[i] === userInput) {
-            sentence[i] = userInput;
-        }
-    }
+    sentence = sentence.replace(new RegExp(userInput, 'g'), userInput);
 
-    textarea.value = sentence.join(' ');
+    textarea.value = sentence;
 }
+
+// Rest of your existing code for checkboxes and textarea
+
 
 
 
