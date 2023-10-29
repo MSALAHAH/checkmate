@@ -17,10 +17,12 @@
                     <input type="text" id="userInput" oninput="updateTextarea()" placeholder="Type something...">
                     <button id="updateButton" onclick="updateSentenceWithUserInput()">Update Sentence</button>
                     <br>
+                        <div class="selectionStyle">
                         <label for="mainCheckbox1" class="custom-checkbox">
                             <input type="checkbox" name="checkbox" title="Step by Step to get your %100 Quality score" value="" id="mainCheckbox1" onchange="togglemainCheckbox1Options()"> Call Flow
                             <span class="checkmark"></span>
                         </label>
+                        </div>
                             <div class="sub-options" id="mainCheckbox1Options" style="display: none;">
                                 <label for="mainCheckbox1-1" class="custom-checkbox">
                                     <input type="checkbox" name="checkbox" id="mainCheckbox1-1" title="good greeting with something like 'Thank You for choosing Optimum' and the Quality score for this point is granted" value=""> Appropriate Greeting
@@ -79,11 +81,13 @@
                             </div>
 
                             <hr>
-
+                    
+                            <div class="selectionStyle">
                             <label for="mainCheckbox2" class="custom-checkbox">
                                 <input type="checkbox" name="checkbox" value="" id="mainCheckbox2" onchange="togglemainCheckbox2Options()"> Equipment Activation
                                 <span class="checkmark"></span>
                             </label>
+                            </div>
                                 <div class="sub-options" id="mainCheckbox2Options" style="display: none;">
                                     <label for="mainCheckbox2-1" class="custom-checkbox">
                                         <input type="checkbox" name="checkbox"  id="mainCheckbox2-1" value=" as per VAT, used WHA Tool to Activate the equipment -"> Through WHA Tool
@@ -92,11 +96,13 @@
                                 </div>
 
                             <hr>
-
+                    
+                            <div class="selectionStyle">
                             <label for="mainCheckbox3" class="custom-checkbox">
                                 <input type="checkbox" name="checkbox" value="" id="mainCheckbox3" onchange="togglemainCheckbox3Options()"> Escalated
                                 <span class="checkmark"></span>
                             </label>
+                            </div>
                                 <div class="sub-options" id="mainCheckbox3Options" style="display: none;">
                                     <label for="mainCheckbox3-2" class="custom-checkbox">
                                         <input type="checkbox" name="checkbox" id="mainCheckbox3-2" value=" Escalated to Prov. Support to fix AUTODIS issue -"> Escalated to Provisioning Support
@@ -109,11 +115,13 @@
                                     </label>
                                 </div>                         
                             <hr>
-
+                    
+                        <div class="selectionStyle">
                         <label for="mainCheckbox7" class="custom-checkbox">
                             <input type="checkbox" name="checkbox" value="" id="mainCheckbox7" onchange="togglemainCheckbox7Options()"> Dropped Call Actions
                             <span class="checkmark"></span>
                         </label>
+                        </div>
                             <div class="sub-options" id="mainCheckbox7Options" style="display: none;">
                                 <label for="mainCheckbox7-1" class="custom-checkbox">
                                     <input type="checkbox" name="checkbox" id="mainCheckbox7-1" value=" call dropped - called the customer back - Answered #DROPPED_CONNECTED -"> Called back - Connected
