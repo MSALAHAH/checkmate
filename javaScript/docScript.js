@@ -6,16 +6,6 @@ function updateSentence() {
     document.getElementById('sentence').value = sentenceParts.join(' ').trim();
 }
 
-
-// the user input push button
-
-
-var sentenceParts = [];
-
-function updateSentence() {
-    document.getElementById('sentence').value = sentenceParts.join(' ').trim();
-}
-
 function updateSentenceWithUserInput() {
     var userInput = document.getElementById('userInput').value;
 
@@ -25,9 +15,16 @@ function updateSentenceWithUserInput() {
         sentenceParts.splice(userInputIndex, 1);
     }
 
-    // Add the user input to sentenceParts
-    sentenceParts.push(userInput);
-    
+    // Add the user input to sentenceParts with space, hyphen, and space
+    sentenceParts.push(userInput + ' - ');
+
+    updateSentence();
+}
+
+// Function to clear the user input
+function clearUserInput() {
+    var userInput = document.getElementById('userInput');
+    userInput.value = '';
     updateSentence();
 }
 
@@ -42,17 +39,9 @@ for (var i = 0; i < checkboxes.length; i++) {
     checkboxes[i].addEventListener("change", updateSentence);
 }
 
-
-// the user input clear button
-// Function to clear the user input
-function clearUserInput() {
-    var userInput = document.getElementById('userInput');
-    userInput.value = '';
-    updateSentence();
-}
-
 // Add an event listener to the clear button
 document.getElementById("clearButton").addEventListener("click", clearUserInput);
+
 
 
 
