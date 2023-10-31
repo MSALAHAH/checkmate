@@ -73,26 +73,26 @@ userInput.addEventListener("input", function () {
     userInput.value = correctedValue;
 });
 
-// Textarea 2
-const sentence = document.getElementById("sentence");
+// // Textarea 2
+// const sentence = document.getElementById("sentence");
 
-sentence.addEventListener("input", function () {
-    const inputValue = sentence.value;
+// sentence.addEventListener("input", function () {
+//     const inputValue = sentence.value;
 
-    // Split the input text into words
-    const words = inputValue.split(" ");
+//     // Split the input text into words
+//     const words = inputValue.split(" ");
 
-    // Iterate through the words and correct spelling
-    const correctedWords = words.map((word) => {
-        const correctedWord = dictionary.suggest(word);
-        return correctedWord.length > 0 ? correctedWord[0] : word;
-    });
+//     // Iterate through the words and correct spelling
+//     const correctedWords = words.map((word) => {
+//         const correctedWord = dictionary.suggest(word);
+//         return correctedWord.length > 0 ? correctedWord[0] : word;
+//     });
 
-    // Join the corrected words back into a sentence
-    const correctedValue = correctedWords.join(" ");
+//     // Join the corrected words back into a sentence
+//     const correctedValue = correctedWords.join(" ");
 
-    sentence.value = correctedValue;
-});
+//     sentence.value = correctedValue;
+// });
 
 
 
