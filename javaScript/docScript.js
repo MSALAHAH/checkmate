@@ -49,6 +49,56 @@ document.getElementById("clearButton").addEventListener("click", clearUserInput)
 
 
 
+// Create an instance of Typo
+var dictionary = new Typo("en_US"); // Use the appropriate dictionary for your language
+
+// Textarea 1
+const userInput = document.getElementById("userInput");
+
+userInput.addEventListener("input", function () {
+    const inputValue = userInput.value;
+
+    // Split the input text into words
+    const words = inputValue.split(" ");
+
+    // Iterate through the words and correct spelling
+    const correctedWords = words.map((word) => {
+        const correctedWord = dictionary.suggest(word);
+        return correctedWord.length > 0 ? correctedWord[0] : word;
+    });
+
+    // Join the corrected words back into a sentence
+    const correctedValue = correctedWords.join(" ");
+
+    userInput.value = correctedValue;
+});
+
+// Textarea 2
+const sentence = document.getElementById("sentence");
+
+sentence.addEventListener("input", function () {
+    const inputValue = sentence.value;
+
+    // Split the input text into words
+    const words = inputValue.split(" ");
+
+    // Iterate through the words and correct spelling
+    const correctedWords = words.map((word) => {
+        const correctedWord = dictionary.suggest(word);
+        return correctedWord.length > 0 ? correctedWord[0] : word;
+    });
+
+    // Join the corrected words back into a sentence
+    const correctedValue = correctedWords.join(" ");
+
+    sentence.value = correctedValue;
+});
+
+
+
+
+
+
 
 
 
