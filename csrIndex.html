@@ -27,12 +27,14 @@
             <div id="styleBox">
 
                 <div class="UserInput">
-                    <textarea id="userInput" oninput="updateTextarea()" placeholder="Type something..."></textarea>
+                    <textarea id="userInput" oninput="updateTextarea()" placeholder="User Custom Input..."></textarea>
                       <div id="userInputButtons">
                           <button id="updateButton" onclick="updateSentenceWithUserInput()">Push Input</button>
                           <button id="clearButton" onclick="clearUserInput()">Clear Input</button>
                       </div>
                 </div>
+
+                <hr>
                 
                 <div id="checkboxesDiv">
                     <div class="selectionStyle">
@@ -141,27 +143,27 @@
                                     <hr>
 
                                     <label for="subMainCheckbox1" class="custom-checkbox" title="All the options if you upgraded the TV service">
-                                        <input type="checkbox" name="checkbox" value="" id="subMainCheckbox1" onchange="togglesubMainCheckbox1Options()"> TV Package Upgrade 🟢
+                                        <input type="checkbox" name="checkbox" value="" id="subMainCheckbox1" onchange="togglesubMainCheckbox1Options()"> TV Package Upgrade 🟩
                                         <span class="checkmark"></span>
                                     </label>
                                         <div class="sub-options" id="subMainCheckbox1Options" style="display: none;">
                                             <label for="subMainCheckbox1-1" class="custom-checkbox" title="TV service Upgraded from _Basic_ to _Core_">
-                                                <input type="checkbox" name="checkbox" id="subMainCheckbox1-1" value="Upgraded the TV package to Core #TV_UPGRADE_TO_CORE -"> UPG To Core 🟢
+                                                <input type="checkbox" name="checkbox" id="subMainCheckbox1-1" value="Upgraded the TV package to Core #TV_UPGRADE_TO_CORE - "> UPG To Core 🟩
                                                 <span class="checkmark"></span>
                                             </label>
                                             <br>
                                             <label for="subMainCheckbox1-2" class="custom-checkbox" title="TV service Upgraded from _Basic or Core_ to _Value_">
-                                                <input type="checkbox" name="checkbox" id="subMainCheckbox1-2" value="Upgraded the TV package to Value #TV_UPGRADE_TO_VALUE -"> UPG To Value 🟢
+                                                <input type="checkbox" name="checkbox" id="subMainCheckbox1-2" value="Upgraded the TV package to Value #TV_UPGRADE_TO_VALUE - "> UPG To Value 🟩
                                                 <span class="checkmark"></span>
                                             </label>
                                             <br>
                                             <label for="subMainCheckbox1-3" class="custom-checkbox" title="TV service Upgraded from _Basic, Core or Value_ to _Select_">
-                                                <input type="checkbox" name="checkbox" id="subMainCheckbox1-3" value="Upgraded the TV package to Select #TV_UPGRADE_TO_SELECT -"> UPG To Select 🟢
+                                                <input type="checkbox" name="checkbox" id="subMainCheckbox1-3" value="Upgraded the TV package to Select #TV_UPGRADE_TO_SELECT - "> UPG To Select 🟩
                                                 <span class="checkmark"></span>
                                             </label>
                                             <br>
                                             <label for="subMainCheckbox1-4" class="custom-checkbox" title="TV service Upgraded from _Basic, Core, Value or Select_ to _Premier_">
-                                                <input type="checkbox" name="checkbox" id="subMainCheckbox1-4" value="Upgraded the TV package to Premier #TV_UPGRADE_TO_PREMIER -"> UPG To Premier 🟢
+                                                <input type="checkbox" name="checkbox" id="subMainCheckbox1-4" value="Upgraded the TV package to Premier #TV_UPGRADE_TO_PREMIER - "> UPG To Premier 🟩
                                                 <span class="checkmark"></span>
                                             </label>
                                         </div>
@@ -169,27 +171,27 @@
                                     <hr id="Divider">
 
                                 <label for="subMainCheckbox2" class="custom-checkbox" title="All the options if you downgraded the TV service">
-                                    <input type="checkbox" name="checkbox" value="" id="subMainCheckbox2" onchange="togglesubMainCheckbox2Options()"> TV Package Downgrade 🔻
+                                    <input type="checkbox" name="checkbox" value="" id="subMainCheckbox2" onchange="togglesubMainCheckbox2Options()"> TV Package Downgrade 🟥
                                     <span class="checkmark"></span>
                                 </label>
                                     <div class="sub-options" id="subMainCheckbox2Options" style="display: none;">
                                         <label for="subMainCheckbox2-1" class="custom-checkbox" title="TV service Downgraded from _Premier_ to _Select_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-1" value="Downgraded the TV package to Select #TV_DOWNGRADE_TO_SELECT -"> Down To Select 🔻
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-1" value="Downgraded the TV package to Select #TV_DOWNGRADE_TO_SELECT - "> Down To Select 🟥
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox2-2" class="custom-checkbox" title="TV service Downgraded from _Premier or Select_ to _Value_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-2" value="Downgraded the TV package to Value #TV_DOWNGRADE_TO_VALUE -"> Down To Value 🔻
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-2" value="Downgraded the TV package to Value #TV_DOWNGRADE_TO_VALUE - "> Down To Value 🟥
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox2-3" class="custom-checkbox" title="TV service Downgraded from _Premier, Select or Value_ to _Core_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-3" value="Downgraded the TV package to Core #TV_DOWNGRADE_TO_CORE -"> Down To Core 🔻
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-3" value="Downgraded the TV package to Core #TV_DOWNGRADE_TO_CORE - "> Down To Core 🟥
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox2-4" class="custom-checkbox" title="TV service Downgraded from _Premier, Select, Value or Core_ to _Basic_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-4" value="Upgraded the TV package to Basic #UPGRADE_TO_BISIC -"> Down To Basic 🔻
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-4" value="Upgraded the TV package to Basic #UPGRADE_TO_BISIC - "> Down To Basic 🟥
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -197,52 +199,52 @@
                                     <hr id="Divider">
 
                                 <label for="subMainCheckbox3" class="custom-checkbox" title="All the options if you upgraded the OOL service">
-                                    <input type="checkbox" name="checkbox" value="" id="subMainCheckbox3" onchange="togglesubMainCheckbox3Options()"> OOL Package Upgrade 🟢
+                                    <input type="checkbox" name="checkbox" value="" id="subMainCheckbox3" onchange="togglesubMainCheckbox3Options()"> OOL Package Upgrade 🟩
                                     <span class="checkmark"></span>
                                 </label>
                                     <div class="sub-options" id="subMainCheckbox3Options" style="display: none;">
                                         <label for="subMainCheckbox3-1" class="custom-checkbox"  title="OOL service Upgraded from _20 Mb/s_ to _50 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-1" value="Upgraded the OOL Speed to 50 Mb/s #OOL_UPGRADE_TO_50MB/S -"> UPG to 50 Mb/s 🟢
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-1" value="Upgraded the OOL Speed to 50 Mb/s #OOL_UPGRADE_TO_50MB/S - "> UPG to 50 Mb/s 🟩
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox3-2" class="custom-checkbox" title="OOL service Upgraded from _20 Mb/s or 50 Mb/s_ to _75 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-2" value="Upgraded the OOL Speed to 75 Mb/s #OOL_UPGRADE_TO_75MB/S -"> UPG to 75 Mb/s 🟢
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-2" value="Upgraded the OOL Speed to 75 Mb/s #OOL_UPGRADE_TO_75MB/S - "> UPG to 75 Mb/s 🟩
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox3-3" class="custom-checkbox" title="OOL service Upgraded from _20 Mb/s, 50 Mb/s or 75 Mb/s_ to _100 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-3" value="Upgraded the OOL Speed to 100 Mb/s #OOL_UPGRADE_TO_100MB/S -"> UPG to 100 Mb/s 🟢
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-3" value="Upgraded the OOL Speed to 100 Mb/s #OOL_UPGRADE_TO_100MB/S - "> UPG to 100 Mb/s 🟩
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox3-4" class="custom-checkbox" title="OOL service Upgraded from _20 Mb/s, 50 Mb/s, 75 Mb/s or 100 Mb/s_ to _150 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-4" value="Upgraded the OOL Speed to 150 Mb/s #OOL_UPGRADE_TO_150MB/S -"> UPG to 150 Mb/s 🟢
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-4" value="Upgraded the OOL Speed to 150 Mb/s #OOL_UPGRADE_TO_150MB/S - "> UPG to 150 Mb/s 🟩
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox3-5" class="custom-checkbox" title="OOL service Upgraded from _20 Mb/s, 50 Mb/s, 75 Mb/s, 100 Mb/s or 150 Mb/s_ to _200 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-5" value="Upgraded the OOL Speed to 200 Mb/s #OOL_UPGRADE_TO_200MB/S -"> UPG to 200 Mb/s 🟢
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-5" value="Upgraded the OOL Speed to 200 Mb/s #OOL_UPGRADE_TO_200MB/S - "> UPG to 200 Mb/s 🟩
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox3-6" class="custom-checkbox" title="OOL service Upgraded from _20 Mb/s, 50 Mb/s, 75 Mb/s, 100 Mb/s, 150 Mb/s or 200 Mb/s_ to _300 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-6" value="Upgraded the OOL Speed to 300 Mb/s #OOL_UPGRADE_TO_300MB/S -"> UPG to 300 Mb/s 🟢
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-6" value="Upgraded the OOL Speed to 300 Mb/s #OOL_UPGRADE_TO_300MB/S - "> UPG to 300 Mb/s 🟩
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox3-7" class="custom-checkbox" title="OOL service Upgraded from _20 Mb/s, 50 Mb/s, 75 Mb/s, 100 Mb/s, 150 Mb/s, 200 Mb/s or 300 Mb/s_ to _400 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-7" value="Upgraded the OOL Speed to 400 Mb/s #OOL_UPGRADE_TO_400MB/S -"> UPG to 400 Mb/s 🟢
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-7" value="Upgraded the OOL Speed to 400 Mb/s #OOL_UPGRADE_TO_400MB/S - "> UPG to 400 Mb/s 🟩
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox3-8" class="custom-checkbox" title="OOL service Upgraded from _20 Mb/s, 50 Mb/s, 75 Mb/s, 100 Mb/s, 150 Mb/s, 200 Mb/s, 300 Mb/s or 400 Mb/s_ to _500 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-8" value="Upgraded the OOL Speed to 500 Mb/s #OOL_UPGRADE_TO_500MB/S -"> UPG to 500 Mb/s 🟢
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-8" value="Upgraded the OOL Speed to 500 Mb/s #OOL_UPGRADE_TO_500MB/S - "> UPG to 500 Mb/s 🟩
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox3-9" class="custom-checkbox" title="OOL service Upgraded from _20 Mb/s, 50 Mb/s, 75 Mb/s, 100 Mb/s, 150 Mb/s, 200 Mb/s, 300 Mb/s, 400 Mb/s or 500 Mb/s_ to _1 Gig_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-9" value="Upgraded the OOL Speed to 1 Gig #OOL_UPGRADE_TO_1GIG -"> UPG to 1 Gig 🟢
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox3-9" value="Upgraded the OOL Speed to 1 Gig #OOL_UPGRADE_TO_1GIG - "> UPG to 1 Gig 🟩
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -250,53 +252,53 @@
                                     <hr id="Divider">
 
                                 <label for="subMainCheckbox4" class="custom-checkbox" title="All the options if you Downgraded the OOL service">
-                                    <input type="checkbox" name="checkbox" value="" id="subMainCheckbox4" onchange="togglesubMainCheckbox4Options()"> OOL Package Downgrade 🔻
+                                    <input type="checkbox" name="checkbox" value="" id="subMainCheckbox4" onchange="togglesubMainCheckbox4Options()"> OOL Package Downgrade 🟥
                                     <span class="checkmark"></span>
                                 </label>
                                     <div class="sub-options" id="subMainCheckbox4Options" style="display: none;">
                                         <label for="subMainCheckbox4-1" class="custom-checkbox" title="OOL service Downgraded from _1 Gig_ to _500 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-1" value="Downgraded the OOL Speed to 500 Mb/s #OOL_DOWNGRADE_TO_500MB/S -"> Down to 500 Mb/s 🔻
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-1" value="Downgraded the OOL Speed to 500 Mb/s #OOL_DOWNGRADE_TO_500MB/S - "> Down to 500 Mb/s 🟥
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox4-2" class="custom-checkbox" title="OOL service Downgraded from _1 Gig or 500 Mb/s_ to _400 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-2" value="Downgraded the OOL Speed to 400 Mb/s #OOL_DOWNGRADE_TO_400MB/S -"> Down to 400 Mb/s 🔻
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-2" value="Downgraded the OOL Speed to 400 Mb/s #OOL_DOWNGRADE_TO_400MB/S - "> Down to 400 Mb/s 🟥
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox4-3" class="custom-checkbox" title="OOL service Downgraded from _1 Gig, 500 Mb/s or 400 Mb/s_ to _300 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-3" value="Downgraded the OOL Speed to 300 Mb/s #OOL_DOWNGRADE_TO_300MB/S -"> Down to 300 Mb/s 🔻
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-3" value="Downgraded the OOL Speed to 300 Mb/s #OOL_DOWNGRADE_TO_300MB/S - "> Down to 300 Mb/s 🟥
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox4-4" class="custom-checkbox" title="OOL service Downgraded from _1 Gig, 500 Mb/s, 400 Mb/s or 300 Mb/s_ to _200 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-4" value="Downgraded the OOL Speed to 200 Mb/s #OOL_DOWNGRADE_TO_200MB/S -"> Down to 200 Mb/s 🔻
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-4" value="Downgraded the OOL Speed to 200 Mb/s #OOL_DOWNGRADE_TO_200MB/S - "> Down to 200 Mb/s 🟥
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox4-5" class="custom-checkbox" title="OOL service Downgraded from _1 Gig, 500 Mb/s, 400 Mb/s or 300 Mb/s_ to _150 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-5" value="Downgraded the OOL Speed to 150 Mb/s #OOL_DOWNGRADE_TO_150MB/S -"> Down to 150 Mb/s 🔻
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-5" value="Downgraded the OOL Speed to 150 Mb/s #OOL_DOWNGRADE_TO_150MB/S - "> Down to 150 Mb/s 🟥
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         
                                         <label for="subMainCheckbox4-6" class="custom-checkbox" title="OOL service Downgraded from _1 Gig, 500 Mb/s, 400 Mb/s, 300 Mb/s, 200 Mb/s or 150 Mb/s_ to _100 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-6" value="Downgraded the OOL Speed to 100 Mb/s #OOL_DOWNGRADE_TO_100MB/S -"> Down to 100 Mb/s 🔻
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-6" value="Downgraded the OOL Speed to 100 Mb/s #OOL_DOWNGRADE_TO_100MB/S - "> Down to 100 Mb/s 🟥
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox4-7" class="custom-checkbox" title="OOL service Downgraded from _1 Gig, 500 Mb/s, 400 Mb/s, 300 Mb/s, 200 Mb/s, 150 Mb/s or 100 Mb/s_ to _75 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-7" value="Downgraded the OOL Speed to 75 Mb/s #OOL_DOWNGRADE_TO_75MB/S -"> Down to 75 Mb/s 🔻
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-7" value="Downgraded the OOL Speed to 75 Mb/s #OOL_DOWNGRADE_TO_75MB/S - "> Down to 75 Mb/s 🟥
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox4-8" class="custom-checkbox" title="OOL service Downgraded from _1 Gig, 500 Mb/s, 400 Mb/s, 300 Mb/s, 200 Mb/s, 150 Mb/s, 100 Mb/s or 75 Mb/s_ to _50 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-8" value="Downgraded the OOL Speed to 50 Mb/s #OOL_DOWNGRADE_TO_50MB/S -"> Down to 50 Mb/s 🔻
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-8" value="Downgraded the OOL Speed to 50 Mb/s #OOL_DOWNGRADE_TO_50MB/S - "> Down to 50 Mb/s 🟥
                                             <span class="checkmark"></span>
                                         </label>
                                         <br>
                                         <label for="subMainCheckbox4-9" class="custom-checkbox" title="OOL service Downgraded from _1 Gig, 500 Mb/s, 400 Mb/s, 300 Mb/s, 200 Mb/s, 150 Mb/s, 100 Mb/s, 75 Mb/s or 50 Mb/s_ to _20 Mb/s_">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-9" value="Downgraded the OOL Speed to 20 Mb/s #OOL_DOWNGRADE_TO_20MB/S -"> Down to 20 Mb/s 🔻
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox4-9" value="Downgraded the OOL Speed to 20 Mb/s #OOL_DOWNGRADE_TO_20MB/S - "> Down to 20 Mb/s 🟥
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -430,54 +432,54 @@
                             <span class="checkmark"></span>
                         </label>
                         </div>
-                            <div class="sub-options" id="mainCheckbox5Options" style="display: none;">
-                                <h5 class="subHeader">Create Optimum ID</h5>
-                                <label for="mainCheckbox5-1" class="custom-checkbox" title="if the customer passed CPNI to create the Optimum ID.">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox5-1" value=" CPNI Passed to create the Optimum ID - created - provided the Temporary password to set the account password - educated about the Online Account #OPTIMUM_ONLINE_ACCOUNT - "> CPNI Passed - Created
-                                    <span class="checkmark"></span>
-                                </label>
-                                <br>
-                                <label for="mainCheckbox5-2" class="custom-checkbox" title="if the customer failed to pass the CPNI to create the Optimum ID - nothing created.">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox5-2" value=" CPNI Failed to create the Optimum ID - educated about the process to create the Online Account #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> CPNI Failed - Not Created
-                                    <span class="checkmark"></span>
-                                </label>
-                                <br>
-                                <hr id="Divider">
-                                <h5 class="subHeader">Disclose Optimum ID</h5>
-                                <label for="mainCheckbox5-3" class="custom-checkbox" title="if the customer requested information about his/her ID and CPNI passed.">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox5-3" value=" CPNI Passed to disclose the Optimum ID - provided the ID and educated about the Online Account #OPTIMUM_ONLINE_ACCOUNT - "> CPNI Passed - Disclosed
-                                    <span class="checkmark"></span>
-                                </label>
-                                <br>
-                                <label for="mainCheckbox5-4" class="custom-checkbox" title="if the customer requested information about his/her ID but failed to pass CPNI - nothing disclosed.">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox5-4" value=" CPNI Failed to disclose the Optimum ID - no information provided about the Online Account #OPTIMUM_ONLINE_ACCOUNT - "> CPNI Failed - Not Disclosed
-                                    <span class="checkmark"></span>
-                                </label>
-                                <br>
-                                <hr id="Divider">
-                                <h5 class="subHeader">Optimum ID Password Reset</h5>
-                                <label for="mainCheckbox5-5" class="custom-checkbox" title="if the customer requested a new password and CPNI passed - password provided.">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox5-5" value=" CPNI Passed to reset the online account password - the new password provided #OPTIMUM_ONLINE_ACCOUNT_SUPPORT - "> CPNI Passed - Password Provided 
-                                    <span class="checkmark"></span>
-                                </label>
-                                <br>
-                                <label for="mainCheckbox5-6" class="custom-checkbox" title="if the customer requested a new password but failed to pass CPNI - no information provided.">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox5-6" value=" CPNI Failed to reset the online account password - educated the customer that we cannot reset the password without passing CPNI #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> CPNI Failed - No Changes
-                                    <span class="checkmark"></span>
-                                </label>
-                                <br>
-                                <hr id="Divider">
-                                <h5 class="subHeader">Optimum ID Transfer</h5>
-                                <label for="mainCheckbox5-7" class="custom-checkbox" title="if the customer requested ID transfer from the disconnected account and _CPNI passed 'both accounts'_ - ID transferred.">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox5-7" value=" CPNI Passed to transfer the ID from the old account [00000-000000-00] to the new current account - ID Transferred Successfully - provided the needed information #OPTIMUM_ONLINE_ACCOUNT_TRANSFER - "> CPNI Passed - Transferred
-                                    <span class="checkmark"></span>
-                                </label>
-                                <br>
-                                <label for="mainCheckbox5-8" class="custom-checkbox" title="if the customer requested ID transfer from the disconnected account and failed to pass CPNI - no changes.">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox5-8" value=" ID transfer request cannot be done from [00000-000000-00] to the new current account - CPNI Failed #OPTIMUM_ONLINE_ACCOUNT_TRANSFER - "> CPNI Failed - No Changed
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
+                        <div class="sub-options" id="mainCheckbox5Options" style="display: none;">
+                            <h5 class="subHeader">Create Optimum ID</h5>
+                            <label for="mainCheckbox5-1" class="custom-checkbox" title="if the customer passed CPNI to create the Optimum ID.">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox5-1" value="CPNI Passed to create the Optimum ID - created - provided the Temporary password to set the account password - educated about the Online Account #OPTIMUM_ONLINE_ACCOUNT - "> CPNI 🟩 - Created
+                                <span class="checkmark"></span>
+                            </label>
+                            <br>
+                            <label for="mainCheckbox5-2" class="custom-checkbox" title="if the customer failed to pass the CPNI to create the Optimum ID - nothing created.">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox5-2" value="CPNI Failed to create the Optimum ID - educated about the process to create the Online Account #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> CPNI 🟥 - Not Created
+                                <span class="checkmark"></span>
+                            </label>
+                            <br>
+                            <hr id="Divider">
+                            <h5 class="subHeader">Disclose Optimum ID</h5>
+                            <label for="mainCheckbox5-3" class="custom-checkbox" title="if the customer requested information about his/her ID and CPNI passed.">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox5-3" value="CPNI Passed to disclose the Optimum ID - provided the ID and educated about the Online Account #OPTIMUM_ONLINE_ACCOUNT - "> CPNI 🟩 - Disclosed
+                                <span class="checkmark"></span>
+                            </label>
+                            <br>
+                            <label for="mainCheckbox5-4" class="custom-checkbox" title="if the customer requested information about his/her ID but failed to pass CPNI - nothing disclosed.">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox5-4" value="CPNI Failed to disclose the Optimum ID - no information provided about the Online Account #OPTIMUM_ONLINE_ACCOUNT - "> CPNI 🟥 - Not Disclosed
+                                <span class="checkmark"></span>
+                            </label>
+                            <br>
+                            <hr id="Divider">
+                            <h5 class="subHeader">Optimum ID Password Reset</h5>
+                            <label for="mainCheckbox5-5" class="custom-checkbox" title="if the customer requested a new password and CPNI passed - password provided.">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox5-5" value="CPNI Passed to reset the online account password - the new password provided #OPTIMUM_ONLINE_ACCOUNT_SUPPORT - "> CPNI 🟩 - Password Provided 
+                                <span class="checkmark"></span>
+                            </label>
+                            <br>
+                            <label for="mainCheckbox5-6" class="custom-checkbox" title="if the customer requested a new password but failed to pass CPNI - no information provided.">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox5-6" value="CPNI Failed to reset the online account password - educated the customer that we cannot reset the password without passing CPNI #OPTIMUM_ONLINE_ACCOUNT_NO_CHANGES - "> CPNI 🟥 - No Changes
+                                <span class="checkmark"></span>
+                            </label>
+                            <br>
+                            <hr id="Divider">
+                            <h5 class="subHeader">Optimum ID Transfer</h5>
+                            <label for="mainCheckbox5-7" class="custom-checkbox" title="if the customer requested ID transfer from the disconnected account and _CPNI passed 'both accounts'_ - ID transferred.">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox5-7" value="CPNI Passed to transfer the ID from the old account [00000-000000-00] to the new current account - ID Transferred Successfully - provided the needed information #OPTIMUM_ONLINE_ACCOUNT_TRANSFER - "> CPNI 🟩 - Transferred
+                                <span class="checkmark"></span>
+                            </label>
+                            <br>
+                            <label for="mainCheckbox5-8" class="custom-checkbox" title="if the customer requested ID transfer from the disconnected account and failed to pass CPNI - no changes.">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox5-8" value="ID transfer request cannot be done from [00000-000000-00] to the new current account - CPNI Failed #OPTIMUM_ONLINE_ACCOUNT_TRANSFER - "> CPNI 🟥 - No Changed
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
 
                             <hr>
 

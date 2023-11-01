@@ -90,8 +90,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15px;
-    margin: 0px 0px 5% 0px;
+    padding: 3% 3% 2% 3%;
+    margin: 2% 2% 0% 2%;
     box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
     background: #ffffff5c;
     border-radius: 6px;
@@ -101,11 +101,12 @@
     font-size: 14px;
     font-weight: bold;
     font-family: "Regular", sans-serif;
-    text-transform: capitalize;
+    text-transform:unset;
     margin-bottom: 3%;
     border-radius: 8px;
     border: none;
     box-shadow: 0px 0px 9px 2px rgb(0 0 0 / 50%);
+    width: 100%;
     max-width: 100%;
     min-height: 35px;
     padding: 8px;
@@ -121,8 +122,8 @@
     color: #000;
     background-color: #fff;
     border: none;
-    border-radius: 10px;
-    box-shadow: inset 1px 1px 10px 0px rgba(0, 0, 0, 0.42);
+    border-radius: 6px;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.42);
     cursor: pointer;
     transition: all 0.1s linear;
 }
@@ -148,7 +149,7 @@
     text-align: left;
     text-transform: capitalize;
     line-height: 28px;
-    padding: 20px 3px 20px 3px;
+    padding: 0px 0px 5% 0px;
 }
 
 
@@ -314,7 +315,7 @@ input[type="checkbox"]:checked + .checkmark {
 
     #checkboxesDiv {
         font-size: 14px;
-        padding: 20px 3px 20px 3px;
+        padding: 0px 0px 5% 0px;
     }
 
     #newCallBtn,
@@ -334,7 +335,7 @@ input[type="checkbox"]:checked + .checkmark {
 
     #checkboxesDiv {
         font-size: 16px;
-        padding: 20px 3px 20px 3px;
+        padding: 0px 0px 5% 0px;
     }
 
     #newCallBtn,
@@ -358,7 +359,7 @@ input[type="checkbox"]:checked + .checkmark {
 
     #checkboxesDiv {
         font-size: 14px;
-        padding: 20px 3px 20px 3px;
+        padding: 0px 0px 5% 0px;
     }
 
     #newCallBtn,
@@ -375,7 +376,7 @@ input[type="checkbox"]:checked + .checkmark {
 
     #checkboxesDiv {
         font-size: 20px;
-        padding: 20px 3px 20px 3px;
+        padding: 0px 0px 5% 0px;
     }
 
     #newCallBtn,
