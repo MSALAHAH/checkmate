@@ -23,16 +23,16 @@
         <div id="docToolSectionBody">
             <h2 id="headSubject">Self-Install <br>Documentation Tool</h2>
             <div id="styleBox">
+
+                <div class="UserInput">
+                    <textarea id="userInput" oninput="updateTextarea()" placeholder="Type something..."></textarea>
+                      <div id="userInputButtons">
+                          <button id="updateButton" onclick="updateSentenceWithUserInput()">Push Input</button>
+                          <button id="clearButton" onclick="clearUserInput()">Clear Input</button>
+                      </div>
+                </div>
+                
                 <div id="checkboxesDiv">
-                    
-                    <div class="UserInput">
-                        <input type="text" id="userInput" oninput="updateTextarea()" placeholder="Type something...">
-                          <div id="userInputButtons">
-                              <button id="updateButton" onclick="updateSentenceWithUserInput()">push input</button>
-                              <button id="clearButton" onclick="clearUserInput()">Clear Input</button>
-                          </div>
-                    </div>
-                    
                         <div class="selectionStyle">
                         <label for="mainCheckbox1" class="custom-checkbox">
                             <input type="checkbox" name="checkbox" title="Step by Step to get your %100 Quality score" value="" id="mainCheckbox1" onchange="togglemainCheckbox1Options()"> Call Flow
