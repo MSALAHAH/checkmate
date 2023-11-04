@@ -116,6 +116,21 @@ function copyToClipboard() {
 // SUB-OPTIONS FUNCTIONS BELOW
 // SUBs=======================================================================
 
+
+// MAIN BOX 00 FUNCTION
+function togglemainCheckbox00Options() {
+    var mainCheckbox00Checkbox = document.getElementById('mainCheckbox00');
+    var mainCheckbox00Options = document.getElementById('mainCheckbox00Options');
+
+    if (mainCheckbox00Checkbox.checked) {
+        mainCheckbox00Options.style.display = 'block';
+    } else {
+        mainCheckbox00Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+
 // MAIN BOX 1 FUNCTION
 function togglemainCheckbox1Options() {
     var mainCheckbox1Checkbox = document.getElementById('mainCheckbox1');
