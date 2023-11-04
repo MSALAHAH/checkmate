@@ -183,6 +183,7 @@ input[type="checkbox"]:checked + .checkmark {
     border-radius: 6px;
 }
 
+#mainCheckbox00Options,
 #mainCheckbox1Options,
 #mainCheckbox2Options,
 #mainCheckbox3Options,
