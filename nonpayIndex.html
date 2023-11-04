@@ -38,6 +38,40 @@
 
                 <div id="checkboxesDiv">
                     <div class="selectionStyle">
+                        <label for="mainCheckbox00" class="custom-checkbox" title="">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox00" onchange="togglemainCheckbox00Options()"> Call Info
+                            <span class="checkmark"></span>
+                        </label>
+                        </div>
+                            <div class="sub-options" id="mainCheckbox00Options" style="display: none;">
+                                <label for="mainCheckbox00-1" class="custom-checkbox" title="to add the Tag [ ** LOB NAME ** ]">
+                                    <input type="checkbox" name="checkbox" id="mainCheckbox00-1" value="**NON_PAY_DOCUMENTATION**">
+                                    <span class="checkmark"></span>
+                                    **NON_PAY** Tag
+                                </label>
+                                <hr id="Divider">
+                                <h5 class="subHeader">Caller Type</h5>
+                                <label for="mainCheckbox00-2" class="custom-checkbox" title="if the called is the account holder check this box">
+                                    <input type="checkbox" name="checkbox" id="mainCheckbox00-2" value="caller:[Account Holder]">
+                                    <span class="checkmark"></span>
+                                    Account Holder
+                                </label>
+                                <br>
+                                <label for="mainCheckbox00-3" class="custom-checkbox" title="if the called is the Auth. User check this box">
+                                    <input type="checkbox" name="checkbox" id="mainCheckbox00-3" value="caller:[Auth. User]">
+                                    <span class="checkmark"></span>
+                                    Auth. User
+                                </label>
+                                <br>
+                                <label for="mainCheckbox00-4" class="custom-checkbox" title="if the called is the Other User check this box">
+                                    <input type="checkbox" name="checkbox" id="mainCheckbox00-4" value="caller:[Other User]">
+                                    <span class="checkmark"></span>
+                                    Other User
+                                </label>
+                                <br>
+                            </div>
+                            
+                    <div class="selectionStyle">
                     <label for="mainCheckbox1" class="custom-checkbox" title="Step by Step to get your %100 Quality score">
                         <input type="checkbox" name="checkbox" value="" id="mainCheckbox1" onchange="togglemainCheckbox1Options()"> Call Flow
                         <span class="checkmark"></span>
@@ -155,6 +189,11 @@
                                         <span class="checkmark"></span>
                                     </label>
                                         <div class="sub-options" id="subMainCheckbox1Options" style="display: none;">
+                                            <label for="subMainCheckbox1-0" class="custom-checkbox" title="if TV add-on added (HBO, Starz, Showtime)..etc">
+                                                <input type="checkbox" name="checkbox" id="subMainCheckbox1-0" value="TV Add-On added [***]"> Add TV Add-On 🟩
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <br>
                                             <label for="subMainCheckbox1-1" class="custom-checkbox" title="TV service Upgraded from _Basic_ to _Core_">
                                                 <input type="checkbox" name="checkbox" id="subMainCheckbox1-1" value="Upgraded the TV package to Core #TV_UPGRADE_TO_CORE - "> UPG To Core 🟩
                                                 <span class="checkmark"></span>
@@ -183,6 +222,11 @@
                                     <span class="checkmark"></span>
                                 </label>
                                     <div class="sub-options" id="subMainCheckbox2Options" style="display: none;">
+                                        <label for="subMainCheckbox2-0" class="custom-checkbox" title="if TV add-on removed (HBO, Starz, Showtime)..etc">
+                                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-0" value="TV Add-On Removed [***]"> Remove TV Add-On 🟥
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <br>
                                         <label for="subMainCheckbox2-1" class="custom-checkbox" title="TV service Downgraded from _Premier_ to _Select_">
                                             <input type="checkbox" name="checkbox" id="subMainCheckbox2-1" value="Downgraded the TV package to Select #TV_DOWNGRADE_TO_SELECT - "> Down To Select 🟥
                                             <span class="checkmark"></span>
@@ -323,11 +367,6 @@
                         </div>
                             <div class="sub-options" id="mainCheckbox2Options" style="display: none;">
                                 <h5 class="subHeader">Appreciation Credit</h5>
-                                <label for="mainCheckbox2-1" class="custom-checkbox">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox2-1" value="$5.00 Customer Appreciation Credit - " id="credit5"> $5.00
-                                    <span class="checkmark"></span>
-                                </label>
-                                <br>
                                 <label for="mainCheckbox2-2" class="custom-checkbox">
                                     <input type="checkbox" name="checkbox" id="mainCheckbox2-2" value="$10.00 Customer Appreciation Credit - " id="credit10"> $10.00
                                     <span class="checkmark"></span>
@@ -345,7 +384,7 @@
                             <hr id="Divider">
                                 <h5 class="subHeader">Collections Fees</h5>
                                 <label for="mainCheckbox2-5" class="custom-checkbox">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox2-5" value="$10 Late fee waived - " id="lateFee"> Late Fee ($10)
+                                    <input type="checkbox" name="checkbox" id="mainCheckbox2-5" value="$00.00 Late fee waived - " id="lateFee"> Late Fee ($00.00)
                                     <span class="checkmark"></span>
                                 </label>
                                 <br>
