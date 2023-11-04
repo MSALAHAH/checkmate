@@ -374,6 +374,10 @@ input[type="checkbox"]:checked + .checkmark {
         width: 445px;
     }
 
+    .selectionStyle{
+        margin: 0% 0% 2% 0%;
+    }
+
     #checkboxesDiv {
         font-size: 20px;
         padding: 0px 0px 5% 0px;
