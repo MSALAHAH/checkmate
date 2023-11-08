@@ -102,9 +102,16 @@ document.getElementById("clearButton").addEventListener("click", clearUserInput)
 
 
 
-function reloadPage() {
+// function reloadPage() {
+//     window.location.reload();
+// }
+
+
+function reloadPageAndShowAlert() {
     window.location.reload();
+    alertFunction(); // Call the alertFunction to display the alert
 }
+
 
 
 function copyToClipboard() {
