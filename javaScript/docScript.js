@@ -112,6 +112,13 @@ function reloadPageAndShowAlert() {
     alertFunction(); // Call the alertFunction to display the alert
 }
 
+function alertFunction() {
+  var x = document.getElementById("alertMessage");
+  x.className = "show";
+  setTimeout(function() {
+    x.className = x.className.replace("show", "");
+  }, 3000);
+}
 
 
 function copyToClipboard() {
