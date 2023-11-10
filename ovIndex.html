@@ -1,344 +1,399 @@
 <!DOCTYPE html>
-                <!-- بِسْم اللَّه الرَّحْمن الرَّحِيم -->
-    <!-- وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا -->
+<!-- بِسْم اللَّه الرَّحْمن الرَّحِيم -->
+<!-- وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا -->
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/docStyle.css">
-        <link rel="icon" type="image/png" sizes="16x16" href="https://www.optimum.com/themes/custom/optimum/slice/favicon/favicon-16x16.png">
-        <title>CheckMate - Voice</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/docStyle.css">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://www.optimum.com/themes/custom/optimum/slice/favicon/favicon-16x16.png">
+    <title>CheckMate - Voice</title>
+</head>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K9F091RHMT"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K9F091RHMT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', 'G-K9F091RHMT');
-    </script>
+    gtag('config', 'G-K9F091RHMT');
+</script>
 
-    <body>
-        <div id="docToolSectionBody">
-            <h2 id="headSubject">Optimum Voice <br><span class="headSpan">Documentation Tool</span></h2>
-            <div id="styleBox">
+<body>
+    <div id="docToolSectionBody">
+        <h2 id="headSubject">Optimum Voice <br><span class="headSpan">Documentation Tool</span></h2>
+        <div id="styleBox">
 
-                <div class="UserInput">
-                    <textarea id="userInput" oninput="updateTextarea()" placeholder="User Custom Input..."></textarea>
-                      <div id="userInputButtons">
-                          <button id="updateButton" onclick="updateSentenceWithUserInput()">Push Input</button>
-                          <button id="clearButton" onclick="clearUserInput()">Clear Input</button>
-                      </div>
+            <div class="UserInput">
+                <textarea id="userInput" oninput="updateTextarea()" placeholder="User Custom Input..."></textarea>
+                <div id="userInputButtons">
+                    <button id="updateButton" onclick="updateSentenceWithUserInput()">Push Input</button>
+                    <button id="clearButton" onclick="clearUserInput()">Clear Input</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="checkboxesDiv">
+                <div class="selectionStyle">
+                    <label for="mainCheckbox1" class="custom-checkbox"
+                        title="Step by Step to get your %100 Quality score">
+                        <input type="checkbox" name="checkbox" value="" id="mainCheckbox1"
+                            onchange="togglemainCheckbox1Options()"> Call Flow
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="sub-options" id="mainCheckbox1Options" style="display: none;">
+                    <label for="mainCheckbox1-1" class="custom-checkbox"
+                        title="Good greeting with something like 'Thank You for choosing Optimum.' and your Quality score for this point is granted.">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox1-1" value="">
+                        <span class="checkmark"></span>
+                        Appropriate Greeting
+                    </label>
+                    <br>
+                    <label for="mainCheckbox1-2" class="custom-checkbox"
+                        title="As a part of the opening, it's important to let the customer confirm the full name and address.">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox1-2" value="">
+                        <span class="checkmark"></span>
+                        Name & Address Validation
+                    </label>
+                    <br>
+                    <label for="mainCheckbox1-3" class="custom-checkbox"
+                        title="One of the most important things ever is to ask the customer about a number to call him back if the call dropped for any reason.">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox1-3" value="">
+                        <span class="checkmark"></span>
+                        Confirm CallBack Number
+                    </label>
+                    <br>
+                    <label for="mainCheckbox1-4" class="custom-checkbox"
+                        title="remember to update the phone number and the E-mail, also ask what is the best way to send the alerts ==E-MAIL OR TEXT==">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox1-4"
+                            value=" Ensured that the customer contact preferences on file is updated -">
+                        Update CPC
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox1-5" class="custom-checkbox"
+                        title="expected to use all the tools, and please follow the Tool flow 😀">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox1-5" value=""> Tool Utilization (ZT)
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox1-7" class="custom-checkbox"
+                        title="simply ask the customer about the reason the account is past due, browse over the account's tabs looking for resolution">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox1-7" value=""> Account Nav.
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox1-8" class="custom-checkbox"
+                        title="Empathy helps a customer feel like the agent knows what they are going through, or you can start with 'How is your day going?'">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox1-8" value=""> Show Empathy & Build
+                        Rapport
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox1-9" class="custom-checkbox"
+                        title="let the customer know that he is Appreciated">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox1-9" value=""> Loyalty Acknowledgement
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox1-14" class="custom-checkbox"
+                        title="let the customer know that he can use the self-help options like the Online Account and MyOptimum App">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox1-14"
+                            value=" Educated about the online account Optimum.net and the Mobile Application My Optimum #SELF_HELP -">
+                        Self-Help
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox1-15" class="custom-checkbox"
+                        title="make sure to mention the reson for the call and the resolution process">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox1-15" value=""> Call Recap
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox1-16" class="custom-checkbox"
+                        title="thank the customer for his time, remember to promote the survay and to thank the customer for choosing Optimum">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox1-16" value=""> Closure Script
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <hr>
+
+                <div class="selectionStyle">
+                    <label for="mainCheckbox8" class="custom-checkbox" title="#noTitleMentioned_404">
+                        <input type="checkbox" name="checkbox" value="" id="mainCheckbox8"
+                            onchange="togglemainCheckbox8Options()"> Case Issue
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="sub-options" id="mainCheckbox8Options" style="display: none;">
+
+                    <label for="subMainCheckbox0" class="custom-checkbox" title="#noTitleMentioned_404">
+                        <input type="checkbox" name="checkbox" value="" id="subMainCheckbox0"
+                            onchange="togglesubMainCheckbox0Options()"> Issue Code
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <div class="sub-options" id="subMainCheckbox0Options" style="display: none;">
+                        <label for="subMainCheckbox0-1" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox0-1"
+                                value="called because there's no dial tone - "> No Dial Tone
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+
+                        <label for="subMainCheckbox0-2" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox0-2"
+                                value="called because cannot get any Inbound calls - "> No Inbound
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+
+                        <label for="subMainCheckbox0-3" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox0-3"
+                                value="called because cannot make any Outbound called - "> No Outbound
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+
+                        <label for="subMainCheckbox0-4" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox0-4"
+                                value="called to port In a number - "> Port In/Rebuild
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+
+                        <label for="subMainCheckbox0-5" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox0-5"
+                                value="called asking about general information - "> General Inquiry
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+
+                        <label for="subMainCheckbox0-6" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox0-6"
+                                value="called to inquire about the features - "> Phone Features
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+
+                    <hr id="Divider">
+
+                    <label for="subMainCheckbox1" class="custom-checkbox" title="">
+                        <input type="checkbox" name="checkbox" value="" id="subMainCheckbox1"
+                            onchange="togglesubMainCheckbox1Options()"> Cause Code
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <div class="sub-options" id="subMainCheckbox1Options" style="display: none;">
+                        <label for="subMainCheckbox1-1" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox1-1"
+                                value="signal issue detected - "> Signals issue
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+
+                        <label for="subMainCheckbox1-2" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox1-2"
+                                value="possible Equipment Issue - "> Equipment Issue
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+
+                        <label for="subMainCheckbox1-3" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox1-3"
+                                value="possible Wiring Issue - "> Wiring Issue
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+
+                        <label for="subMainCheckbox1-4" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox1-4" value=""> General
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+
+                    <hr id="Divider">
+
+                    <label for="subMainCheckbox2" class="custom-checkbox" title="#noTitleMentioned_404">
+                        <input type="checkbox" name="checkbox" value="" id="subMainCheckbox2"
+                            onchange="togglesubMainCheckbox2Options()"> Resolution Code
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <div class="sub-options" id="subMainCheckbox2Options" style="display: none;">
+                        <label for="subMainCheckbox2-1" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-1"
+                                value="the issue Resolved with TBS - "> Resolved with TBS
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+
+                        <label for="subMainCheckbox2-2" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-2"
+                                value="Scheduled a service visit to fix the issue - "> Scheduled a service visit
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+
+                        <label for="subMainCheckbox2-3" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-3"
+                                value="Escalated to (---) department to fix the issue - "> Escalated to another
+                            department
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+
+                        <label for="subMainCheckbox2-4" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-4"
+                                value="Escalated to a supervisor to fix the issue - "> Escalated to a supervisor
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <br>
+
+                        <label for="subMainCheckbox2-5" class="custom-checkbox" title="#noTitleMentioned_404">
+                            <input type="checkbox" name="checkbox" id="subMainCheckbox2-5"
+                                value="fixed by educating the customer - Customer education - "> Customer education
+                            <span class="checkmark"></span>
+                        </label>
+
+                    </div>
+                </div>
+
+
+                <hr>
+
+                <div class="selectionStyle">
+                    <label for="mainCheckbox6" class="custom-checkbox">
+                        <input type="checkbox" name="checkbox" value="" id="mainCheckbox6"
+                            onchange="togglemainCheckbox6Options()"> Transfer for Resolution
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="sub-options" id="mainCheckbox6Options" style="display: none;">
+                    <label for="mainCheckbox6-1" class="custom-checkbox">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-1" value="Xfer to Care Support - ">
+                        Xfer to Care Support
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox6-2" class="custom-checkbox">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-2" value="Xfer to Tech Support - ">
+                        Xfer to Tech Support
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox6-3" class="custom-checkbox">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-3" value="Xfer to Retention - "> Xfer
+                        to Retention
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox6-4" class="custom-checkbox">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-4" value="Xfer to Sales - "> Xfer to
+                        Sales
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox6-5" class="custom-checkbox">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-5" value="Xfer to Mobile - "> Xfer to
+                        Mobile
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
 
                 <hr>
-                
-                <div id="checkboxesDiv">
-                    <div class="selectionStyle"> 
-                    <label for="mainCheckbox1" class="custom-checkbox" title="Step by Step to get your %100 Quality score">
-                        <input type="checkbox" name="checkbox" value="" id="mainCheckbox1" onchange="togglemainCheckbox1Options()"> Call Flow
+
+                <div class="selectionStyle">
+                    <label for="mainCheckbox7" class="custom-checkbox">
+                        <input type="checkbox" name="checkbox" value="" id="mainCheckbox7"
+                            onchange="togglemainCheckbox7Options()"> Dropped Call Actions
                         <span class="checkmark"></span>
                     </label>
-                    </div>
-                        <div class="sub-options" id="mainCheckbox1Options" style="display: none;">
-                            <label for="mainCheckbox1-1" class="custom-checkbox" title="Good greeting with something like 'Thank You for choosing Optimum.' and your Quality score for this point is granted.">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-1" value="">
-                                <span class="checkmark"></span>
-                                Appropriate Greeting
-                            </label>
-                            <br>
-                            <label for="mainCheckbox1-2" class="custom-checkbox" title="As a part of the opening, it's important to let the customer confirm the full name and address.">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-2" value="">
-                                <span class="checkmark"></span>
-                                Name & Address Validation
-                            </label>
-                            <br>
-                            <label for="mainCheckbox1-3" class="custom-checkbox" title="One of the most important things ever is to ask the customer about a number to call him back if the call dropped for any reason.">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-3" value="">
-                                <span class="checkmark"></span>
-                                Confirm CallBack Number
-                            </label>
-                            <br>
-                            <label for="mainCheckbox1-4" class="custom-checkbox" title="remember to update the phone number and the E-mail, also ask what is the best way to send the alerts ==E-MAIL OR TEXT==">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-4" value=" Ensured that the customer contact preferences on file is updated -"> 
-                                Update CPC
-                                <span class="checkmark"></span>
-                            </label>
-                            <br>
-                            <label for="mainCheckbox1-5" class="custom-checkbox" title="expected to use all the tools, and please follow the Tool flow 😀">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-5" value=""> Tool Utilization (ZT)
-                                <span class="checkmark"></span>
-                            </label>
-                            <br>
-                            <label for="mainCheckbox1-7" class="custom-checkbox" title="simply ask the customer about the reason the account is past due, browse over the account's tabs looking for resolution">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-7" value=""> Account Nav.
-                                <span class="checkmark"></span>
-                            </label>
-                            <br>
-                            <label for="mainCheckbox1-8" class="custom-checkbox" title="Empathy helps a customer feel like the agent knows what they are going through, or you can start with 'How is your day going?'">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-8" value=""> Show Empathy & Build Rapport
-                                <span class="checkmark"></span>
-                            </label>
-                            <br>
-                            <label for="mainCheckbox1-9" class="custom-checkbox" title="let the customer know that he is Appreciated">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-9" value=""> Loyalty Acknowledgement
-                                <span class="checkmark"></span>
-                            </label>
-                            <br>
-                            <label for="mainCheckbox1-14" class="custom-checkbox" title="let the customer know that he can use the self-help options like the Online Account and MyOptimum App">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-14" value=" Educated about the online account Optimum.net and the Mobile Application My Optimum #SELF_HELP -"> Self-Help
-                                <span class="checkmark"></span>
-                            </label>
-                            <br>
-                            <label for="mainCheckbox1-15" class="custom-checkbox" title="make sure to mention the reson for the call and the resolution process">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-15" value=""> Call Recap
-                                <span class="checkmark"></span>
-                            </label>
-                            <br>
-                            <label for="mainCheckbox1-16" class="custom-checkbox" title="thank the customer for his time, remember to promote the survay and to thank the customer for choosing Optimum">
-                                <input type="checkbox" name="checkbox" id="mainCheckbox1-16" value=""> Closure Script
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                            <hr>
-
-                  <div class="selectionStyle"> 
-                        <label for="mainCheckbox8" class="custom-checkbox" title="#noTitleMentioned_404">
-                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox8" onchange="togglemainCheckbox8Options()"> Case Issue
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-
-                            <div class="sub-options" id="mainCheckbox8Options" style="display: none;">
-
-                                <label for="subMainCheckbox0" class="custom-checkbox" title="#noTitleMentioned_404">
-                                    <input type="checkbox" name="checkbox" value="" id="subMainCheckbox0" onchange="togglesubMainCheckbox0Options()"> Issue Code
-                                    <span class="checkmark"></span>
-                                </label>
-
-                                    <div class="sub-options" id="subMainCheckbox0Options" style="display: none;">
-                                        <label for="subMainCheckbox0-1" class="custom-checkbox" title="#noTitleMentioned_404">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox0-1" value="called because there's no dial tone - "> No Dial Tone
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                        <br>
-
-                                        <label for="subMainCheckbox0-2" class="custom-checkbox" title="#noTitleMentioned_404">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox0-2" value="called because cannot get any Inbound calls - "> No Inbound
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                        <br>
-
-                                        <label for="subMainCheckbox0-3" class="custom-checkbox" title="#noTitleMentioned_404">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox0-3" value="called because cannot make any Outbound called - "> No Outbound
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                        <br>
-
-                                        <label for="subMainCheckbox0-4" class="custom-checkbox" title="#noTitleMentioned_404">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox0-4" value="called to port In a number - "> Port In/Rebuild
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                        <br>
-
-                                        <label for="subMainCheckbox0-5" class="custom-checkbox" title="#noTitleMentioned_404">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox0-5" value="called asking about general information - "> General Inquiry
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                        <br>
-
-                                        <label for="subMainCheckbox0-6" class="custom-checkbox" title="#noTitleMentioned_404">
-                                            <input type="checkbox" name="checkbox" id="subMainCheckbox0-6" value="called to inquire about the features - "> Phone Features
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                    </div>
-
-                                    <hr id="Divider">
-                              
-                                    <label for="subMainCheckbox1" class="custom-checkbox" title="">
-                                        <input type="checkbox" name="checkbox" value="" id="subMainCheckbox1" onchange="togglesubMainCheckbox1Options()"> Cause Code
-                                        <span class="checkmark"></span>
-                                    </label>
-
-                                        <div class="sub-options" id="subMainCheckbox1Options" style="display: none;">
-                                            <label for="subMainCheckbox1-1" class="custom-checkbox" title="#noTitleMentioned_404">
-                                                <input type="checkbox" name="checkbox" id="subMainCheckbox1-1" value="signal issue detected - "> Signals issue
-                                                <span class="checkmark"></span>
-                                            </label>
-
-                                            <br>
-
-                                            <label for="subMainCheckbox1-2" class="custom-checkbox" title="#noTitleMentioned_404">
-                                                <input type="checkbox" name="checkbox" id="subMainCheckbox1-2" value="possible Equipment Issue - "> Equipment Issue
-                                                <span class="checkmark"></span>
-                                            </label>
-
-                                            <br>
-
-                                            <label for="subMainCheckbox1-3" class="custom-checkbox" title="#noTitleMentioned_404">
-                                                <input type="checkbox" name="checkbox" id="subMainCheckbox1-3" value="possible Wiring Issue - "> Wiring Issue
-                                                <span class="checkmark"></span>
-                                            </label>
-
-                                            <br>
-
-                                            <label for="subMainCheckbox1-4" class="custom-checkbox" title="#noTitleMentioned_404">
-                                                <input type="checkbox" name="checkbox" id="subMainCheckbox1-4" value=""> General
-                                                <span class="checkmark"></span>
-                                            </label>
-
-                                        </div>
-
-                                        <hr id="Divider">
-
-                                        <label for="subMainCheckbox2" class="custom-checkbox" title="#noTitleMentioned_404">
-                                            <input type="checkbox" name="checkbox" value="" id="subMainCheckbox2" onchange="togglesubMainCheckbox2Options()"> Resolution Code
-                                            <span class="checkmark"></span>
-                                        </label>
-
-                                            <div class="sub-options" id="subMainCheckbox2Options" style="display: none;">
-                                                <label for="subMainCheckbox2-1" class="custom-checkbox" title="#noTitleMentioned_404">
-                                                    <input type="checkbox" name="checkbox" id="subMainCheckbox2-1" value="the issue Resolved with TBS - "> Resolved with TBS
-                                                    <span class="checkmark"></span>
-                                                </label>
-
-                                                <br>
-
-                                                <label for="subMainCheckbox2-2" class="custom-checkbox" title="#noTitleMentioned_404">
-                                                    <input type="checkbox" name="checkbox" id="subMainCheckbox2-2" value="Scheduled a service visit to fix the issue - "> Scheduled a service visit
-                                                    <span class="checkmark"></span>
-                                                </label>
-
-                                                <br>
-
-                                                <label for="subMainCheckbox2-3" class="custom-checkbox" title="#noTitleMentioned_404">
-                                                    <input type="checkbox" name="checkbox" id="subMainCheckbox2-3" value="Escalated to (---) department to fix the issue - "> Escalated to another department
-                                                    <span class="checkmark"></span>
-                                                </label>
-
-                                                <br>
-
-                                                <label for="subMainCheckbox2-4" class="custom-checkbox" title="#noTitleMentioned_404">
-                                                    <input type="checkbox" name="checkbox" id="subMainCheckbox2-4" value="Escalated to a supervisor to fix the issue - "> Escalated to a supervisor
-                                                    <span class="checkmark"></span>
-                                                </label>
-
-                                                <br>
-
-                                                <label for="subMainCheckbox2-5" class="custom-checkbox" title="#noTitleMentioned_404">
-                                                    <input type="checkbox" name="checkbox" id="subMainCheckbox2-5" value="fixed by educating the customer - Customer education - "> Customer education
-                                                    <span class="checkmark"></span>
-                                                </label>
-
-                                            </div>
-                            </div> 
-
-
-                            <hr>
-
-                        <div class="selectionStyle"> 
-                        <label for="mainCheckbox6" class="custom-checkbox">
-                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox6" onchange="togglemainCheckbox6Options()"> Transfer for Resolution
-                            <span class="checkmark"></span>
-                        </label>
-                        </div>
-                            <div class="sub-options" id="mainCheckbox6Options" style="display: none;">
-                                <label for="mainCheckbox6-1" class="custom-checkbox">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox6-1" value="Xfer to Care Support - "> Xfer to Care Support
-                                    <span class="checkmark"></span>
-                                </label>
-                                <br>
-                                <label for="mainCheckbox6-2" class="custom-checkbox">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox6-2" value="Xfer to Tech Support - "> Xfer to Tech Support
-                                    <span class="checkmark"></span>
-                                </label>
-                                <br>
-                                <label for="mainCheckbox6-3" class="custom-checkbox">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox6-3" value="Xfer to Retention - "> Xfer to Retention
-                                    <span class="checkmark"></span>
-                                </label>
-                                <br>
-                                <label for="mainCheckbox6-4" class="custom-checkbox">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox6-4" value="Xfer to Sales - "> Xfer to Sales
-                                    <span class="checkmark"></span>
-                                </label>
-                              <br>
-                                <label for="mainCheckbox6-5" class="custom-checkbox">
-                                    <input type="checkbox" name="checkbox" id="mainCheckbox6-5" value="Xfer to Mobile - "> Xfer to Mobile
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-
-                            <hr>
-
-                            <div class="selectionStyle"> 
-                            <label for="mainCheckbox7" class="custom-checkbox">
-                                <input type="checkbox" name="checkbox" value="" id="mainCheckbox7" onchange="togglemainCheckbox7Options()"> Dropped Call Actions
-                                <span class="checkmark"></span>
-                            </label>
-                            </div>
-                                <div class="sub-options" id="mainCheckbox7Options" style="display: none;">
-                                    <label for="mainCheckbox7-1" class="custom-checkbox">
-                                        <input type="checkbox" name="checkbox" id="mainCheckbox7-1" value=" call dropped - called the customer back - Answered #DROPPED_CONNECTED -"> Called back - Connected
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <br>
-                                    <label for="mainCheckbox7-2" class="custom-checkbox">
-                                        <input type="checkbox" name="checkbox" id="mainCheckbox7-2" value=" call dropped - called the customer back - No Answer - Left a Voicemail #DROPPED_NO_ANSWER -"> No Answer - Left Voicemail
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <br>
-                                    <label for="mainCheckbox7-3" class="custom-checkbox">
-                                        <input type="checkbox" name="checkbox" id="mainCheckbox7-3" value=" call dropped - called the customer back - No Answer - No Voicemail #DROPPED_NOT_REACHABLE -"> No Answer - No Voicemail
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <br>
-                                    <label for="mainCheckbox7-4" class="custom-checkbox">
-                                        <input type="checkbox" name="checkbox" id="mainCheckbox7-4" value=" call dropped - called the customer back - Call Could Not be Complete #DROPPED_NOT_REACHABLE -">Call Could Not be Completed
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <br>
-                                    <label for="mainCheckbox7-5" class="custom-checkbox">
-                                        <input type="checkbox" name="checkbox" id="mainCheckbox7-5" value=" call dropped - called the customer back - Line Busy #DROPPED_LINE_BUSY -">Line Busy
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
                 </div>
-            </div>
-
-            <br>
-
-            <div>
-                <button id="newCallBtn" onclick="reloadPage()">New Call</button>
-                <button id="copyBtn" onclick="copyToClipboard()">Copy Text</button>
-            </div>
-
-            <br>
-
-            <textarea id="sentence" rows="12" cols="50" readonly></textarea>
-
-            <br>
-
-            <div class="footer">
-                <p>Created By <a id="spanBold" href="https://msalahah.github.io/R4/" target="_blank">Mohammed Melok</a> | All Rights Reserved&copy;</p>
+                <div class="sub-options" id="mainCheckbox7Options" style="display: none;">
+                    <label for="mainCheckbox7-1" class="custom-checkbox">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox7-1"
+                            value=" call dropped - called the customer back - Answered #DROPPED_CONNECTED -"> Called
+                        back - Connected
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox7-2" class="custom-checkbox">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox7-2"
+                            value=" call dropped - called the customer back - No Answer - Left a Voicemail #DROPPED_NO_ANSWER -">
+                        No Answer - Left Voicemail
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox7-3" class="custom-checkbox">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox7-3"
+                            value=" call dropped - called the customer back - No Answer - No Voicemail #DROPPED_NOT_REACHABLE -">
+                        No Answer - No Voicemail
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox7-4" class="custom-checkbox">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox7-4"
+                            value=" call dropped - called the customer back - Call Could Not be Complete #DROPPED_NOT_REACHABLE -">Call
+                        Could Not be Completed
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox7-5" class="custom-checkbox">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox7-5"
+                            value=" call dropped - called the customer back - Line Busy #DROPPED_LINE_BUSY -">Line Busy
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
             </div>
         </div>
 
+        <br>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="./javaScript/scrollreveal.min.js" defer></script>
+        <div>
+            <button id="newCallBtn" onclick="reloadPage()">New Call</button>
+            <button id="copyBtn" onclick="copyToClipboard()">Copy Text</button>
+        </div>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="./javaScript/menuScript.js" defer></script>
-        <script src="./javaScript/docScript.js" defer></script>
-    </body>
+        <br>
+
+        <textarea id="sentence" rows="12" cols="50" readonly></textarea>
+
+        <br>
+
+        <div class="footer">
+            <p>Created By <a id="spanBold" href="https://msalahah.github.io/R4/" target="_blank">Mohammed Melok</a> |
+                All Rights Reserved&copy;</p>
+        </div>
+    </div>
+
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="./javaScript/scrollreveal.min.js" defer></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./javaScript/menuScript.js" defer></script>
+    <script src="./javaScript/docScript.js" defer></script>
+</body>
+
 </html>

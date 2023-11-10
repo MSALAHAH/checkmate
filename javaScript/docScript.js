@@ -113,11 +113,11 @@ function reloadPageAndShowAlert() {
 }
 
 function alertFunction() {
-  var x = document.getElementById("alertMessage");
-  x.className = "show";
-  setTimeout(function() {
-    x.className = x.className.replace("show", "");
-  }, 3000);
+    var x = document.getElementById("alertMessage");
+    x.className = "show";
+    setTimeout(function () {
+        x.className = x.className.replace("show", "");
+    }, 3000);
 }
 
 
@@ -248,82 +248,82 @@ function togglemainCheckbox8Options() {
     }
     updateSentence();
 }
-                            // SUB BOX 0-8 FUNCTION 
-                            function togglesubMainCheckbox0Options() {
-                                var subMainCheckbox0Checkbox = document.getElementById('subMainCheckbox0');
-                                var subMainCheckbox0Options = document.getElementById('subMainCheckbox0Options');
+// SUB BOX 0-8 FUNCTION 
+function togglesubMainCheckbox0Options() {
+    var subMainCheckbox0Checkbox = document.getElementById('subMainCheckbox0');
+    var subMainCheckbox0Options = document.getElementById('subMainCheckbox0Options');
 
-                                if (subMainCheckbox0Checkbox.checked) {
-                                    subMainCheckbox0Options.style.display = 'block';
-                                } else {
-                                    subMainCheckbox0Options.style.display = 'none';
-                                }
-                                updateSentence();
-                            }
-                            // SUB BOX 1-8 FUNCTION
-                            function togglesubMainCheckbox1Options() {
-                                var subMainCheckbox1Checkbox = document.getElementById('subMainCheckbox1');
-                                var subMainCheckbox1Options = document.getElementById('subMainCheckbox1Options');
-                            
-                                if (subMainCheckbox1Checkbox.checked) {
-                                    subMainCheckbox1Options.style.display = 'block';
-                                } else {
-                                    subMainCheckbox1Options.style.display = 'none';
-                                }
-                                updateSentence();
-                            }
+    if (subMainCheckbox0Checkbox.checked) {
+        subMainCheckbox0Options.style.display = 'block';
+    } else {
+        subMainCheckbox0Options.style.display = 'none';
+    }
+    updateSentence();
+}
+// SUB BOX 1-8 FUNCTION
+function togglesubMainCheckbox1Options() {
+    var subMainCheckbox1Checkbox = document.getElementById('subMainCheckbox1');
+    var subMainCheckbox1Options = document.getElementById('subMainCheckbox1Options');
 
-                            // SUB BOX 2-8 FUNCTION
-                            function togglesubMainCheckbox2Options() {
-                                var subMainCheckbox2Checkbox = document.getElementById('subMainCheckbox2');
-                                var subMainCheckbox2Options = document.getElementById('subMainCheckbox2Options');
-                            
-                                if (subMainCheckbox2Checkbox.checked) {
-                                    subMainCheckbox2Options.style.display = 'block';
-                                } else {
-                                    subMainCheckbox2Options.style.display = 'none';
-                                }
-                                updateSentence();
-                            }
+    if (subMainCheckbox1Checkbox.checked) {
+        subMainCheckbox1Options.style.display = 'block';
+    } else {
+        subMainCheckbox1Options.style.display = 'none';
+    }
+    updateSentence();
+}
 
-                            // SUB BOX 3-8 FUNCTION
-                            function togglesubMainCheckbox3Options() {
-                                var subMainCheckbox3Checkbox = document.getElementById('subMainCheckbox3');
-                                var subMainCheckbox3Options = document.getElementById('subMainCheckbox3Options');
-                            
-                                if (subMainCheckbox3Checkbox.checked) {
-                                    subMainCheckbox3Options.style.display = 'block';
-                                } else {
-                                    subMainCheckbox3Options.style.display = 'none';
-                                }
-                                updateSentence();
-                            }
+// SUB BOX 2-8 FUNCTION
+function togglesubMainCheckbox2Options() {
+    var subMainCheckbox2Checkbox = document.getElementById('subMainCheckbox2');
+    var subMainCheckbox2Options = document.getElementById('subMainCheckbox2Options');
 
-                            // SUB BOX 4-8 FUNCTION
-                            function togglesubMainCheckbox4Options() {
-                                var subMainCheckbox4Checkbox = document.getElementById('subMainCheckbox4');
-                                var subMainCheckbox4Options = document.getElementById('subMainCheckbox4Options');
-                            
-                                if (subMainCheckbox4Checkbox.checked) {
-                                    subMainCheckbox4Options.style.display = 'block';
-                                } else {
-                                    subMainCheckbox4Options.style.display = 'none';
-                                }
-                                updateSentence();
-                            }
+    if (subMainCheckbox2Checkbox.checked) {
+        subMainCheckbox2Options.style.display = 'block';
+    } else {
+        subMainCheckbox2Options.style.display = 'none';
+    }
+    updateSentence();
+}
 
-                            // SUB BOX 5-8 FUNCTION
-                            function togglesubMainCheckbox5Options() {
-                                var subMainCheckbox5Checkbox = document.getElementById('subMainCheckbox5');
-                                var subMainCheckbox5Options = document.getElementById('subMainCheckbox5Options');
-                            
-                                if (subMainCheckbox5Checkbox.checked) {
-                                    subMainCheckbox5Options.style.display = 'block';
-                                } else {
-                                    subMainCheckbox5Options.style.display = 'none';
-                                }
-                                updateSentence();
-                            }
+// SUB BOX 3-8 FUNCTION
+function togglesubMainCheckbox3Options() {
+    var subMainCheckbox3Checkbox = document.getElementById('subMainCheckbox3');
+    var subMainCheckbox3Options = document.getElementById('subMainCheckbox3Options');
+
+    if (subMainCheckbox3Checkbox.checked) {
+        subMainCheckbox3Options.style.display = 'block';
+    } else {
+        subMainCheckbox3Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+// SUB BOX 4-8 FUNCTION
+function togglesubMainCheckbox4Options() {
+    var subMainCheckbox4Checkbox = document.getElementById('subMainCheckbox4');
+    var subMainCheckbox4Options = document.getElementById('subMainCheckbox4Options');
+
+    if (subMainCheckbox4Checkbox.checked) {
+        subMainCheckbox4Options.style.display = 'block';
+    } else {
+        subMainCheckbox4Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+// SUB BOX 5-8 FUNCTION
+function togglesubMainCheckbox5Options() {
+    var subMainCheckbox5Checkbox = document.getElementById('subMainCheckbox5');
+    var subMainCheckbox5Options = document.getElementById('subMainCheckbox5Options');
+
+    if (subMainCheckbox5Checkbox.checked) {
+        subMainCheckbox5Options.style.display = 'block';
+    } else {
+        subMainCheckbox5Options.style.display = 'none';
+    }
+    updateSentence();
+}
 
 // SUBs=======================================================================
 window.onload = function () {

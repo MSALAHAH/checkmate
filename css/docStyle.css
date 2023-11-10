@@ -1,434 +1,465 @@
             /* بِسْم اللَّه الرَّحْمن الرَّحِيم */
-/* وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;800&display=swap');
+            /* وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا */
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;800&display=swap');
 
-*,::before,::after{
-    box-sizing: border-box;
-  }
-  body{
-    background: linear-gradient(277deg, #002864, #f66608 100%);
-    margin: 0;
-    font-family: "Regular", sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: .5s;
-  }
+            *, ::before, ::after {
+                box-sizing: border-box;
+            }
 
-  @font-face {
-    font-family: "Regular";
-    src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Light.woff') format('woff'),url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-}
+            body {
+                background: linear-gradient(277deg, #002864, #f66608 100%);
+                margin: 0;
+                font-family: "Regular", sans-serif;
+                font-weight: 500;
+                font-size: 1rem;
+                transition: .5s;
+            }
 
-@font-face {
-    font-family: "Regular";
-    src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Regular.woff') format('woff'),url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
+            @font-face {
+                font-family: "Regular";
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Light.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Light.woff2') format('woff2');
+                font-weight: 300;
+                font-style: normal;
+            }
 
-@font-face {
-    font-family: "Regular";
-    src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Medium.woff') format('woff'),url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Medium.woff2') format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
+            @font-face {
+                font-family: "Regular";
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Regular.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Regular.woff2') format('woff2');
+                font-weight: 400;
+                font-style: normal;
+            }
 
-@font-face {
-    font-family: "Regular";
-    src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Bold.woff') format('woff'),url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
+            @font-face {
+                font-family: "Regular";
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Medium.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Medium.woff2') format('woff2');
+                font-weight: 500;
+                font-style: normal;
+            }
 
-  h1{
-    margin: 0;
-  }
-  ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  a{
-    text-decoration: none;
-  }
+            @font-face {
+                font-family: "Regular";
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Bold.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Bold.woff2') format('woff2');
+                font-weight: 700;
+                font-style: normal;
+            }
 
+            h1 {
+                margin: 0;
+            }
 
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
 
-#docToolSectionBody {
-    display: flex;
-    height: 100%;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-#headSubject {
-    text-align: left;
-    padding: 15px 0px 5px 30px;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 22px;
-    width: 100%;
-    margin-top: 0px;
-    background-color: rgba(253, 249, 249, 0);
-    color: #fff;
-    text-shadow: 0px 0px 5px #000;
-}
-
-.headSpan {
-    font-size: 16px;
-}
-
-#Divider {
-    width: 230px;
-}
-
-#alertMessage {
-    visibility: hidden;
-    min-width: 250px;
-    margin-left: -200px;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    color: black;
-    text-align: center;
-    border-radius: 10px;
-    padding: 16px;
-    position: fixed;
-    z-index: 3;
-    left: 56.5%;
-    bottom: 92%;
-    font-size: 16px;
-  }
-  
-  #alertMessage.show {
-    visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  }
-  
-  @-webkit-keyframes fadein {
-    from {bottom: 0; opacity: 0;} 
-    to {bottom: 30px; opacity: 1;}
-  }
-  
-  @keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-  }
-  
-  @-webkit-keyframes fadeout {
-    from {bottom: 30px; opacity: 1;} 
-    to {bottom: 0; opacity: 0;}
-  }
-  
-  @keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-  }
-  
-.UserInput {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3% 3% 2% 3%;
-    margin: 2% 2% 0% 2%;
-    box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
-    background: #ffffff5c;
-    border-radius: 6px;
-}
-
-#userInput {
-    font-size: 14px;
-    font-weight: bold;
-    font-family: "Regular", sans-serif;
-    text-transform:unset;
-    margin-bottom: 3%;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0px 0px 9px 2px rgb(0 0 0 / 50%);
-    width: 100%;
-    max-width: 100%;
-    min-height: 35px;
-    padding: 8px;
-    overflow: hidden;
-}
-
-#updateButton, #clearButton {
-    padding: 5px 8px;
-    font-family: 'Roboto Slab';
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 6px;
-    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.42);
-    cursor: pointer;
-    transition: all 0.1s linear;
-}
-
-#updateButton:hover {
-    background-color: #06842c;
-    box-shadow: 0px 0px 11px 0px rgb(245 245 245 / 62%);
-    color: #fff;
-    transform: translateY(-2px);
-}
-
-#clearButton:hover {
-    background-color: #d71a1a;
-    box-shadow: 0px 0px 11px 0px rgb(245 245 245 / 62%);
-    color: #fff;
-    transform: translateY(-2px);
-}
-
-#checkboxesDiv {
-    width: 80%;
-    font-weight: bold;
-    display: inline-block;
-    text-align: left;
-    text-transform: capitalize;
-    line-height: 28px;
-    padding: 0px 0px 5% 0px;
-}
-
-
-#styleBox {
-    width: 365px;
-    border-radius: 8px;
-    box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
-    background: #ffffff5c;
-}
-
-.selectionStyle {
-    padding: 6px;
-    box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
-    background: #ffffff5c;
-    border-radius: 6px;
-}
-
-input[type="checkbox"]:checked + .checkmark {
-  box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
-}
+            a {
+                text-decoration: none;
+            }
 
 
 
+            #docToolSectionBody {
+                display: flex;
+                height: 100%;
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+            }
 
-.subHeader {
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 2px;
-    padding: 1px;
-    box-shadow: inset 1px 1px 4px 1px rgba(0, 0, 0, 0.48);
-    border-radius: 6px;
-}
+            #headSubject {
+                text-align: left;
+                padding: 15px 0px 5px 30px;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 22px;
+                width: 100%;
+                margin-top: 0px;
+                background-color: rgba(253, 249, 249, 0);
+                color: #fff;
+                text-shadow: 0px 0px 5px #000;
+            }
 
-#mainCheckbox00Options,
-#mainCheckbox1Options,
-#mainCheckbox2Options,
-#mainCheckbox3Options,
-#mainCheckbox4Options,
-#mainCheckbox5Options,
-#mainCheckbox6Options,
-#mainCheckbox7Options,
-#mainCheckbox8Options,
-#subMainCheckbox0Options,
-#subMainCheckbox1Options,
-#subMainCheckbox2Options,
-#subMainCheckbox3Options,
-#subMainCheckbox4Options,
-#subMainCheckbox5Options {
-    margin-left: 22px;
-}
+            .headSpan {
+                font-size: 16px;
+            }
 
-#newCallBtn,
-#copyBtn {
-    padding: 0.7em 2em;
-    font-family: 'Roboto Slab';
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.42);
-    transition: all 0.1s ease 0s;
-    cursor: pointer;
-    outline: none;
-}
+            #Divider {
+                width: 230px;
+            }
 
-#newCallBtn:hover,
-#copyBtn:hover {
-    background-color: #06842c;
-    box-shadow: 0px 0px 20px 3px rgb(253 253 253 / 62%);
-    color: #fff;
-    transform: translateY(-3px);
-}
+            #alertMessage {
+                visibility: hidden;
+                min-width: 250px;
+                margin-left: -200px;
+                background-color: white;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                color: black;
+                text-align: center;
+                border-radius: 10px;
+                padding: 16px;
+                position: fixed;
+                z-index: 3;
+                left: 56.5%;
+                bottom: 92%;
+                font-size: 16px;
+            }
 
-#newCallBtn:active,
-#copyBtn:active {
-    transform: translateY(-1px);
-}
+            #alertMessage.show {
+                visibility: visible;
+                -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+                animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            }
 
-.custom-checkbox {
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-    user-select: none;
-}
+            @-webkit-keyframes fadein {
+                from {
+                    bottom: 0;
+                    opacity: 0;
+                }
 
-.custom-checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
+                to {
+                    bottom: 30px;
+                    opacity: 1;
+                }
+            }
 
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #eee;
-    border-radius: 3px;
-    transition: background-color 0.2s ease;
-}
+            @keyframes fadein {
+                from {
+                    bottom: 0;
+                    opacity: 0;
+                }
 
-.custom-checkbox input:checked ~ .checkmark {
-    background-color: #06842c;
-    transition: background-color 0.3s ease;
-}
+                to {
+                    bottom: 30px;
+                    opacity: 1;
+                }
+            }
 
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
+            @-webkit-keyframes fadeout {
+                from {
+                    bottom: 30px;
+                    opacity: 1;
+                }
 
-.custom-checkbox input:checked ~ .checkmark:after {
-    display: block;
-    transition: all 0.3s ease;
-}
+                to {
+                    bottom: 0;
+                    opacity: 0;
+                }
+            }
 
-.custom-checkbox .checkmark:after {
-    left: 7.5px;
-    top: 4.7px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    transition: all 0.2s ease;
-}
+            @keyframes fadeout {
+                from {
+                    bottom: 30px;
+                    opacity: 1;
+                }
 
-#sentence {
-    font-size: 12px;
-    font-family: "Regular", sans-serif;
-    font-weight: bold;
-    text-transform: capitalize;
-    border-width: 5px;
-    margin-bottom: 10%;
-    border-style: outset;
-    border-radius: 8px;
-    border: none;
-    box-shadow: inset 0px 0px 10px 5px rgb(0 0 0 / 50%);
-    width: 80%;
-    height: 40%;
-    padding: 18px;
-    overflow: hidden;
-}
+                to {
+                    bottom: 0;
+                    opacity: 0;
+                }
+            }
 
-#spanBold{
-    color: #14b3b3;
-    font-weight: 700;
-}
+            .UserInput {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 3% 3% 2% 3%;
+                margin: 2% 2% 0% 2%;
+                box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
+                background: #ffffff5c;
+                border-radius: 6px;
+            }
 
-@media (max-width: 320px) {
-    body {
-        padding-left: 0px;
-    }
+            #userInput {
+                font-size: 14px;
+                font-weight: bold;
+                font-family: "Regular", sans-serif;
+                text-transform: unset;
+                margin-bottom: 3%;
+                border-radius: 8px;
+                border: none;
+                box-shadow: 0px 0px 9px 2px rgb(0 0 0 / 50%);
+                width: 100%;
+                max-width: 100%;
+                min-height: 35px;
+                padding: 8px;
+                overflow: hidden;
+            }
 
-    #styleBox {
-        width: 250px;
-    }
+            #updateButton, #clearButton {
+                padding: 5px 8px;
+                font-family: 'Roboto Slab';
+                font-size: 13px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #000;
+                background-color: #fff;
+                border: none;
+                border-radius: 6px;
+                box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.42);
+                cursor: pointer;
+                transition: all 0.1s linear;
+            }
 
-    #checkboxesDiv {
-        font-size: 14px;
-        padding: 0px 0px 5% 0px;
-    }
+            #updateButton:hover {
+                background-color: #06842c;
+                box-shadow: 0px 0px 11px 0px rgb(245 245 245 / 62%);
+                color: #fff;
+                transform: translateY(-2px);
+            }
 
-    #newCallBtn,
-    #copyBtn {
-        font-size: 12px;
-    }
-}
+            #clearButton:hover {
+                background-color: #d71a1a;
+                box-shadow: 0px 0px 11px 0px rgb(245 245 245 / 62%);
+                color: #fff;
+                transform: translateY(-2px);
+            }
 
-@media (max-width: 425px) {
-    body {
-        padding-left: 0px;
-    }
+            #checkboxesDiv {
+                width: 80%;
+                font-weight: bold;
+                display: inline-block;
+                text-align: left;
+                text-transform: capitalize;
+                line-height: 28px;
+                padding: 0px 0px 5% 0px;
+            }
 
-    #styleBox {
-        width: 320px;
-    }
 
-    #checkboxesDiv {
-        font-size: 16px;
-        padding: 0px 0px 5% 0px;
-    }
+            #styleBox {
+                width: 365px;
+                border-radius: 8px;
+                box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
+                background: #ffffff5c;
+            }
 
-    #newCallBtn,
-    #copyBtn {
-        font-size: 14px;
-    }
-}
+            .selectionStyle {
+                padding: 6px;
+                box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
+                background: #ffffff5c;
+                border-radius: 6px;
+            }
 
-@media (max-width: 768px) {
-    body {
-        padding-left: 0px;
-    }
+            input[type="checkbox"]:checked+.checkmark {
+                box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
+            }
 
-    #styleBox {
-        width: 320px;
-    }
 
-    #updateButton, #clearButton {
-        font-size: 11px;
-    }
 
-    #checkboxesDiv {
-        font-size: 14px;
-        padding: 0px 0px 5% 0px;
-    }
 
-    #newCallBtn,
-    #copyBtn {
-        font-size: 14px;
-    }
-}
+            .subHeader {
+                text-align: center;
+                margin-top: 5px;
+                margin-bottom: 2px;
+                padding: 1px;
+                box-shadow: inset 1px 1px 4px 1px rgba(0, 0, 0, 0.48);
+                border-radius: 6px;
+            }
 
-@media (min-width: 1440px) {
-    
-    #styleBox {
-        width: 445px;
-    }
+            #mainCheckbox00Options,
+            #mainCheckbox1Options,
+            #mainCheckbox2Options,
+            #mainCheckbox3Options,
+            #mainCheckbox4Options,
+            #mainCheckbox5Options,
+            #mainCheckbox6Options,
+            #mainCheckbox7Options,
+            #mainCheckbox8Options,
+            #subMainCheckbox0Options,
+            #subMainCheckbox1Options,
+            #subMainCheckbox2Options,
+            #subMainCheckbox3Options,
+            #subMainCheckbox4Options,
+            #subMainCheckbox5Options {
+                margin-left: 22px;
+            }
 
-    .selectionStyle{
-        margin: 0% 0% 2% 0%;
-    }
+            #newCallBtn,
+            #copyBtn {
+                padding: 0.7em 2em;
+                font-family: 'Roboto Slab';
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #000;
+                background-color: #fff;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.42);
+                transition: all 0.1s ease 0s;
+                cursor: pointer;
+                outline: none;
+            }
 
-    #checkboxesDiv {
-        font-size: 20px;
-        padding: 0px 0px 5% 0px;
-    }
+            #newCallBtn:hover,
+            #copyBtn:hover {
+                background-color: #06842c;
+                box-shadow: 0px 0px 20px 3px rgb(253 253 253 / 62%);
+                color: #fff;
+                transform: translateY(-3px);
+            }
 
-    #newCallBtn,
-    #copyBtn {
-        font-size: 15px;
-    }
-}
+            #newCallBtn:active,
+            #copyBtn:active {
+                transform: translateY(-1px);
+            }
+
+            .custom-checkbox {
+                position: relative;
+                padding-left: 30px;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            .custom-checkbox input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                background-color: #eee;
+                border-radius: 3px;
+                transition: background-color 0.2s ease;
+            }
+
+            .custom-checkbox input:checked~.checkmark {
+                background-color: #06842c;
+                transition: background-color 0.3s ease;
+            }
+
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+
+            .custom-checkbox input:checked~.checkmark:after {
+                display: block;
+                transition: all 0.3s ease;
+            }
+
+            .custom-checkbox .checkmark:after {
+                left: 7.5px;
+                top: 4.7px;
+                width: 5px;
+                height: 10px;
+                border: solid white;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+                transition: all 0.2s ease;
+            }
+
+            #sentence {
+                font-size: 12px;
+                font-family: "Regular", sans-serif;
+                font-weight: bold;
+                text-transform: capitalize;
+                border-width: 5px;
+                margin-bottom: 10%;
+                border-style: outset;
+                border-radius: 8px;
+                border: none;
+                box-shadow: inset 0px 0px 10px 5px rgb(0 0 0 / 50%);
+                width: 80%;
+                height: 40%;
+                padding: 18px;
+                overflow: hidden;
+            }
+
+            #spanBold {
+                color: #14b3b3;
+                font-weight: 700;
+            }
+
+            @media (max-width: 320px) {
+                body {
+                    padding-left: 0px;
+                }
+
+                #styleBox {
+                    width: 250px;
+                }
+
+                #checkboxesDiv {
+                    font-size: 14px;
+                    padding: 0px 0px 5% 0px;
+                }
+
+                #newCallBtn,
+                #copyBtn {
+                    font-size: 12px;
+                }
+            }
+
+            @media (max-width: 425px) {
+                body {
+                    padding-left: 0px;
+                }
+
+                #styleBox {
+                    width: 320px;
+                }
+
+                #checkboxesDiv {
+                    font-size: 16px;
+                    padding: 0px 0px 5% 0px;
+                }
+
+                #newCallBtn,
+                #copyBtn {
+                    font-size: 14px;
+                }
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    padding-left: 0px;
+                }
+
+                #styleBox {
+                    width: 320px;
+                }
+
+                #updateButton, #clearButton {
+                    font-size: 11px;
+                }
+
+                #checkboxesDiv {
+                    font-size: 14px;
+                    padding: 0px 0px 5% 0px;
+                }
+
+                #newCallBtn,
+                #copyBtn {
+                    font-size: 14px;
+                }
+            }
+
+            @media (min-width: 1440px) {
+
+                #styleBox {
+                    width: 445px;
+                }
+
+                .selectionStyle {
+                    margin: 0% 0% 2% 0%;
+                }
+
+                #checkboxesDiv {
+                    font-size: 20px;
+                    padding: 0px 0px 5% 0px;
+                }
+
+                #newCallBtn,
+                #copyBtn {
+                    font-size: 15px;
+                }
+            }
