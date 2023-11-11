@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/docStyle.css">
+    <link rel="stylesheet" href="./css/alert.css">
     <link rel="icon" type="image/png" sizes="16x16"
         href="https://www.optimum.com/themes/custom/optimum/slice/favicon/favicon-16x16.png">
     <title>CheckMate - Voice</title>
@@ -25,6 +26,13 @@
 <body>
     <div id="docToolSectionBody">
         <h2 id="headSubject">Optimum Voice <br><span class="headSpan">Documentation Tool</span></h2>
+
+        <div class="alert" id="warning-alert">
+            <h3>Important Notice</h3>
+            <p>once you click "New Call",<br>The page will reload, no data will be retained.</p>
+            <a class="close">&times;</a>
+        </div>
+        
         <div id="styleBox">
 
             <div class="UserInput">
@@ -376,23 +384,22 @@
         </div>
 
         <br>
-
+        <div id="alertMessage">Your Note successfully Copied.</div>
+        <br>
         <textarea id="sentence" rows="12" cols="50" readonly></textarea>
 
         <br>
 
         <div class="footer">
-            <p>Created By <a id="spanBold" href="https://msalahah.github.io/R4/" target="_blank">Mohammed Melok</a> |
+            <p>Coded By <a id="spanBold" href="https://msalahah.github.io/R4/" target="_blank">Mohammed Melok</a> |
                 All Rights Reserved&copy;</p>
+                <div id="iframeContainer"></div>
         </div>
     </div>
 
 
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="./javaScript/scrollreveal.min.js" defer></script>
-
     <!--=============== MAIN JS ===============-->
-    <script src="./javaScript/menuScript.js" defer></script>
+    <script src="./javaScript/jquery-3.6.4.min.js" defer></script>
     <script src="./javaScript/docScript.js" defer></script>
 </body>
 

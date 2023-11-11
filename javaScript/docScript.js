@@ -1,10 +1,22 @@
 //              بِسْم اللَّه الرَّحْمن الرَّحِيم
 //  وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا
+
 var sentenceParts = [];
 
 function updateSentence() {
     document.getElementById('sentence').value = sentenceParts.join(' ').trim();
 }
+
+// =============Head Title Href JS=============
+
+document.getElementById('headSubject').addEventListener('click', function () {
+    window.location.href = './index.html';
+});
+
+
+
+
+// =============Custom User Input JS=============
 
 function updateSentenceWithUserInput() {
     var userInput = document.getElementById('userInput').value;
@@ -45,70 +57,58 @@ document.getElementById("clearButton").addEventListener("click", clearUserInput)
 
 
 
+// =============Alert JS=============
+
+$(document).ready(function () {
+    function hideAlert() {
+        $(".alert").fadeOut();
+    }
+
+    setTimeout(hideAlert, 15000); // 30 seconds
+});
 
 
 
 
-// // Create an instance of Typo
-// var dictionary = new Typo("en_US"); // Use the appropriate dictionary for your language
+// =============iFrame JS=============
 
-// // Textarea 1
-// const userInput = document.getElementById("userInput");
+const spanBold = document.getElementById('spanBold');
+const iframeContainer = document.getElementById('iframeContainer');
 
-// userInput.addEventListener("input", function () {
-//     const inputValue = userInput.value;
+spanBold.addEventListener('mouseover', () => {
+    // Create an iframe element
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://msalahah.github.io/R4/';
+    iframe.width = '100%';
+    iframe.height = '100%';
+    iframe.frameBorder = 0;
 
-//     // Split the input text into words
-//     const words = inputValue.split(" ");
+    // Append the iframe to the container
+    iframeContainer.innerHTML = ''; // Clear previous content
+    iframeContainer.appendChild(iframe);
 
-//     // Iterate through the words and correct spelling
-//     const correctedWords = words.map((word) => {
-//         const correctedWord = dictionary.suggest(word);
-//         return correctedWord.length > 0 ? correctedWord[0] : word;
-//     });
+    // Display the container
+    iframeContainer.style.display = 'block';
+});
 
-//     // Join the corrected words back into a sentence
-//     const correctedValue = correctedWords.join(" ");
-
-//     userInput.value = correctedValue;
-// });
-
-// // Textarea 2
-// const sentence = document.getElementById("sentence");
-
-// sentence.addEventListener("input", function () {
-//     const inputValue = sentence.value;
-
-//     // Split the input text into words
-//     const words = inputValue.split(" ");
-
-//     // Iterate through the words and correct spelling
-//     const correctedWords = words.map((word) => {
-//         const correctedWord = dictionary.suggest(word);
-//         return correctedWord.length > 0 ? correctedWord[0] : word;
-//     });
-
-//     // Join the corrected words back into a sentence
-//     const correctedValue = correctedWords.join(" ");
-
-//     sentence.value = correctedValue;
-// });
+spanBold.addEventListener('mouseout', () => {
+    // Hide the container when mouse leaves the spanBold element
+    iframeContainer.style.display = 'none';
+});
 
 
 
 
+// =============the main two buttons and the alert message JS=============
 
-
-
-
-
-// function reloadPage() {
-//     window.location.reload();
-// }
-
-
-function reloadPageAndShowAlert() {
+function reloadPage() {
     window.location.reload();
+}
+
+function copyToClipboard() {
+    var textarea = document.getElementById('sentence');
+    textarea.select();
+    document.execCommand('copy');
     alertFunction(); // Call the alertFunction to display the alert
 }
 
@@ -120,12 +120,6 @@ function alertFunction() {
     }, 3000);
 }
 
-
-function copyToClipboard() {
-    var textarea = document.getElementById('sentence');
-    textarea.select();
-    document.execCommand('copy');
-}
 
 // SUB-OPTIONS FUNCTIONS BELOW
 // SUBs=======================================================================
@@ -324,6 +318,9 @@ function togglesubMainCheckbox5Options() {
     }
     updateSentence();
 }
+
+
+
 
 // SUBs=======================================================================
 window.onload = function () {

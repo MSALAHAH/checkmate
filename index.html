@@ -70,36 +70,15 @@
         </div>
     </section>
     <div class="footer">
-        <p>Created By <a id="spanBold" href="https://msalahah.github.io/R4/" target="_blank">Mohammed Melok</a> | All
-            Rights Reserved&copy;</p>
+        <p>Coded By <a id="spanBold" href="https://msalahah.github.io/R4/" target="_blank">Mohammed Melok</a> |
+            All Rights Reserved&copy;</p>
+        <div id="iframeContainer"></div>
     </div>
 
     <!-- تم بفضل الله -->
 
-    <script>
-        const typeElements = document.querySelectorAll('[id="typeEffect"]');
-        typeElements.forEach((element) => {
-            let text = element.innerText;
-            element.innerText = '';
-
-            function typeWriter(text, i, element) {
-                if (i < text.length) {
-                    if (text.charAt(i) === ' ') {
-                        element.innerHTML += '&nbsp;';
-                    } else {
-                        element.innerText += text.charAt(i);
-                    }
-                    i++;
-                    setTimeout(function () {
-                        typeWriter(text, i, element);
-                    }, 120); //speed
-                }
-            }
-
-            typeWriter(text, 0, element);
-        });
-
-    </script>
+    <script src="./javaScript/jquery-3.6.4.min.js"></script>
+    <script src="./javaScript/typeEffect.js" defer></script>
 </body>
 
 </html>
