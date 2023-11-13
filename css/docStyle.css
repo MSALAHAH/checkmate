@@ -359,7 +359,7 @@
                 font-size: 12px;
                 font-family: "Regular", sans-serif;
                 font-weight: bold;
-                text-transform: capitalize;
+                text-transform: none;
                 border-width: 5px;
                 margin-bottom: 10%;
                 border-style: outset;
