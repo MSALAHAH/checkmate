@@ -72,10 +72,10 @@ $(document).ready(function () {
 
 // =============iFrame JS=============
 
-const spanBold = document.getElementById('spanBold');
+const footerSpanBold = document.getElementById('footerSpanBold');
 const iframeContainer = document.getElementById('iframeContainer');
 
-spanBold.addEventListener('mouseover', () => {
+footerSpanBold.addEventListener('mouseover', () => {
     // Create an iframe element
     const iframe = document.createElement('iframe');
     iframe.src = 'https://msalahah.github.io/R4/';
@@ -91,8 +91,8 @@ spanBold.addEventListener('mouseover', () => {
     iframeContainer.style.display = 'block';
 });
 
-spanBold.addEventListener('mouseout', () => {
-    // Hide the container when mouse leaves the spanBold element
+footerSpanBold.addEventListener('mouseout', () => {
+    // Hide the container when mouse leaves the footerSpanBold element
     iframeContainer.style.display = 'none';
 });
 
