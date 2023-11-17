@@ -438,16 +438,7 @@
             }
 
 
-            @media (max-width: 991px) {
-                html {
-                    font-size: 55%;
-                }
-
-                section {
-                    padding: 3rem 2rem;
-                }
-            }
-
+            
 
             @media (max-width: 450px) {
                 html {
@@ -456,5 +447,26 @@
 
                 .footer {
                     bottom: -333px;
+                }
+            }
+
+
+            @media (max-width: 768px) {
+                .heading {
+                    transform: translate(-50%, -130%);
+                }
+
+                .services .box-container {
+                    padding: 25% 3% 5% 3%;
+                }
+            }
+
+            @media (max-width: 991px) {
+                html {
+                    font-size: 55%;
+                }
+
+                section {
+                    padding: 3rem 2rem;
                 }
             }
