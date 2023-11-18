@@ -438,7 +438,7 @@
             }
 
 
-            
+
 
             @media (max-width: 450px) {
                 html {
@@ -453,7 +453,8 @@
 
             @media (max-width: 768px) {
                 .heading {
-                    transform: translate(-50%, -130%);
+                    transform: translate(-50%, -110%);
+                    width: 360px;
                 }
 
                 .services .box-container {
@@ -468,5 +469,9 @@
 
                 section {
                     padding: 3rem 2rem;
+                }
+
+                .heading {
+                    transform: translate(-50%, -92%);
                 }
             }
