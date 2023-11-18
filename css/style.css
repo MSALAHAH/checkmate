@@ -74,15 +74,11 @@
             }
 
             .heading {
-                position: absolute;
-                top: 13%;
-                left: 50%;
-                transform: translate(-50%, -50%);
                 text-align: center;
                 padding: 2%;
                 margin-bottom: 2rem;
                 background: #59616bb3;
-                width: 400px;
+                width: 100%;
                 border-radius: 23px;
             }
 
@@ -99,7 +95,7 @@
             }
 
             .services .box-container {
-                padding: 15% 3% 5% 3%;
+                padding: 3% 3% 5% 3%;
                 display: -ms-grid;
                 display: grid;
                 -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
@@ -452,14 +448,7 @@
 
 
             @media (max-width: 768px) {
-                .heading {
-                    transform: translate(-50%, -110%);
-                    width: 360px;
-                }
-
-                .services .box-container {
-                    padding: 25% 3% 5% 3%;
-                }
+                
             }
 
             @media (max-width: 991px) {
@@ -469,9 +458,5 @@
 
                 section {
                     padding: 3rem 2rem;
-                }
-
-                .heading {
-                    transform: translate(-50%, -92%);
                 }
             }
