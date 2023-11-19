@@ -324,33 +324,21 @@ function togglesubMainCheckbox5Options() {
 
 // DOWNLOAD BUTTON ===========================
 
-// Function to download a file
-async function downloadFile(fileUrl, fileName) {
+async function keepScreenAwake() {
     try {
-        const response = await fetch(fileUrl);
-        const blob = await response.blob();
+        // Request a wake lock
+        const wakeLock = await navigator.wakeLock.request('screen');
 
-        const link = document.createElement('a');
-        link.href = URL.createObjectURL(blob);
-        link.download = fileName;
+        // Log a message when the wake lock is active
+        console.log("Screen will stay awake indefinitely.");
 
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        // You can release the wake lock later if needed
+        // wakeLock.release();
     } catch (error) {
-        console.error('Error downloading file:', error);
+        // Handle errors, e.g., if the browser does not support the Wake Lock API
+        console.error("Error requesting wake lock:", error);
     }
 }
-
-// Function to handle button click and initiate downloads
-function handleDownloadButtonClick() {
-    downloadFile('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/screenAwake.bat', 'screenAwake.bat');
-    downloadFile('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/nircmd.exe', 'nircmd.exe');
-}
-
-// Attach the click event to the button
-document.getElementById('downloadFileBtn').addEventListener('click', handleDownloadButtonClick);
-
 
 //=============================================
 
