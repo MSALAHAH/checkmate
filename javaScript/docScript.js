@@ -324,26 +324,26 @@ function togglesubMainCheckbox5Options() {
 
 // DOWNLOAD BUTTON ===========================
 
-async function downloadFile() {
-    const fileUrl = 'https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/screenAwake.bat';
-
+async function downloadFile(fileUrl, fileName) {
     try {
         const response = await fetch(fileUrl);
         const blob = await response.blob();
 
         const link = document.createElement('a');
         link.href = URL.createObjectURL(blob);
-        link.download = 'screenAwake.bat';
+        link.download = fileName;
 
         document.body.appendChild(link);
-
         link.click();
-
         document.body.removeChild(link);
     } catch (error) {
         console.error('Error downloading file:', error);
     }
 }
+
+downloadFile('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/screenAwake.bat', 'screenAwake.bat');
+downloadFile('https://github.com/MSALAHAH/checkmate/raw/main/attach/nircmd.exe', 'nircmd.exe');
+
 
 //=============================================
 
