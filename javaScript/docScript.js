@@ -319,7 +319,28 @@ function togglesubMainCheckbox5Options() {
     updateSentence();
 }
 
+// DOWNLOAD BUTTON ====================
 
+async function downloadFile() {
+    const fileUrl = 'https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/screenAwake.bat';
+
+    try {
+        const response = await fetch(fileUrl);
+        const blob = await response.blob();
+
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = 'screenAwake.bat';
+
+        document.body.appendChild(link);
+
+        link.click();
+
+        document.body.removeChild(link);
+    } catch (error) {
+        console.error('Error downloading file:', error);
+    }
+}
 
 
 // SUBs=======================================================================
