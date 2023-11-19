@@ -319,7 +319,10 @@ function togglesubMainCheckbox5Options() {
     updateSentence();
 }
 
-// DOWNLOAD BUTTON ====================
+// SUBs ABOVE=======================================================================
+
+
+// DOWNLOAD BUTTON ===========================
 
 async function downloadFile() {
     const fileUrl = 'https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/screenAwake.bat';
@@ -342,8 +345,8 @@ async function downloadFile() {
     }
 }
 
+//=============================================
 
-// SUBs=======================================================================
 window.onload = function () {
     var checkboxes = document.getElementsByName('checkbox');
     for (var i = 0; i < checkboxes.length; i++) {
