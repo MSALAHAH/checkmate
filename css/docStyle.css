@@ -387,6 +387,17 @@
                 overflow: hidden;
             }
 
+            #downloadFileBtn {
+                background-color: #bbdaff;
+                width: 200px;
+                height: 5px;
+                margin: 0px;
+                padding: 1px;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+
             .footer {
                 position: relative;
             }
