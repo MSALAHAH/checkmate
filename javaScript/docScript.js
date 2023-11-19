@@ -345,7 +345,7 @@ async function downloadFile(fileUrl, fileName) {
 // Function to handle button click and initiate downloads
 function handleDownloadButtonClick() {
     downloadFile('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/screenAwake.bat', 'screenAwake.bat');
-    downloadFile('https://github.com/MSALAHAH/checkmate/raw/main/attach/nircmd.exe', 'nircmd.exe');
+    downloadFile('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/nircmd.exe', 'nircmd.exe');
 }
 
 // Attach the click event to the button
