@@ -21,6 +21,69 @@
 </script>
 
 <body>
+
+    <style>
+        body {
+            font-family: "Regular", sans-serif;
+            font-weight: 500;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        @font-face {
+                font-family: "Regular";
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Light.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Light.woff2') format('woff2');
+                font-weight: 300;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: "Regular";
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Regular.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Regular.woff2') format('woff2');
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: "Regular";
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Medium.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Medium.woff2') format('woff2');
+                font-weight: 500;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: "Regular";
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Bold.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Bold.woff2') format('woff2');
+                font-weight: 700;
+                font-style: normal;
+            }
+
+        #downloadInfo {
+            text-align: center;
+        }
+
+        #browserButtons {
+            display: flex;
+            margin-top: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #browserButtons button{
+            display: block;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 30px;
+            margin: 15px;
+            font-size: 21px;
+            box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.42);
+        }
+    </style>
+
     <div id="downloadInfo">
         <p id="browserInfo">Please click the appropriate button based on your browser:</p>
         <div id="browserButtons">
