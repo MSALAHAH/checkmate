@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- بِسْم اللَّه الرَّحْمن الرَّحِيم -->
+<!-- وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا -->
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://www.optimum.com/themes/custom/optimum/slice/favicon/favicon-16x16.png">
+    <title>CheckMate - Stay Awake</title>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K9F091RHMT"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-K9F091RHMT');
+</script>
+
+<body>
+    <div id="downloadInfo">
+        <p id="browserInfo">Please click the appropriate button based on your browser:</p>
+        <div id="browserButtons">
+            <button id="edgeButton" style="display: none;" onclick="handleButtonClick('Edge')">Microsoft Edge</button>
+            <button id="chromeButton" style="display: none;" onclick="handleButtonClick('Chrome')">Google Chrome</button>
+            <button id="firefoxButton" style="display: none;" onclick="handleButtonClick('Firefox')">Mozilla Firefox</button>
+        </div>
+    </div>
+
+    <script>
+        function handleButtonClick(browser) {
+            var link;
+            if (browser === 'Edge') {
+                link = 'https://microsoftedge.microsoft.com/addons/detail/caffeine-keep-awake/kfcdcelkpooajbeepngjepgklbagnkng';
+            } else if (browser === 'Chrome') {
+                link = 'https://chromewebstore.google.com/detail/caffeine-keep-awake/fcblbbbkcneogddmpmfdchnocbpfpmag?utm_source=ext_app_menu';
+            } else if (browser === 'Firefox') {
+                link = 'https://addons.mozilla.org/en-US/firefox/addon/keep-awake-screen-only/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search';
+            } else {
+                // Default link or handle other browsers
+                link = 'https://example.com/default-link';
+            }
+
+            // Redirect to the specified link
+            window.location.href = link;
+        }
+
+        // Detect the browser and show the relevant button
+        var isEdge = /Edge\/\d./i.test(navigator.userAgent);
+        var isChrome = /Chrome/i.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        var isFirefox = /Firefox/i.test(navigator.userAgent);
+
+        if (isEdge) {
+            document.getElementById('browserInfo').innerText = 'You are using Microsoft Edge. Click the button below:';
+            document.getElementById('edgeButton').style.display = 'block';
+        } else if (isChrome) {
+            document.getElementById('browserInfo').innerText = 'You are using Google Chrome. Click the button below:';
+            document.getElementById('chromeButton').style.display = 'block';
+        } else if (isFirefox) {
+            document.getElementById('browserInfo').innerText = 'You are using Mozilla Firefox. Click the button below:';
+            document.getElementById('firefoxButton').style.display = 'block';
+        } else {
+            // Display a default message or handle other browsers
+            document.getElementById('browserInfo').innerText = 'Click the button below:';
+            // Display the default button if needed
+            document.getElementById('edgeButton').style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
