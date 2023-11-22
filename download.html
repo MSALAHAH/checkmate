@@ -77,19 +77,38 @@
             display: block;
             border: none;
             border-radius: 10px;
+            cursor: pointer;
             padding: 10px 30px;
             margin: 15px;
             font-size: 21px;
             box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.42);
+        }
+
+        #edgeLogo {
+            background: url(https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/edgeLogo.png);
+            position: relative;
+            background-size: 10%;
+            background-repeat: no-repeat;
+            background-position: right;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        #chromeLogo {
+            background: url(https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/chromeLogo.png);
+        }
+
+        #firefoxLogo {
+            background: url(https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/firefoxLogo.png);
         }
     </style>
 
     <div id="downloadInfo">
         <p id="browserInfo">Please click the appropriate button based on your browser:</p>
         <div id="browserButtons">
-            <button id="edgeButton" style="display: none;" onclick="handleButtonClick('Edge')">Microsoft Edge <img id="edgeLogo" href="https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/edgeLogo.png"></button>
-            <button id="chromeButton" style="display: none;" onclick="handleButtonClick('Chrome')">Google Chrome <img id="chromeLogo" href="https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/chromeLogo.png"></button>
-            <button id="firefoxButton" style="display: none;" onclick="handleButtonClick('Firefox')">Mozilla Firefox <img id="firefoxLogo" href="https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/firefoxLogo.png"></button>
+            <button id="edgeButton" style="display: none;" onclick="handleButtonClick('Edge')">Microsoft Edge</button>
+            <button id="chromeButton" style="display: none;" onclick="handleButtonClick('Chrome')">Google Chrome</button>
+            <button id="firefoxButton" style="display: none;" onclick="handleButtonClick('Firefox')">Mozilla Firefox</button>
             <button id="revealAllButton" onclick="revealAllButtons()">Not Your Browser?</button>
         </div>
     </div>
