@@ -27,6 +27,7 @@
             <button id="edgeButton" style="display: none;" onclick="handleButtonClick('Edge')">Microsoft Edge</button>
             <button id="chromeButton" style="display: none;" onclick="handleButtonClick('Chrome')">Google Chrome</button>
             <button id="firefoxButton" style="display: none;" onclick="handleButtonClick('Firefox')">Mozilla Firefox</button>
+            <button id="revealAllButton" onclick="revealAllButtons()">Not My Browser</button>
         </div>
     </div>
 
@@ -39,19 +40,25 @@
                 link = 'https://chromewebstore.google.com/detail/caffeine-keep-awake/fcblbbbkcneogddmpmfdchnocbpfpmag?utm_source=ext_app_menu';
             } else if (browser === 'Firefox') {
                 link = 'https://addons.mozilla.org/en-US/firefox/addon/keep-awake-screen-only/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search';
-            } else {
-                // Default link or handle other browsers
-                link = 'https://example.com/default-link';
             }
 
             // Redirect to the specified link
             window.location.href = link;
         }
 
+        function revealAllButtons() {
+            // Show all buttons
+            document.getElementById('edgeButton').style.display = 'block';
+            document.getElementById('chromeButton').style.display = 'block';
+            document.getElementById('firefoxButton').style.display = 'block';
+            document.getElementById('revealAllButton').style.display = 'none';
+            document.getElementById('browserInfo').innerText = 'Please click the appropriate button based on your browser:';
+        }
+
         // Detect the browser and show the relevant button
-        var isEdge = /Edge\/\d./i.test(navigator.userAgent);
-        var isChrome = /Chrome/i.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-        var isFirefox = /Firefox/i.test(navigator.userAgent);
+        var isEdge = navigator.userAgent.includes("Edg");
+        var isChrome = navigator.userAgent.includes("Chrome");
+        var isFirefox = navigator.userAgent.includes("Firefox");
 
         if (isEdge) {
             document.getElementById('browserInfo').innerText = 'You are using Microsoft Edge. Click the button below:';
