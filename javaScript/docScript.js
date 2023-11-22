@@ -322,24 +322,6 @@ function togglesubMainCheckbox5Options() {
 // SUBs ABOVE=======================================================================
 
 
-// DOWNLOAD BUTTON ===========================
-
-async function keepScreenAwake() {
-    try {
-        // Request a wake lock
-        const wakeLock = await navigator.wakeLock.request('screen');
-
-        // Log a message when the wake lock is active
-        console.log("Screen will stay awake indefinitely.");
-
-        // You can release the wake lock later if needed
-        // wakeLock.release();
-    } catch (error) {
-        // Handle errors, e.g., if the browser does not support the Wake Lock API
-        console.error("Error requesting wake lock:", error);
-    }
-}
-
 //=============================================
 
 window.onload = function () {
