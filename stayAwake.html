@@ -84,7 +84,7 @@
             border: none;
             border-radius: 10px;
             cursor: pointer;
-            padding: 10px 30px;
+            padding: 10px 40px 10px 15px;
             margin: 15px;
             font-size: 21px;
             box-shadow: 0px 0px 7px 1px #7b7b7b87;
@@ -95,13 +95,33 @@
             background-size: 32px;
         }
 
+        #edgeButton:hover {
+            background-size: 175px;
+            transition: all 0.3s ease;
+            color: #00000000;
+        }
+
         #chromeButton {
                     background: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/chromeLogo.png') no-repeat right center;
+                    background-size: 32px;
                 }
+
+        #chromeButton:hover {
+            background-size: 195px;
+            transition: all 0.3s ease;
+            color: #00000000;
+        }
 
         #firefoxButton {
                     background: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/firefoxLogo.png') no-repeat right center;
+                    background-size: 32px;
                 }
+
+        #firefoxButton:hover {
+            background-size: 175px;
+            transition: all 0.3s ease;
+            color: #00000000;
+        }
 
     </style>
 
@@ -111,7 +131,7 @@
             <button id="edgeButton" style="display: none;" onclick="handleButtonClick('Edge')">Microsoft Edge</button>
             <button id="chromeButton" style="display: none;" onclick="handleButtonClick('Chrome')">Google Chrome</button>
             <button id="firefoxButton" style="display: none;" onclick="handleButtonClick('Firefox')">Mozilla Firefox</button>
-            <button id="revealAllButton" onclick="revealAllButtons()">Not Your Browser?</button>
+            <button id="revealAllButton" onclick="revealAllButtons()" style="padding: 10px 30px;">Not Your Browser?</button>
         </div>
     </div>
 
