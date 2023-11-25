@@ -398,8 +398,40 @@
                 cursor: pointer;
             }
 
+            #chatBotButton {
+                font-family: inherit;
+                font-weight: 600;
+                background-color: #ffffff;
+                margin: 0px;
+                padding: 9px;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+
             .footer {
                 position: relative;
+            }
+
+            #iframeContainer2 {
+                display: none;
+                position: absolute;
+                bottom: -440px;
+                right: 30px;
+                animation: fadeIn 0.5s ease-out;
+            }
+          
+            @keyframes fadeIn {
+              from {
+                opacity: 0;
+              }
+              to {
+                opacity: 1;
+              }
+            }
+
+            #chatbotIframe {
+                border-radius: 12px;
             }
 
             #iframeContainer {
