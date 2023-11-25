@@ -512,6 +512,11 @@
                 #copyBtn {
                     font-size: 14px;
                 }
+
+                #iframeContainer2 {
+                    bottom: -235px;
+                    right: 10px;
+                }
             }
 
             @media (min-width: 1440px) {
