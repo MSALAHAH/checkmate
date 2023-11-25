@@ -1,16 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="ChatBotCSS.css">
-    <script src="ChatBotScript.js" defer></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
-    <link rel="icon" type="image/png" sizes="16x16" href="https://www.optimum.com/themes/custom/optimum/slice/favicon/favicon-16x16.png">
-    
-    <title>Optimum CX-Wizard</title>
+    <link rel="stylesheet" href="./css/chatBotStyle.css">
+    <title>Chatbot</title>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -24,62 +19,17 @@
 </script>
 
 <body>
-    <div class="l-navbar" id="navbar">
-        <nav class="nav">
-            <div>
-                <div class="nav__brand">
-                    <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
-                    <a href="#" class="nav__logo">Get Tools</a>
-                </div>
-
-                <div class="nav__list">
-                    <a href="index.html" class="nav__link active">
-                    <ion-icon name="cash-outline" class="nav__icon"></ion-icon>
-                    <span class="nav__name">Non-Pay Documentation Tool</span>
-                    </a>
-
-                    <a href="ChatBotIndex.html" class="nav__link active">
-                        <ion-icon name="albums-outline"></ion-icon>
-                        <span class="nav__name"> Optimum CX-Wizard</span>
-                        </a>
-
-                        <div  class="nav__link collapse">
-                            <ion-icon name="finger-print-outline" class="nav__icon"></ion-icon>
-                            <span class="nav__name">Projects - Coming Soon</span>
-
-                            <ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
-
-                            <ul class="collapse__menu">
-                            <a href="./projects/clock001/index.html" class="collapse__sublink">Beta.Clock</a>
-                            </ul>
-                        </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-
     <div class="chatbot">
-        <header>
-            <h2>CX-Wizard Chatbot</h2>
-        </header>
-        <ul class="chatbox">
-            <li class="chat incoming">
-            </li>
-
-            <li class="chat ongoing">
-            </li>
-        </ul>
-<br>
+        <ul class="chatbox"></ul>
         <div class="chat-Input">
-            <textarea placeholder="Ask Your Question or Enter The Full Error Message..." required></textarea>
-            <span id="sendBtn"><ion-icon name="send-outline"></ion-icon></span>
+            <textarea placeholder="Type your message..."></textarea>
+            <span id="sendBtn">Send</span>
         </div>
     </div>
 
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="./scrollreveal.min.js" defer></script>
+    <iframe src="./index.html" width="350" height="450" frameborder="0" scrolling="no"></iframe>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="./menuScript.js" defer></script>
+    <script src="./javaScript/ChatBotScript.js"></script>
 </body>
+
 </html>

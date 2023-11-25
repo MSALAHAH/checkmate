@@ -3,7 +3,7 @@
 const errorDatabase = [
     {
         errorMessage: "Error code ABC123: Database connection failed",
-        solution: "To fix this issue, check your database credentials and ensure the database server is running."
+        solution: `To fix this issue, check your database credentials and ensure the database server is running.`
     },
     {
         errorMessage: "Error code XYZ456: File not found",
@@ -26,7 +26,6 @@ const errorDatabase = [
 document.addEventListener("DOMContentLoaded", function () {
     const chatbot = document.querySelector(".chatbot");
     const chatbox = document.querySelector(".chatbox");
-
     const chatInput = document.querySelector(".chat-Input textarea");
     const sendChatbtn = document.querySelector(".chat-Input span#sendBtn");
 
@@ -39,54 +38,65 @@ document.addEventListener("DOMContentLoaded", function () {
         return chatLi;
     }
 
+    // Introduce the bot when the page is loaded
+    const botIntroMessage = "Hello!<br>how can i help?";
+    chatbox.appendChild(createChatLi(botIntroMessage, "incoming"));
+
     const handleChat = () => {
         userMessage = chatInput.value.trim();
         if (!userMessage) return;
 
         chatbox.appendChild(createChatLi(userMessage, "outgoing"));
         chatInput.value = '';
+        adjustTextareaHeight(); // Adjust textarea height after sending a message
 
-        // Check if the message is an error and handle it accordingly
         const chatbotResponse = handleErrorMessage(userMessage);
         chatbox.appendChild(createChatLi(chatbotResponse, "incoming"));
+        adjustTextareaHeight(); // Adjust textarea height after receiving a message
 
-        // Scroll to the bottom when a new message is added
         chatbox.scrollTop = chatbox.scrollHeight;
     }
 
+    const adjustTextareaHeight = () => {
+        chatInput.style.height = "auto";
+        chatInput.style.height = (chatInput.scrollHeight) + "px";
+    }
+
+    chatInput.addEventListener("input", adjustTextareaHeight); // Adjust textarea height while typing
+
     chatInput.addEventListener("keydown", function (event) {
-        if (event.key === "Enter") {
+        if (event.key === "Enter" && !event.shiftKey) {
             event.preventDefault();
             handleChat();
         }
     });
 
     sendChatbtn.addEventListener("click", handleChat);
-});
 
-// Function to handle incoming error messages
-function handleErrorMessage(errorMessage) {
-    // Iterate through the error database to find a match
-    for (const entry of errorDatabase) {
-        if (errorMessage.includes(entry.errorMessage)) {
-            return entry.solution;
+    // Function to handle incoming error messages
+    function handleErrorMessage(errorMessage) {
+        // Iterate through the error database to find a match
+        for (const entry of errorDatabase) {
+            if (errorMessage.includes(entry.errorMessage)) {
+                return entry.solution;
+            }
         }
+
+        // If no match is found, provide a generic response
+        return getChatbotResponse(errorMessage);
     }
 
-    // If no match is found, provide a generic response
-    return getChatbotResponse(errorMessage);
-}
+    // Example responses based on user input
+    function getChatbotResponse(userMessage) {
+        const responses = {
+            "hello": "Hello! How can I assist you today?",
+            "hi": "Hi, How is it going?",
+            "how are you": "I'm just a computer program, but I'm here to help.",
+            "goodbye": "Goodbye!",
+            "default": "I'm not sure I understand. Can you please rephrase or ask another question?"
+        };
 
-// Example responses based on user input
-function getChatbotResponse(userMessage) {
-    const responses = {
-        "hello": "Hello! How can I assist you today?",
-        "hi": "Hi, How is it going?",
-        "how are you": "I'm just a computer program, but I'm here to help.",
-        "goodbye": "Goodbye! Feel free to come back if you have more questions.",
-        "default": "I'm not sure I understand. Can you please rephrase or ask another question?"
-    };
-
-    const lowercaseMessage = userMessage.toLowerCase();
-    return responses[lowercaseMessage] || responses["default"];
-}
+        const lowercaseMessage = userMessage.toLowerCase();
+        return responses[lowercaseMessage] || responses["default"];
+    }
+});
