@@ -78,32 +78,32 @@ $(document).ready(function () {
 //   }
 
 
-  //self profile iFrame
-const footerSpanBold = document.getElementById('footerSpanBold');
-const iframeContainer = document.getElem
+//   //self profile iFrame
+// const footerSpanBold = document.getElementById('footerSpanBold');
+// const iframeContainer = document.getElem
 
-getElementById('iframeContainer');
+// getElementById('iframeContainer');
 
-footerSpanBold.addEventListener('mouseover', () => {
-    // Create an iframe element
-    const iframe = document.createElement('iframe');
-    iframe.src = 'https://msalahah.github.io/R4/';
-    iframe.width = '100%';
-    iframe.height = '100%';
-    iframe.frameBorder = 0;
+// footerSpanBold.addEventListener('mouseover', () => {
+//     // Create an iframe element
+//     const iframe = document.createElement('iframe');
+//     iframe.src = 'https://msalahah.github.io/R4/';
+//     iframe.width = '100%';
+//     iframe.height = '100%';
+//     iframe.frameBorder = 0;
 
-    // Append the iframe to the container
-    iframeContainer.innerHTML = ''; // Clear previous content
-    iframeContainer.appendChild(iframe);
+//     // Append the iframe to the container
+//     iframeContainer.innerHTML = ''; // Clear previous content
+//     iframeContainer.appendChild(iframe);
 
-    // Display the container
-    iframeContainer.style.display = 'block';
-});
+//     // Display the container
+//     iframeContainer.style.display = 'block';
+// });
 
-footerSpanBold.addEventListener('mouseout', () => {
-    // Hide the container when mouse leaves the footerSpanBold element
-    iframeContainer.style.display = 'none';
-});
+// footerSpanBold.addEventListener('mouseout', () => {
+//     // Hide the container when mouse leaves the footerSpanBold element
+//     iframeContainer.style.display = 'none';
+// });
 
 
 
