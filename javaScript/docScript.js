@@ -72,10 +72,10 @@ $(document).ready(function () {
 
 // =============iFrame JS=============
 
-function toggleIframe() { //chatbot iframe
-    var iframeContainer = document.getElementById('iframeContainer');
-    iframeContainer.style.display = (iframeContainer.style.display === 'none' || iframeContainer.style.display === '') ? 'block' : 'none';
-  }
+// function toggleIframe() { //chatbot iframe
+//     var iframeContainer = document.getElementById('iframeContainer');
+//     iframeContainer.style.display = (iframeContainer.style.display === 'none' || iframeContainer.style.display === '') ? 'block' : 'none';
+//   }
 
 
   //self profile iFrame
