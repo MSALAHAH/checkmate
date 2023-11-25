@@ -82,7 +82,7 @@ function toggleIframe() { //chatbot iframe
 const footerSpanBold = document.getElementById('footerSpanBold');
 const iframeContainer = document.getElem
 
-entById('iframeContainer');
+getElementById('iframeContainer');
 
 footerSpanBold.addEventListener('mouseover', () => {
     // Create an iframe element
