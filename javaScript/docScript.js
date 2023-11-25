@@ -72,8 +72,17 @@ $(document).ready(function () {
 
 // =============iFrame JS=============
 
+function toggleIframe() { //chatbot iframe
+    var iframeContainer = document.getElementById('iframeContainer');
+    iframeContainer.style.display = (iframeContainer.style.display === 'none' || iframeContainer.style.display === '') ? 'block' : 'none';
+  }
+
+
+  //self profile iFrame
 const footerSpanBold = document.getElementById('footerSpanBold');
-const iframeContainer = document.getElementById('iframeContainer');
+const iframeContainer = document.getElem
+
+entById('iframeContainer');
 
 footerSpanBold.addEventListener('mouseover', () => {
     // Create an iframe element
