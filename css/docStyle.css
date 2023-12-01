@@ -7,11 +7,11 @@
             }
             
             body {
-                /* background: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/0bf0a910738b5d9d6b14bccc6e2fba1ffa9cf635/attach/blob.svg'); */
+                background: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/0bf0a910738b5d9d6b14bccc6e2fba1ffa9cf635/attach/blob02.svg');
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
-                background-image: linear-gradient(to right top, #051937, #057abf, #00a1af, #00d173a8, #057abf);
+                /* background-image: linear-gradient(to right top, #051937, #057abf, #00a1af, #00d173a8, #057abf); */
                 margin: 0;
                 font-family: "Regular", sans-serif;
                 font-weight: 500;
