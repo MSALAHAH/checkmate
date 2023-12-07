@@ -417,8 +417,7 @@
             #iframeContainer2 {
                 display: none;
                 position: absolute;
-                bottom: -440px;
-                right: 30px;
+                bottom: -260px;
                 animation: fadeIn 0.5s ease-out;
             }
           
