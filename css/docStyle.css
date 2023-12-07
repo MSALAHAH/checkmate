@@ -468,6 +468,10 @@
                 #copyBtn {
                     font-size: 12px;
                 }
+
+                #iframeContainer2 #chatBotButton {
+                    visibility: hidden; 
+                }
             }
 
             @media (max-width: 425px) {
@@ -487,6 +491,10 @@
                 #newCallBtn,
                 #copyBtn {
                     font-size: 14px;
+                }
+
+                #iframeContainer2 #chatBotButton {
+                    visibility: hidden; 
                 }
             }
 
@@ -511,10 +519,6 @@
                 #newCallBtn,
                 #copyBtn {
                     font-size: 14px;
-                }
-
-                #iframeContainer2 #chatBotButton {
-                    visibility: hidden; 
                 }
             }
 
