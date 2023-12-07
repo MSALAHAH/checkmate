@@ -3,7 +3,12 @@
 const errorDatabase = [
     {
         errorMessage: "acp",
-        solution: `For questions about eligibility or the verification process,
+        solution: `
+        Get the Approval letter: getinternet.gov,
+        <br>
+        get the benefit with Optimum: optimum.com/acpapp,
+        <br>
+        for questions about eligibility or the verification process,
         <br>
         (888)891-2189,
         <br>
