@@ -514,8 +514,7 @@
                 }
 
                 #iframeContainer2 {
-                    bottom: -235px;
-                    width: 350px !important; 
+                    visibility: hidden; 
                 }
             }
 
