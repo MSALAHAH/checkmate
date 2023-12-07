@@ -116,7 +116,33 @@ document.addEventListener("DOMContentLoaded", function () {
     function getChatbotResponse(userMessage) {
         const responses = {
             "hello": "Hello! How can I assist you today?",
-            "hi": "Hi, How is it going?",
+            "acp": `
+            Get the Approval letter: getinternet.gov,
+            <br>
+            get the benefit with Optimum: optimum.com/acpapp,
+            <br>
+            for questions about eligibility or the verification process,
+            <br>
+            (888)891-2189,
+            <br>
+            <hr>
+            if he/she want need any help with something like the below,
+            <br>
+            1- The status of your ACP application,
+            <br>
+            2- Documents needed to show if he/she qualify,
+            <br>
+            3- Assistance with the ACP Household Worksheet,
+            <br>
+            4- Resetting the account.
+            <br>
+            call the ACP Support Center at (877)384-2575
+            <br>
+            (7 days a week, from 9:00 a.m. to 9:00 p.m. ET)
+            <br>
+            <hr>
+            or E-mail ACPSupport@usac.org.
+            `,
             "how are you": "I'm just a computer program, but I'm here to help.",
             "goodbye": "Goodbye!",
             "default": "I'm not sure I understand. Can you please rephrase or ask another question?"
