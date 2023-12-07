@@ -5,10 +5,12 @@ const errorDatabase = [
         errorMessage: "ACP",
         solution: `For questions about eligibility or the verification process, let the customer call (888) 891-2189,
         <br>
+        <hr>
         and let the customer call the ACP Support Center at (877) 384-2575 (7 days a week, from 9:00 a.m. to 9:00 p.m. ET) if he/she want need any help with something like the below,
         <br>
         The status of your ACP application, Documents needed to show if he/she qualify, Assistance with the ACP Household Worksheet or Resetting the account.
         <br>
+        <hr>
         or E-mail ACPSupport@usac.org.
         `
     },
