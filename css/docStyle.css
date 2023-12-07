@@ -489,6 +489,10 @@
                 #copyBtn {
                     font-size: 14px;
                 }
+
+                #iframeContainer2 #chatBotButton {
+                    visibility: visible; 
+                }
             }
 
             @media (max-width: 768px) {
