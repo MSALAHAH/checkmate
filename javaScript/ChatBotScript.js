@@ -10,7 +10,13 @@ const errorDatabase = [
         <hr>
         if he/she want need any help with something like the below,
         <br>
-        The status of your ACP application, Documents needed to show if he/she qualify, Assistance with the ACP Household Worksheet or Resetting the account.
+        1- The status of your ACP application,
+        <br>
+        2- Documents needed to show if he/she qualify,
+        <br>
+        3- Assistance with the ACP Household Worksheet,
+        <br>
+        4- Resetting the account.
         <br>
         call the ACP Support Center at (877)384-2575
         <br>
