@@ -2,7 +2,7 @@
 //  وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا
 const errorDatabase = [
     {
-        errorMessage: "ACP",
+        errorMessage: "acp",
         solution: `For questions about eligibility or the verification process,
         <br>
         (888)891-2189,
