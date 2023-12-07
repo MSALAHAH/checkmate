@@ -400,6 +400,7 @@
             }
 
             #chatBotButton {
+                visibility: hidden;
                 font-family: inherit;
                 font-weight: 600;
                 background-color: #dadafb;
@@ -468,10 +469,6 @@
                 #copyBtn {
                     font-size: 12px;
                 }
-
-                #iframeContainer2 #chatBotButton {
-                    visibility: hidden; 
-                }
             }
 
             @media (max-width: 425px) {
@@ -491,10 +488,6 @@
                 #newCallBtn,
                 #copyBtn {
                     font-size: 14px;
-                }
-
-                #iframeContainer2 #chatBotButton {
-                    visibility: hidden; 
                 }
             }
 
@@ -520,6 +513,10 @@
                 #copyBtn {
                     font-size: 14px;
                 }
+
+                #iframeContainer2 #chatBotButton {
+                    visibility: visible; 
+                }
             }
 
             @media (min-width: 1440px) {
@@ -540,5 +537,9 @@
                 #newCallBtn,
                 #copyBtn {
                     font-size: 15px;
+                }
+
+                #iframeContainer2 #chatBotButton {
+                    visibility: visible; 
                 }
             }
