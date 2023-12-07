@@ -513,7 +513,7 @@
                     font-size: 14px;
                 }
 
-                #iframeContainer2 {
+                #iframeContainer2 #chatBotButton {
                     visibility: hidden; 
                 }
             }
