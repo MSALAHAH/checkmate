@@ -3,7 +3,7 @@
 const errorDatabase = [
     {
         errorMessage: "acp",
-        solution:`
+        solution: `
         Get the Approval letter: getinternet.gov,
         <br>
         get the benefit with Optimum: optimum.com/acpapp,
@@ -29,23 +29,23 @@ const errorDatabase = [
         <br>
         <hr>
         or E-mail ACPSupport@usac.org.
-        `,
+        `
     },
     {
-        errorMessage: "",
-        solution: ""
+        errorMessage: "Error code XYZ456: File not found",
+        solution: "This error occurs when the specified file does not exist. Make sure the file path is correct."
     },
     {
-        errorMessage: "",
-        solution: ""
+        errorMessage: "Error code DEF789: Network timeout",
+        solution: "If you're experiencing network timeouts, check your internet connection and ensure the server is reachable."
     },
     {
-        errorMessage: "",
-        solution: ""
+        errorMessage: "Error code GHI321: Invalid input",
+        solution: "This error indicates that the input data is invalid. Double-check the input and try again."
     },
     {
-        errorMessage: "",
-        solution: ""
+        errorMessage: "Error code MNO987: Access denied",
+        solution: "Access to this resource is denied. Ensure you have the necessary permissions to access it."
     }
 ];
 
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function getChatbotResponse(userMessage) {
         const responses = {
             "hello": "Hello! How can I assist you today?",
-            "hi": "Hi! How is it going today?",
+            "hi": "Hi, How is it going?",
             "how are you": "I'm just a computer program, but I'm here to help.",
             "goodbye": "Goodbye!",
             "default": "I'm not sure I understand. Can you please rephrase or ask another question?"
