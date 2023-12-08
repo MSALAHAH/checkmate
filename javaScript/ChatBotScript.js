@@ -1,5 +1,5 @@
 //              بِسْم اللَّه الرَّحْمن الرَّحِيم
-//  وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا
+//  وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭ
 const errorDatabase = [
     {
         errorMessage: "acp",
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const chatbot = document.querySelector(".chatbot");
     const chatbox = document.querySelector(".chatbox");
     const chatInput = document.querySelector(".chat-Input textarea");
-    const sendChatbtn = document.querySelector(".chat-Input span#sendBtn");
+    const sendChatBtn = document.querySelector(".chat-Input span#sendBtn");
 
     let userMessage;
 
@@ -62,10 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
         chatLi.classList.add("chat", className);
         chatLi.innerHTML = `<p>${message}</p>`;
         return chatLi;
-    }
+    };
 
     // Introduce the bot when the page is loaded
-    const botIntroMessage = "Hello!<br>how can i help?";
+    const botIntroMessage = "Hello!<br>how can I help?";
     chatbox.appendChild(createChatLi(botIntroMessage, "incoming"));
 
     const handleChat = () => {
@@ -81,35 +81,35 @@ document.addEventListener("DOMContentLoaded", function () {
         adjustTextareaHeight(); // Adjust textarea height after receiving a message
 
         chatbox.scrollTop = chatbox.scrollHeight;
-    }
+    };
 
     const adjustTextareaHeight = () => {
         chatInput.style.height = "auto";
         chatInput.style.height = (chatInput.scrollHeight) + "px";
-    }
+    };
 
     chatInput.addEventListener("input", adjustTextareaHeight); // Adjust textarea height while typing
 
-    chatInput.addEventListener("keydown", function (event) {
+    chatInput.addEventListener("keyup", function (event) {
         if (event.key === "Enter" && !event.shiftKey) {
             event.preventDefault();
             handleChat();
         }
     });
 
-    sendChatbtn.addEventListener("click", handleChat);
+    sendChatBtn.addEventListener("click", handleChat);
 
     // Function to handle incoming error messages
     function handleErrorMessage(errorMessage) {
-        // Iterate through the error database to find a match
+        const lowerCaseErrorMessage = errorMessage.toLowerCase();
+
         for (const entry of errorDatabase) {
-            if (errorMessage.includes(entry.errorMessage)) {
+            if (lowerCaseErrorMessage.includes(entry.errorMessage.toLowerCase())) {
                 return entry.solution;
             }
         }
 
-        // If no match is found, provide a generic response
-        return getChatbotResponse(errorMessage);
+        return getChatbotResponse(lowerCaseErrorMessage);
     }
 
     // Example responses based on user input
