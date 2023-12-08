@@ -1,27 +1,27 @@
 //              بِسْم اللَّه الرَّحْمن الرَّحِيم
 //  وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا
-// const errorDatabase = [
-//     {
-//         errorMessage: "",
-//         solution: ``
-//     },
-//     {
-//         errorMessage: "",
-//         solution: ""
-//     },
-//     {
-//         errorMessage: "",
-//         solution: ""
-//     },
-//     {
-//         errorMessage: "",
-//         solution: ""
-//     },
-//     {
-//         errorMessage: "",
-//         solution: ""
-//     }
-// ];
+const errorDatabase = [
+    {
+        errorMessage: "",
+        solution: ``
+    },
+    {
+        errorMessage: "",
+        solution: ""
+    },
+    {
+        errorMessage: "",
+        solution: ""
+    },
+    {
+        errorMessage: "",
+        solution: ""
+    },
+    {
+        errorMessage: "",
+        solution: ""
+    }
+];
 
 document.addEventListener("DOMContentLoaded", function () {
     const chatbot = document.querySelector(".chatbot");
@@ -91,10 +91,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const responses = {
             "hello": "Hello! How can I assist you today?",
             "hi": "Hi! How is it going today?",
-            "how are you": "I'm just a computer program, but I'm here to help.",
-            "goodbye": "Goodbye!",
-            "default": "I'm not sure I understand. Can you please rephrase or ask another question?",
-            "acp": `Get the Approval letter: getinternet.gov,
+            "acp": `
+            Get the Approval letter: getinternet.gov,
             <br>
             get the benefit with Optimum: optimum.com/acpapp,
             <br>
@@ -119,7 +117,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <br>
             <hr>
             or E-mail ACPSupport@usac.org.
-            `
+            `,
+            "how are you": "I'm just a computer program, but I'm here to help.",
+            "goodbye": "Goodbye!",
+            "default": "I'm not sure I understand. Can you please rephrase or ask another question?"
         };
 
         const lowercaseMessage = userMessage.toLowerCase();
