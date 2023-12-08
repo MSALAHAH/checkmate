@@ -1,27 +1,27 @@
 //              بِسْم اللَّه الرَّحْمن الرَّحِيم
 //  وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا
-const errorDatabase = [
-    {
-        errorMessage: "",
-        solution: ``
-    },
-    {
-        errorMessage: "",
-        solution: ""
-    },
-    {
-        errorMessage: "",
-        solution: ""
-    },
-    {
-        errorMessage: "",
-        solution: ""
-    },
-    {
-        errorMessage: "",
-        solution: ""
-    }
-];
+// const errorDatabase = [
+//     {
+//         errorMessage: "",
+//         solution: ``
+//     },
+//     {
+//         errorMessage: "",
+//         solution: ""
+//     },
+//     {
+//         errorMessage: "",
+//         solution: ""
+//     },
+//     {
+//         errorMessage: "",
+//         solution: ""
+//     },
+//     {
+//         errorMessage: "",
+//         solution: ""
+//     }
+// ];
 
 document.addEventListener("DOMContentLoaded", function () {
     const chatbot = document.querySelector(".chatbot");
