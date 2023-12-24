@@ -58,7 +58,7 @@
                 </div>
                 <div class="sub-options" id="mainCheckbox00Options" style="display: none;">
                     <label for="mainCheckbox00-1" class="custom-checkbox" title="to add the Tag [ ** LOB NAME ** ]">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox00-1" value="**NON_PAY** ">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox00-1" value="**NON_PAY**">
                         <span class="checkmark"></span>
                         **NON_PAY** Tag
                     </label>
@@ -737,14 +737,20 @@
                     <label for="mainCheckbox6-1" class="custom-checkbox"
                         title="if there's a service issue and the call will be transferred to tech support.">
                         <input type="checkbox" name="checkbox" id="mainCheckbox6-1"
-                            value="Xfer to Tech Support to resolve the service issue #TRANSFER - "> Active - Service
-                        Issue
+                            value="Xfer to Tech Support to resolve the service issue #TRANSFER - "> Service Issue
                         <span class="checkmark"></span>
                     </label>
                     <br>
                     <label for="mainCheckbox6-2" class="custom-checkbox"
-                        title="if the account is in the restoration process 'Pending Restore'. ">
+                        title="if the customer is asking about the Wi-Fi SSID or the password or any information regarding his network.">
                         <input type="checkbox" name="checkbox" id="mainCheckbox6-2"
+                            value="Xfer to Tech Support to provide information about the Wi-Fi network (SSID, Password, etc..) #TRANSFER - "> Wi-Fi Information
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox6-3" class="custom-checkbox"
+                        title="if the account is in the restoration process 'Pending Restore'. ">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-3"
                             value="Xfer to Tech Support to provision the equipment for the service to be reconnected #TRANSFER - ">
                         Pending Restore - Re-Connect
                         <span class="checkmark"></span>
@@ -753,9 +759,9 @@
                     <hr id="Divider">
 
                     <h5 class="subHeader">Sales</h5>
-                    <label for="mainCheckbox6-3" class="custom-checkbox"
+                    <label for="mainCheckbox6-4" class="custom-checkbox"
                         title="if the customer mentioned that he/she is moving and want to take the service to the new address.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-3"
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-4"
                             value="transferred to the sales team to transfer the account to another address #TRANSFER - ">
                         Move Transfer Request
                         <span class="checkmark"></span>
@@ -764,19 +770,73 @@
                     <hr id="Divider">
 
                     <h5 class="subHeader">Retention</h5>
-                    <label for="mainCheckbox6-4" class="custom-checkbox"
+                    <label for="mainCheckbox6-5" class="custom-checkbox"
                         title="if the customer called to disconnect and he paid the full balance or the past due.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-4"
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-5"
                             value="educated the customer that clearing the account balance or the full past due amount is a must to transfer the call to retention for disconnection. The call was transferred after a payment processed #TRANSFER - ">
-                        Delinquent - Payment Collected
+                        Disconnection - Payment Collected
                         <span class="checkmark"></span>
                     </label>
                     <br>
-                    <label for="mainCheckbox6-5" class="custom-checkbox"
+                    <label for="mainCheckbox6-6" class="custom-checkbox"
                         title="if thecustomer called to disconnect but refused to pay anything.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-5"
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-6"
                             value="educated the customer that clearing the account balance or the full past due amount is a must to transfer the call to Retention for disconnection. The call wasn't transferred due to the absence of any processed payment #TRANSFER - ">
-                        Delinquent - No Payment
+                        Disconnection- No Payment
+                        <span class="checkmark"></span>
+                    </label>
+
+
+                    <hr id="Divider">
+
+                    <h5 class="subHeader">Mobile</h5>
+                    <label for="mainCheckbox6-7" class="custom-checkbox"
+                        title="if the call was transferred to Mobile Care for Account Management, Billing, Service Issue, Add a Line to Existing Account, etc...">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-7"
+                            value="Xfer to Mobile Care #TRANSFER - ">
+                            Xfer to Mobile Care
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox6-8" class="custom-checkbox"
+                        title="if the call was transferred to Mobile Retention for Disconnection, Port-out Pin, Device Unlock, etc...">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-8"
+                            value="Xfer to Mobile Retention #TRANSFER - ">
+                            Xfer to Mobile Retention
+                        <span class="checkmark"></span>
+                    </label>
+                    <br>
+                    <label for="mainCheckbox6-9" class="custom-checkbox"
+                        title="if the call was transferred to Mobile Sales to create a new account, buy a new line [New Customer], etc...">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-9"
+                            value="Xfer to Mobile Sales #TRANSFER - ">
+                            Xfer to Mobile Sales
+                        <span class="checkmark"></span>
+                    </label>
+
+
+                    <hr id="Divider">
+
+
+                    <h5 class="subHeader">Business</h5>
+                    <label for="mainCheckbox6-10" class="custom-checkbox"
+                        title="if the call was transferred to Business for Account Management, Billing, etc...">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-10"
+                            value="Xfer to billing Business to discuss the account billing details #TRANSFER - ">
+                            General Billing - Business
+                        <span class="checkmark"></span>
+                    </label>
+
+
+                    <hr id="Divider">
+
+
+                    <h5 class="subHeader">Bulk Accounts</h5>
+                    <label for="mainCheckbox6-11" class="custom-checkbox"
+                        title="if the call was transferred to Business for Account Management, Billing, etc...">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox6-11"
+                            value="Bulk Residential Account - Xfer to Bulk Residential #TRANSFER - ">
+                            Xfer to Bulk Residential
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -846,7 +906,7 @@
         <button id="controlButton" ></button>
         </a>
 
-        <button id="chatBotButton" onclick="toggleIframe()">Chat With R4 🤖</button>
+        <button id="chatBotButton" onclick="toggleIframe()">Chat With Bot 🤖</button>
 
         <div id="iframeContainer2">
             <iframe id="chatbotIframe" src="./ChatBotIndex.html" width="600" height="450" frameborder="0" scrolling="no"></iframe>
