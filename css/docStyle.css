@@ -283,9 +283,11 @@
             #subMainCheckbox0Options,
             #subMainCheckbox1Options,
             #subMainCheckbox2Options,
+            #subMainCheckbox0of2Options,
             #subMainCheckbox3Options,
             #subMainCheckbox4Options,
-            #subMainCheckbox5Options {
+            #subMainCheckbox5Options
+             {
                 margin-left: 22px;
             }
 

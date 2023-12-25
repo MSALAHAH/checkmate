@@ -97,39 +97,24 @@ function alertFunction() {
 }
 
 
-// SUB-OPTIONS FUNCTIONS BELOW
-// SUBs=======================================================================
+//MAIN BOX(ES) FUNCTIONS BELOW //
 
+// MAIN BOX 01 FUNCTION [Call Info]
+function togglemainCheckbox01Options() {
+    var mainCheckbox01Checkbox = document.getElementById('mainCheckbox01');
+    var mainCheckbox01Options = document.getElementById('mainCheckbox01Options');
 
-// MAIN BOX 00 FUNCTION
-function togglemainCheckbox00Options() {
-    var mainCheckbox00Checkbox = document.getElementById('mainCheckbox00');
-    var mainCheckbox00Options = document.getElementById('mainCheckbox00Options');
-
-    if (mainCheckbox00Checkbox.checked) {
-        mainCheckbox00Options.style.display = 'block';
+    if (mainCheckbox01Checkbox.checked) {
+        mainCheckbox01Options.style.display = 'block';
     } else {
-        mainCheckbox00Options.style.display = 'none';
+        mainCheckbox01Options.style.display = 'none';
     }
     updateSentence();
 }
 
 
-// MAIN BOX 1 FUNCTION
-function togglemainCheckbox1Options() {
-    var mainCheckbox1Checkbox = document.getElementById('mainCheckbox1');
-    var mainCheckbox1Options = document.getElementById('mainCheckbox1Options');
-
-    if (mainCheckbox1Checkbox.checked) {
-        mainCheckbox1Options.style.display = 'block';
-    } else {
-        mainCheckbox1Options.style.display = 'none';
-    }
-    updateSentence();
-}
-
-// MAIN BOX 2 FUNCTION
-function togglemainCheckbox2Options() {
+// MAIN BOX 02 FUNCTION [Call Flow]
+function togglemainCheckbox02Options() {
     var mainCheckbox2Checkbox = document.getElementById('mainCheckbox2');
     var mainCheckbox2Options = document.getElementById('mainCheckbox2Options');
 
@@ -141,34 +126,21 @@ function togglemainCheckbox2Options() {
     updateSentence();
 }
 
-// SUB BOX 0-2 FUNCTION 
-function togglesubMainCheckbox0of2Options() {
-    var subMainCheckbox0Checkbox = document.getElementById('subMainCheckbox0');
-    var subMainCheckbox0Options = document.getElementById('subMainCheckbox0Options');
+// MAIN BOX 03 FUNCTION [C.O.S Actions]
+function togglemainCheckbox03Options() {
+    var mainCheckbox03Checkbox = document.getElementById('mainCheckbox03');
+    var mainCheckbox03Options = document.getElementById('mainCheckbox03Options');
 
-    if (subMainCheckbox0Checkbox.checked) {
-        subMainCheckbox0Options.style.display = 'block';
+    if (mainCheckbox03Checkbox.checked) {
+        mainCheckbox03Options.style.display = 'block';
     } else {
-        subMainCheckbox0Options.style.display = 'none';
+        mainCheckbox03Options.style.display = 'none';
     }
     updateSentence();
 }
 
-// MAIN BOX 3 FUNCTION
-function togglemainCheckbox3Options() {
-    var mainCheckbox3Checkbox = document.getElementById('mainCheckbox3');
-    var mainCheckbox3Options = document.getElementById('mainCheckbox3Options');
-
-    if (mainCheckbox3Checkbox.checked) {
-        mainCheckbox3Options.style.display = 'block';
-    } else {
-        mainCheckbox3Options.style.display = 'none';
-    }
-    updateSentence();
-}
-
-// MAIN BOX 4 FUNCTION
-function togglemainCheckbox4Options() {
+// MAIN BOX 04 FUNCTION [Credit Added]
+function togglemainCheckbox03Options() {
     var mainCheckbox4Checkbox = document.getElementById('mainCheckbox4');
     var mainCheckbox4Options = document.getElementById('mainCheckbox4Options');
 
@@ -180,8 +152,8 @@ function togglemainCheckbox4Options() {
     updateSentence();
 }
 
-// MAIN BOX 5 FUNCTION
-function togglemainCheckbox5Options() {
+// MAIN BOX 05 FUNCTION [Payment Collected]
+function togglemainCheckbox05Options() {
     var mainCheckbox5Checkbox = document.getElementById('mainCheckbox5');
     var mainCheckbox5Options = document.getElementById('mainCheckbox5Options');
 
@@ -193,8 +165,8 @@ function togglemainCheckbox5Options() {
     updateSentence();
 }
 
-// MAIN BOX 6 FUNCTION
-function togglemainCheckbox6Options() {
+// MAIN BOX 06 FUNCTION [Service Restoration Options]
+function togglemainCheckbox06Options() {
     var mainCheckbox6Checkbox = document.getElementById('mainCheckbox6');
     var mainCheckbox6Options = document.getElementById('mainCheckbox6Options');
 
@@ -206,8 +178,8 @@ function togglemainCheckbox6Options() {
     updateSentence();
 }
 
-// MAIN BOX 7 FUNCTION
-function togglemainCheckbox7Options() {
+// MAIN BOX 07 FUNCTION [Optimum ID Actions]
+function togglemainCheckbox07Options() {
     var mainCheckbox7Checkbox = document.getElementById('mainCheckbox7');
     var mainCheckbox7Options = document.getElementById('mainCheckbox7Options');
 
@@ -219,8 +191,8 @@ function togglemainCheckbox7Options() {
     updateSentence();
 }
 
-// MAIN BOX 8 FUNCTION
-function togglemainCheckbox8Options() {
+// MAIN BOX 08 FUNCTION [Transfer for Resolution]
+function togglemainCheckbox08Options() {
     var mainCheckbox8Checkbox = document.getElementById('mainCheckbox8');
     var mainCheckbox8Options = document.getElementById('mainCheckbox8Options');
 
@@ -231,6 +203,153 @@ function togglemainCheckbox8Options() {
     }
     updateSentence();
 }
+
+// MAIN BOX 09 FUNCTION [Dropped Call Actions]
+function togglemainCheckbox8Options() {
+    var mainCheckbox9Checkbox = document.getElementById('mainCheckbox9');
+    var mainCheckbox9Options = document.getElementById('mainCheckbox9Options');
+
+    if (mainCheckbox9Checkbox.checked) {
+        mainCheckbox9Options.style.display = 'block';
+    } else {
+        mainCheckbox9Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+
+
+// SUB-OPTIONS FUNCTIONS BELOW//
+
+// [C.O.S Ations] SUB-OPTIONS 03 BELOW//
+// SUB-BOX 0For03 FUNCTION [Price Reduction]
+function togglesubMainCheckbox0For03Options() {
+    var subMainCheckbox0For03Checkbox = document.getElementById('subMainCheckbox0For03');
+    var subMainCheckbox0For03Options = document.getElementById('subMainCheckbox0For03Options');
+
+    if (subMainCheckbox0For03Checkbox.checked) {
+        subMainCheckbox0For03Options.style.display = 'block';
+    } else {
+        subMainCheckbox0For03Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+// SUB-BOX 1For03 FUNCTION [TV Package Upgrade]
+function togglesubMainCheckbox1For03Options() {
+    var subMainCheckbox1For03Checkbox = document.getElementById('subMainCheckbox1For03');
+    var subMainCheckbox1For03Options = document.getElementById('subMainCheckbox1For03Options');
+
+    if (subMainCheckbox1For03Checkbox.checked) {
+        subMainCheckbox1For03Options.style.display = 'block';
+    } else {
+        subMainCheckbox1For03Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+// SUB-BOX 2For03 FUNCTION [TV Package Downgrade]
+function togglesubMainCheckbox2For03Options() {
+    var subMainCheckbox2For03Checkbox = document.getElementById('subMainCheckbox2For03');
+    var subMainCheckbox2For03Options = document.getElementById('subMainCheckbox2For03Options');
+
+    if (subMainCheckbox2For03Checkbox.checked) {
+        subMainCheckbox2For03Options.style.display = 'block';
+    } else {
+        subMainCheckbox2For03Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+// SUB-BOX 3For03 FUNCTION [OOL Package Upgrade]
+function togglesubMainCheckbox3For03Options() {
+    var subMainCheckbox3For03Checkbox = document.getElementById('subMainCheckbox3For03');
+    var subMainCheckbox3For03Options = document.getElementById('subMainCheckbox3For03Options');
+
+    if (subMainCheckbox3For03Checkbox.checked) {
+        subMainCheckbox3For03Options.style.display = 'block';
+    } else {
+        subMainCheckbox3For03Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+// SUB-BOX 4For03 FUNCTION [OOL Package Downgrade]
+function togglesubMainCheckbox4For03Options() {
+    var subMainCheckbox4For03Checkbox = document.getElementById('subMainCheckbox4For03');
+    var subMainCheckbox4For03Options = document.getElementById('subMainCheckbox4For03Options');
+
+    if (subMainCheckbox4For03Checkbox.checked) {
+        subMainCheckbox4For03Options.style.display = 'block';
+    } else {
+        subMainCheckbox4For03Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+//============================================================
+
+// [Credit Added] SUB-OPTIONS 04 BELOW//
+// SUB-BOX 0For04 FUNCTION [Appreciation Credit]
+function togglesubMainCheckbox0For04Options() {
+    var subMainCheckbox0For04Checkbox = document.getElementById('subMainCheckbox0For04');
+    var subMainCheckbox0For04Options = document.getElementById('subMainCheckbox0For04Options');
+
+    if (subMainCheckbox0For04Checkbox.checked) {
+        subMainCheckbox0For04Options.style.display = 'block';
+    } else {
+        subMainCheckbox0For04Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+// SUB-BOX 1For04 FUNCTION [Collections Charges]
+function togglesubMainCheckbox1For04Options() {
+    var subMainCheckbox1For04Checkbox = document.getElementById('subMainCheckbox1For04');
+    var subMainCheckbox1For04Options = document.getElementById('subMainCheckbox1For04Options');
+
+    if (subMainCheckbox1For04Checkbox.checked) {
+        subMainCheckbox1For04Options.style.display = 'block';
+    } else {
+        subMainCheckbox1For04Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+// SUB-BOX 2For04 FUNCTION [Late Fee]
+function togglesubMainCheckbox2For04Options() {
+    var subMainCheckbox2For04Checkbox = document.getElementById('subMainCheckbox2For04');
+    var subMainCheckbox2For04Options = document.getElementById('subMainCheckbox2For04Options');
+
+    if (subMainCheckbox2For04Checkbox.checked) {
+        subMainCheckbox2For04Options.style.display = 'block';
+    } else {
+        subMainCheckbox2For04Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+// SUB-BOX 3For04 FUNCTION [Restore Fee]
+function togglesubMainCheckbox3For04Options() {
+    var subMainCheckbox3For04Checkbox = document.getElementById('subMainCheckbox3For04');
+    var subMainCheckbox3For04Options = document.getElementById('subMainCheckbox3For04Options');
+
+    if (subMainCheckbox3For04Checkbox.checked) {
+        subMainCheckbox3For04Options.style.display = 'block';
+    } else {
+        subMainCheckbox3For04Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
+
+
+
+
+
+
+
+
 // SUB BOX 0-8 FUNCTION 
 function togglesubMainCheckbox0of8Options() {
     var subMainCheckbox0Checkbox = document.getElementById('subMainCheckbox0');
