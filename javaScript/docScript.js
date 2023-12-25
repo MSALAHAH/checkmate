@@ -141,6 +141,19 @@ function togglemainCheckbox2Options() {
     updateSentence();
 }
 
+// SUB BOX 0-2 FUNCTION 
+function togglesubMainCheckbox0of2Options() {
+    var subMainCheckbox0Checkbox = document.getElementById('subMainCheckbox0');
+    var subMainCheckbox0Options = document.getElementById('subMainCheckbox0Options');
+
+    if (subMainCheckbox0Checkbox.checked) {
+        subMainCheckbox0Options.style.display = 'block';
+    } else {
+        subMainCheckbox0Options.style.display = 'none';
+    }
+    updateSentence();
+}
+
 // MAIN BOX 3 FUNCTION
 function togglemainCheckbox3Options() {
     var mainCheckbox3Checkbox = document.getElementById('mainCheckbox3');
@@ -219,7 +232,7 @@ function togglemainCheckbox8Options() {
     updateSentence();
 }
 // SUB BOX 0-8 FUNCTION 
-function togglesubMainCheckbox0Options() {
+function togglesubMainCheckbox0of8Options() {
     var subMainCheckbox0Checkbox = document.getElementById('subMainCheckbox0');
     var subMainCheckbox0Options = document.getElementById('subMainCheckbox0Options');
 
@@ -231,7 +244,7 @@ function togglesubMainCheckbox0Options() {
     updateSentence();
 }
 // SUB BOX 1-8 FUNCTION
-function togglesubMainCheckbox1Options() {
+function togglesubMainCheckbox1of8Options() {
     var subMainCheckbox1Checkbox = document.getElementById('subMainCheckbox1');
     var subMainCheckbox1Options = document.getElementById('subMainCheckbox1Options');
 
@@ -244,7 +257,7 @@ function togglesubMainCheckbox1Options() {
 }
 
 // SUB BOX 2-8 FUNCTION
-function togglesubMainCheckbox2Options() {
+function togglesubMainCheckbox2of8Options() {
     var subMainCheckbox2Checkbox = document.getElementById('subMainCheckbox2');
     var subMainCheckbox2Options = document.getElementById('subMainCheckbox2Options');
 
@@ -257,7 +270,7 @@ function togglesubMainCheckbox2Options() {
 }
 
 // SUB BOX 3-8 FUNCTION
-function togglesubMainCheckbox3Options() {
+function togglesubMainCheckbox3of8Options() {
     var subMainCheckbox3Checkbox = document.getElementById('subMainCheckbox3');
     var subMainCheckbox3Options = document.getElementById('subMainCheckbox3Options');
 
@@ -270,7 +283,7 @@ function togglesubMainCheckbox3Options() {
 }
 
 // SUB BOX 4-8 FUNCTION
-function togglesubMainCheckbox4Options() {
+function togglesubMainCheckbox4of8Options() {
     var subMainCheckbox4Checkbox = document.getElementById('subMainCheckbox4');
     var subMainCheckbox4Options = document.getElementById('subMainCheckbox4Options');
 
@@ -283,17 +296,17 @@ function togglesubMainCheckbox4Options() {
 }
 
 // SUB BOX 5-8 FUNCTION
-function togglesubMainCheckbox5Options() {
-    var subMainCheckbox5Checkbox = document.getElementById('subMainCheckbox5');
-    var subMainCheckbox5Options = document.getElementById('subMainCheckbox5Options');
+// function togglesubMainCheckbox5of8Options() {
+//     var subMainCheckbox5Checkbox = document.getElementById('subMainCheckbox5');
+//     var subMainCheckbox5Options = document.getElementById('subMainCheckbox5Options');
 
-    if (subMainCheckbox5Checkbox.checked) {
-        subMainCheckbox5Options.style.display = 'block';
-    } else {
-        subMainCheckbox5Options.style.display = 'none';
-    }
-    updateSentence();
-}
+//     if (subMainCheckbox5Checkbox.checked) {
+//         subMainCheckbox5Options.style.display = 'block';
+//     } else {
+//         subMainCheckbox5Options.style.display = 'none';
+//     }
+//     updateSentence();
+// }
 
 // SUBs ABOVE=======================================================================
 

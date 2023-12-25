@@ -65,7 +65,8 @@
                     <h5 class="subHeader">Caller Type</h5>
                     <label for="mainCheckbox00-2" class="custom-checkbox"
                         title="if the called is the account holder check this box">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox00-2" value="caller: [Account Holder] - ">
+                        <input type="checkbox" name="checkbox" id="mainCheckbox00-2"
+                            value="caller: [Account Holder] - ">
                         <span class="checkmark"></span>
                         Account Holder
                     </label>
@@ -225,7 +226,7 @@
                     <label for="subMainCheckbox0" class="custom-checkbox"
                         title="a shortcut if you added a promo to reduce the bill amount">
                         <input type="checkbox" name="checkbox" value="" id="subMainCheckbox0"
-                            onchange="togglesubMainCheckbox0Options()"> Price Reduction
+                            onchange="togglesubMainCheckbox0of8Options()"> Price Reduction
                         <span class="checkmark"></span>
                     </label>
                     <div class="sub-options" id="subMainCheckbox0Options" style="display: none;">
@@ -242,7 +243,7 @@
                     <label for="subMainCheckbox1" class="custom-checkbox"
                         title="All the options if you upgraded the TV service">
                         <input type="checkbox" name="checkbox" value="" id="subMainCheckbox1"
-                            onchange="togglesubMainCheckbox1Options()"> TV Package Upgrade 🟩
+                            onchange="togglesubMainCheckbox1of8Options()"> TV Package Upgrade 🟩
                         <span class="checkmark"></span>
                     </label>
                     <div class="sub-options" id="subMainCheckbox1Options" style="display: none;">
@@ -287,7 +288,7 @@
                     <label for="subMainCheckbox2" class="custom-checkbox"
                         title="All the options if you downgraded the TV service">
                         <input type="checkbox" name="checkbox" value="" id="subMainCheckbox2"
-                            onchange="togglesubMainCheckbox2Options()"> TV Package Downgrade 🟥
+                            onchange="togglesubMainCheckbox2of8Options()"> TV Package Downgrade 🟥
                         <span class="checkmark"></span>
                     </label>
                     <div class="sub-options" id="subMainCheckbox2Options" style="display: none;">
@@ -332,7 +333,7 @@
                     <label for="subMainCheckbox3" class="custom-checkbox"
                         title="All the options if you upgraded the OOL service">
                         <input type="checkbox" name="checkbox" value="" id="subMainCheckbox3"
-                            onchange="togglesubMainCheckbox3Options()"> OOL Package Upgrade 🟩
+                            onchange="togglesubMainCheckbox3of8Options()"> OOL Package Upgrade 🟩
                         <span class="checkmark"></span>
                     </label>
                     <div class="sub-options" id="subMainCheckbox3Options" style="display: none;">
@@ -405,7 +406,7 @@
                     <label for="subMainCheckbox4" class="custom-checkbox"
                         title="All the options if you downgraded the OOL service">
                         <input type="checkbox" name="checkbox" value="" id="subMainCheckbox4"
-                            onchange="togglesubMainCheckbox4Options()"> OOL Package Downgrade 🟥
+                            onchange="togglesubMainCheckbox4of8Options()"> OOL Package Downgrade 🟥
                         <span class="checkmark"></span>
                     </label>
                     <div class="sub-options" id="subMainCheckbox4Options" style="display: none;">
@@ -503,424 +504,473 @@
                         <span class="checkmark"></span>
                     </label>
                 </div>
-                <div class="sub-options" id="mainCheckbox2Options" style="display: none;">
-                    <h5 class="subHeader">Appreciation Credit</h5>
-                    <label for="mainCheckbox2-2" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox2-2"
-                            value="$10.00 customer appreciation credit - " id="credit10"> $10.00
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox2-3" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox2-3"
-                            value="$15.00 customer appreciation credit - " id="credit15"> $15.00
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox2-4" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox2-4"
-                            value="$20.00 customer appreciation credit - " id="credit20"> $20.00
-                        <span class="checkmark"></span>
-                    </label>
-                    <hr id="Divider">
-                    <h5 class="subHeader">Collections Fees</h5>
-                    <label for="mainCheckbox2-5" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox2-5" value="$00.00 Late fee waived - "
-                            id="lateFee"> late fee ($00.00)
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox2-6" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox2-6" value="$00.00 Restore fee waived - "
-                            id="restoreFee"> restore fee ($00.00)
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <hr id="Divider">
-                    <h5 class="subHeader">Verified Credit</h5>
-                    <label for="mainCheckbox2-7" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox2-7"
-                            value="$00.00 waived, Verified Billing Error - " id="billingErorr"> Billing Error
-                        ($00.00)
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox2-8" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox2-8"
-                            value="$00.00 waived for the Service Interruption - " id="serviceInterruption"> Service
-                        Interruption ($00.00)
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
+                        <div class="sub-options" id="mainCheckbox2Options" style="display: none;">
 
-                <hr>
+                            <h5 class="subHeader">Appreciation Credit</h5>
 
-                <div class="selectionStyle">
-                    <label for="mainCheckbox3" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" value="" id="mainCheckbox3"
-                            onchange="togglemainCheckbox3Options()"> Payment Collected
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="sub-options" id="mainCheckbox3Options" style="display: none;">
-                    <label for="mainCheckbox3-1" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox3-1"
-                            value="full payment collected #FULL_PAYMENT - "> Full Payment Collected
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox3-2" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox3-2"
-                            value="the past due amount collected #PAST_DUE - "> Past Due Amount Collected
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox3-3" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox3-3"
-                            value="partial payment collected ($00.00) - educated about the full balance after the payment #PARTIAL_PAYMENT - ">
-                        Partial Payment Collected
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox3-4" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox3-4"
-                            value="write-Off amount collected ($00.00) - educated about the account balance amount after the payment #WRITE-OFF - ">
-                        Payment Collected - Write-Off
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
+                            <label for="mainCheckbox2-2" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox2-2"
+                                    value="$10.00 customer appreciation credit - " id="credit10"> $10.00
+                                <span class="checkmark"></span>
+                            </label>
 
-                <hr>
+                            <br>
 
-                <div class="selectionStyle">
-                    <label for="mainCheckbox4" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" value="" id="mainCheckbox4"
-                            onchange="togglemainCheckbox4Options()"> Service Restoration Options
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="sub-options" id="mainCheckbox4Options" style="display: none;">
-                    <label for="mainCheckbox4-1" class="custom-checkbox"
-                        title="Promis To Pay - the customer is eligible and the extension applied.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox4-1"
-                            value="payment extension granted - educated about the due date after the payment extension #EXTENSION_GRANTED - ">
-                        Promise to Pay - Granted
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox4-2" class="custom-checkbox"
-                        title="Promis To Pay - the customer is NOT eligible.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox4-2"
-                            value="educated that the payment extension denied - educated about the amount required to restore the service #EXTENSION_DENIED - ">
-                        Promise to Pay - Denied
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox4-3" class="custom-checkbox"
-                        title="Payment Plan - the customer is eligible and the payment plan applied.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox4-3"
-                            value="educated that the Payment Plan Approved, the customer agreed on the terms and the service will be back within 2 hours Max #PAYMENT_PLAN - ">
-                        PP Eligible - Applied
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox4-5" class="custom-checkbox"
-                        title="Payment Plan - the customer is eligible for payment plan but he/she did not agree on the payment plan terms.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox4-5"
-                            value="the account is eligible for a payment plan but the customer rejected the offer #CUS_REJECTED_PP - ">
-                        PP Eligible - Customer Denied
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox4-4" class="custom-checkbox"
-                        title="Payment Plan - the customer is NOT eligible for any payment plan.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox4-4"
-                            value="educated that the account is not eligible for any Payment Plan #PP_DENIED - "> PP -
-                        Not Eligible
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
+                            <label for="mainCheckbox2-3" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox2-3"
+                                    value="$15.00 customer appreciation credit - " id="credit15"> $15.00
+                                <span class="checkmark"></span>
+                            </label>
 
-                <hr>
+                            <br>
 
-                <div class="selectionStyle">
-                    <label for="mainCheckbox5" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" value="" id="mainCheckbox5"
-                            onchange="togglemainCheckbox5Options()"> Optimum ID Actions
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="sub-options" id="mainCheckbox5Options" style="display: none;">
-                    <h5 class="subHeader">Create Optimum ID</h5>
-                    <label for="mainCheckbox5-1" class="custom-checkbox"
-                        title="if the customer passed CPNI to create the Optimum ID.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox5-1"
-                            value="CPNI passed to create the Optimum ID - created - provided the temporary password to set the account password - educated about the Online Account #ONLINE_PORTAL - ">
-                        CPNI 🟩 - Created
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox5-2" class="custom-checkbox"
-                        title="if the customer failed to pass the CPNI to create the Optimum ID - nothing created.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox5-2"
-                            value="CPNI failed to create the Optimum ID - educated about the process to create the online account #ONLINE_PORTAL - ">
-                        CPNI 🟥 - Not Created
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <hr id="Divider">
-                    <h5 class="subHeader">Disclose Optimum ID</h5>
-                    <label for="mainCheckbox5-3" class="custom-checkbox"
-                        title="if the customer requested information about his/her ID and CPNI passed.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox5-3"
-                            value="CPNI passed to disclose the Optimum ID - provided the ID and educated about the online account #ONLINE_PORTAL - ">
-                        CPNI 🟩 - Disclosed
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox5-4" class="custom-checkbox"
-                        title="if the customer requested information about his/her ID but failed to pass CPNI - nothing disclosed.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox5-4"
-                            value="CPNI failed to disclose the Optimum ID - no information provided about the online account #ONLINE_PORTAL - ">
-                        CPNI 🟥 - Not Disclosed
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <hr id="Divider">
-                    <h5 class="subHeader">Optimum ID Password Reset</h5>
-                    <label for="mainCheckbox5-5" class="custom-checkbox"
-                        title="if the customer requested a new password and CPNI passed - password provided.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox5-5"
-                            value="CPNI passed to reset the online account password - the new password provided #ONLINE_PORTAL - ">
-                        CPNI 🟩 - Password Provided
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox5-6" class="custom-checkbox"
-                        title="if the customer requested a new password but failed to pass CPNI - no information provided.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox5-6"
-                            value="CPNI failed to reset the online account password - educated the customer that we cannot reset the password without passing CPNI #ONLINE_PORTAL - ">
-                        CPNI 🟥 - No Changes
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <hr id="Divider">
-                    <h5 class="subHeader">Optimum ID Transfer</h5>
-                    <label for="mainCheckbox5-7" class="custom-checkbox"
-                        title="if the customer requested ID transfer from the disconnected account and _CPNI passed 'both accounts'_ - ID transferred.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox5-7"
-                            value="CPNI passed to transfer the ID from the old account [00000-000000-00] to the new current account - ID Transferred Successfully - provided the needed information #ONLINE_PORTAL - ">
-                        CPNI 🟩 - Transferred
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox5-8" class="custom-checkbox"
-                        title="if the customer requested ID transfer from the disconnected account and failed to pass CPNI - no changes.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox5-8"
-                            value="ID transfer request cannot be done from [00000-000000-00] to the new current account - CPNI Failed #ONLINE_PORTAL - ">
-                        CPNI 🟥 - No Changed
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
+                            <label for="mainCheckbox2-4" class="custom-checkbox">
+                                <input type="checkbox" name="checkbox" id="mainCheckbox2-4"
+                                    value="$20.00 customer appreciation credit - " id="credit20"> $20.00
+                                <span class="checkmark"></span>
+                            </label>
 
-                <hr>
+                            <hr id="Divider">
 
-                <div class="selectionStyle">
-                    <label for="mainCheckbox6" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" value="" id="mainCheckbox6"
-                            onchange="togglemainCheckbox6Options()"> Transfer for Resolution
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="sub-options" id="mainCheckbox6Options" style="display: none;">
-                    <h5 class="subHeader">Technical Support</h5>
-                    <label for="mainCheckbox6-1" class="custom-checkbox"
-                        title="if there's a service issue and the call will be transferred to tech support.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-1"
-                            value="Xfer to Tech Support to resolve the service issue #TRANSFER - "> Service Issue
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox6-2" class="custom-checkbox"
-                        title="if the customer is asking about the Wi-Fi SSID or the password or any information regarding his network.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-2"
-                            value="Xfer to Tech Support to provide information about the Wi-Fi network (SSID, Password, etc..) #TRANSFER - "> Wi-Fi Information
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox6-3" class="custom-checkbox"
-                        title="if the account is in the restoration process 'Pending Restore'. ">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-3"
-                            value="Xfer to Tech Support to provision the equipment for the service to be reconnected #TRANSFER - ">
-                        Pending Restore - Re-Connect
-                        <span class="checkmark"></span>
-                    </label>
+                            <h5 class="subHeader">Collections Fees</h5>
 
-                    <hr id="Divider">
+                            <label for="mainCheckbox2-5" class="custom-checkbox"
+                                title="All the options if you downgraded the OOL service">
+                                <input type="checkbox" name="checkbox" value="" id="mainCheckbox2-5"
+                                    onchange="togglesubMainCheckbox0of2Options()"> Late Fee
+                                <span class="checkmark"></span>
+                            </label>
 
-                    <h5 class="subHeader">Sales</h5>
-                    <label for="mainCheckbox6-4" class="custom-checkbox"
-                        title="if the customer mentioned that he/she is moving and want to take the service to the new address.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-4"
-                            value="transferred to the sales team to transfer the account to another address #TRANSFER - ">
-                        Move Transfer Request
-                        <span class="checkmark"></span>
-                    </label>
+                                <div class="sub-options" id="subMainCheckbox0of2Options" style="display: none;">
+                                    <label for="subMainCheckbox0-4" class="custom-checkbox" title="Late Fee credit $2.00">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox0-4"
+                                            value="($2.00) late fee waived"> $2.00
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <br>
+                                    <label for="subMainCheckbox1-4" class="custom-checkbox" title="Late Fee credit $4.00">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox1-4"
+                                            value="($4.00) late fee waived"> $4.00
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label for="subMainCheckbox2-4" class="custom-checkbox" title="Late Fee credit $6.00">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox2-4"
+                                            value="($6.00) late fee waived"> $6.00
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <br>
+                                    <label for="subMainCheckbox3-4" class="custom-checkbox" title="Late Fee credit $10.00">
+                                        <input type="checkbox" name="checkbox" id="subMainCheckbox3-4"
+                                            value="($10.00) late fee waived"> $10.00
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
 
-                    <hr id="Divider">
+                                <br>
 
-                    <h5 class="subHeader">Retention</h5>
-                    <label for="mainCheckbox6-5" class="custom-checkbox"
-                        title="if the customer called to remove a service.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-5"
-                            value="xfer to Retention to remove a service #TRANSFER - ">
-                        Service Removal
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox6-6" class="custom-checkbox"
-                        title="if the customer called to disconnect the account.">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-6"
-                            value="Xfer to retention to disconnect the account #TRANSFER - ">
-                        Account Disconnection
-                        <span class="checkmark"></span>
-                    </label>
+                                <label for="mainCheckbox2-6" class="custom-checkbox">
+                                    <input type="checkbox" name="checkbox" id="mainCheckbox2-6"
+                                        value="$00.00 Restore fee waived - " id="restoreFee"> restore fee ($00.00)
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <br>
+
+                                <hr id="Divider">
+
+                                <h5 class="subHeader">Verified Credit</h5>
+
+                                <label for="mainCheckbox2-7" class="custom-checkbox">
+                                    <input type="checkbox" name="checkbox" id="mainCheckbox2-7"
+                                        value="$00.00 waived, Verified Billing Error - " id="billingErorr"> Billing Error
+                                    ($00.00)
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <br>
+
+                                <label for="mainCheckbox2-8" class="custom-checkbox">
+                                    <input type="checkbox" name="checkbox" id="mainCheckbox2-8"
+                                        value="$00.00 waived for the Service Interruption - " id="serviceInterruption"> Service
+                                    Interruption ($00.00)
+                                    <span class="checkmark"></span>
+                                </label>
+
+                            </div>
+
+                    <hr>
+
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox3" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox3"
+                                onchange="togglemainCheckbox3Options()"> Payment Collected
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox3Options" style="display: none;">
+                        <label for="mainCheckbox3-1" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox3-1"
+                                value="full payment collected #FULL_PAYMENT - "> Full Payment Collected
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox3-2" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox3-2"
+                                value="the past due amount collected #PAST_DUE - "> Past Due Amount Collected
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox3-3" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox3-3"
+                                value="partial payment collected ($00.00) - educated about the full balance after the payment #PARTIAL_PAYMENT - ">
+                            Partial Payment Collected
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox3-4" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox3-4"
+                                value="write-Off amount collected ($00.00) - educated about the account balance amount after the payment #WRITE-OFF - ">
+                            Payment Collected - Write-Off
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <hr>
+
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox4" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox4"
+                                onchange="togglemainCheckbox4Options()"> Service Restoration Options
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox4Options" style="display: none;">
+                        <label for="mainCheckbox4-1" class="custom-checkbox"
+                            title="Promis To Pay - the customer is eligible and the extension applied.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox4-1"
+                                value="payment extension granted - educated about the due date after the payment extension #EXTENSION_GRANTED - ">
+                            Promise to Pay - Granted
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox4-2" class="custom-checkbox"
+                            title="Promis To Pay - the customer is NOT eligible.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox4-2"
+                                value="educated that the payment extension denied - educated about the amount required to restore the service #EXTENSION_DENIED - ">
+                            Promise to Pay - Denied
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox4-3" class="custom-checkbox"
+                            title="Payment Plan - the customer is eligible and the payment plan applied.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox4-3"
+                                value="educated that the Payment Plan Approved, the customer agreed on the terms and the service will be back within 2 hours Max #PAYMENT_PLAN - ">
+                            PP Eligible - Applied
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox4-5" class="custom-checkbox"
+                            title="Payment Plan - the customer is eligible for payment plan but he/she did not agree on the payment plan terms.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox4-5"
+                                value="the account is eligible for a payment plan but the customer rejected the offer #CUS_REJECTED_PP - ">
+                            PP Eligible - Customer Denied
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox4-4" class="custom-checkbox"
+                            title="Payment Plan - the customer is NOT eligible for any payment plan.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox4-4"
+                                value="educated that the account is not eligible for any Payment Plan #PP_DENIED - "> PP
+                            -
+                            Not Eligible
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <hr>
+
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox5" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox5"
+                                onchange="togglemainCheckbox5Options()"> Optimum ID Actions
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox5Options" style="display: none;">
+                        <h5 class="subHeader">Create Optimum ID</h5>
+                        <label for="mainCheckbox5-1" class="custom-checkbox"
+                            title="if the customer passed CPNI to create the Optimum ID.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox5-1"
+                                value="CPNI passed to create the Optimum ID - created - provided the temporary password to set the account password - educated about the Online Account #ONLINE_PORTAL - ">
+                            CPNI 🟩 - Created
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox5-2" class="custom-checkbox"
+                            title="if the customer failed to pass the CPNI to create the Optimum ID - nothing created.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox5-2"
+                                value="CPNI failed to create the Optimum ID - educated about the process to create the online account #ONLINE_PORTAL - ">
+                            CPNI 🟥 - Not Created
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <hr id="Divider">
+                        <h5 class="subHeader">Disclose Optimum ID</h5>
+                        <label for="mainCheckbox5-3" class="custom-checkbox"
+                            title="if the customer requested information about his/her ID and CPNI passed.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox5-3"
+                                value="CPNI passed to disclose the Optimum ID - provided the ID and educated about the online account #ONLINE_PORTAL - ">
+                            CPNI 🟩 - Disclosed
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox5-4" class="custom-checkbox"
+                            title="if the customer requested information about his/her ID but failed to pass CPNI - nothing disclosed.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox5-4"
+                                value="CPNI failed to disclose the Optimum ID - no information provided about the online account #ONLINE_PORTAL - ">
+                            CPNI 🟥 - Not Disclosed
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <hr id="Divider">
+                        <h5 class="subHeader">Optimum ID Password Reset</h5>
+                        <label for="mainCheckbox5-5" class="custom-checkbox"
+                            title="if the customer requested a new password and CPNI passed - password provided.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox5-5"
+                                value="CPNI passed to reset the online account password - the new password provided #ONLINE_PORTAL - ">
+                            CPNI 🟩 - Password Provided
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox5-6" class="custom-checkbox"
+                            title="if the customer requested a new password but failed to pass CPNI - no information provided.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox5-6"
+                                value="CPNI failed to reset the online account password - educated the customer that we cannot reset the password without passing CPNI #ONLINE_PORTAL - ">
+                            CPNI 🟥 - No Changes
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <hr id="Divider">
+                        <h5 class="subHeader">Optimum ID Transfer</h5>
+                        <label for="mainCheckbox5-7" class="custom-checkbox"
+                            title="if the customer requested ID transfer from the disconnected account and _CPNI passed 'both accounts'_ - ID transferred.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox5-7"
+                                value="CPNI passed to transfer the ID from the old account [00000-000000-00] to the new current account - ID Transferred Successfully - provided the needed information #ONLINE_PORTAL - ">
+                            CPNI 🟩 - Transferred
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox5-8" class="custom-checkbox"
+                            title="if the customer requested ID transfer from the disconnected account and failed to pass CPNI - no changes.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox5-8"
+                                value="ID transfer request cannot be done from [00000-000000-00] to the new current account - CPNI Failed #ONLINE_PORTAL - ">
+                            CPNI 🟥 - No Changed
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+
+                    <hr>
+
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox6" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox6"
+                                onchange="togglemainCheckbox6Options()"> Transfer for Resolution
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox6Options" style="display: none;">
+                        <h5 class="subHeader">Technical Support</h5>
+                        <label for="mainCheckbox6-1" class="custom-checkbox"
+                            title="if there's a service issue and the call will be transferred to tech support.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox6-1"
+                                value="Xfer to Tech Support to resolve the service issue #TRANSFER - "> Service Issue
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox6-2" class="custom-checkbox"
+                            title="if the customer is asking about the Wi-Fi SSID or the password or any information regarding his network.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox6-2"
+                                value="Xfer to Tech Support to provide information about the Wi-Fi network (SSID, Password, etc..) #TRANSFER - ">
+                            Wi-Fi Information
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox6-3" class="custom-checkbox"
+                            title="if the account is in the restoration process 'Pending Restore'. ">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox6-3"
+                                value="Xfer to Tech Support to provision the equipment for the service to be reconnected #TRANSFER - ">
+                            Pending Restore - Re-Connect
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <hr id="Divider">
+
+                        <h5 class="subHeader">Sales</h5>
+                        <label for="mainCheckbox6-4" class="custom-checkbox"
+                            title="if the customer mentioned that he/she is moving and want to take the service to the new address.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox6-4"
+                                value="transferred to the sales team to transfer the account to another address #TRANSFER - ">
+                            Move Transfer Request
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <hr id="Divider">
+
+                        <h5 class="subHeader">Retention</h5>
+                        <label for="mainCheckbox6-5" class="custom-checkbox"
+                            title="if the customer called to remove a service.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox6-5"
+                                value="xfer to Retention to remove a service #TRANSFER - ">
+                            Service Removal
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox6-6" class="custom-checkbox"
+                            title="if the customer called to disconnect the account.">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox6-6"
+                                value="Xfer to retention to disconnect the account #TRANSFER - ">
+                            Account Disconnection
+                            <span class="checkmark"></span>
+                        </label>
 
 
-                    <hr id="Divider">
+                        <hr id="Divider">
 
-                    <h5 class="subHeader">Mobile</h5>
-                    <label for="mainCheckbox6-7" class="custom-checkbox"
-                        title="if the call was transferred to Mobile Care for Account Management, Billing, Service Issue, Add a Line to Existing Account, etc...">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-7"
-                            value="Xfer to Mobile Care #TRANSFER - ">
+                        <h5 class="subHeader">Mobile</h5>
+                        <label for="mainCheckbox6-7" class="custom-checkbox"
+                            title="if the call was transferred to Mobile Care for Account Management, Billing, Service Issue, Add a Line to Existing Account, etc...">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox6-7"
+                                value="Xfer to Mobile Care #TRANSFER - ">
                             Xfer to Mobile Care
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox6-8" class="custom-checkbox"
-                        title="if the call was transferred to Mobile Retention for Disconnection, Port-out Pin, Device Unlock, etc...">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-8"
-                            value="Xfer to Mobile Retention #TRANSFER - ">
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox6-8" class="custom-checkbox"
+                            title="if the call was transferred to Mobile Retention for Disconnection, Port-out Pin, Device Unlock, etc...">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox6-8"
+                                value="Xfer to Mobile Retention #TRANSFER - ">
                             Xfer to Mobile Retention
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox6-9" class="custom-checkbox"
-                        title="if the call was transferred to Mobile Sales to create a new account, buy a new line [New Customer], etc...">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-9"
-                            value="Xfer to Mobile Sales #TRANSFER - ">
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox6-9" class="custom-checkbox"
+                            title="if the call was transferred to Mobile Sales to create a new account, buy a new line [New Customer], etc...">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox6-9"
+                                value="Xfer to Mobile Sales #TRANSFER - ">
                             Xfer to Mobile Sales
-                        <span class="checkmark"></span>
-                    </label>
+                            <span class="checkmark"></span>
+                        </label>
 
 
-                    <hr id="Divider">
+                        <hr id="Divider">
 
 
-                    <h5 class="subHeader">Business</h5>
-                    <label for="mainCheckbox6-10" class="custom-checkbox"
-                        title="if the call was transferred to Business for Account Management, Billing, etc...">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-10"
-                            value="Xfer to billing Business to discuss the account billing details #TRANSFER - ">
+                        <h5 class="subHeader">Business</h5>
+                        <label for="mainCheckbox6-10" class="custom-checkbox"
+                            title="if the call was transferred to Business for Account Management, Billing, etc...">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox6-10"
+                                value="Xfer to billing Business to discuss the account billing details #TRANSFER - ">
                             General Billing - Business
-                        <span class="checkmark"></span>
-                    </label>
+                            <span class="checkmark"></span>
+                        </label>
 
 
-                    <hr id="Divider">
+                        <hr id="Divider">
 
 
-                    <h5 class="subHeader">Bulk Accounts</h5>
-                    <label for="mainCheckbox6-11" class="custom-checkbox"
-                        title="if the call was transferred to Business for Account Management, Billing, etc...">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox6-11"
-                            value="Bulk Residential Account - Xfer to Bulk Residential #TRANSFER - ">
+                        <h5 class="subHeader">Bulk Accounts</h5>
+                        <label for="mainCheckbox6-11" class="custom-checkbox"
+                            title="if the call was transferred to Business for Account Management, Billing, etc...">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox6-11"
+                                value="Bulk Residential Account - Xfer to Bulk Residential #TRANSFER - ">
                             Xfer to Bulk Residential
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
 
-                <hr>
+                    <hr>
 
-                <div class="selectionStyle">
-                    <label for="mainCheckbox7" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" value="" id="mainCheckbox7"
-                            onchange="togglemainCheckbox7Options()"> Dropped Call Actions
-                        <span class="checkmark"></span>
-                    </label>
-                </div>
-                <div class="sub-options" id="mainCheckbox7Options" style="display: none;">
-                    <label for="mainCheckbox7-1" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox7-1"
-                            value="call dropped - called the customer back - Answered #DROPPED_CONNECTED - "> Called
-                        back - Connected
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox7-2" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox7-2"
-                            value="call dropped - called the customer back - No Answer - Left a Voicemail #DROPPED_NO_ANSWER - ">
-                        No Answer - Left Voicemail
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox7-3" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox7-3"
-                            value="call dropped - called the customer back - No Answer - No Voicemail #DROPPED_NOT_REACHABLE - ">
-                        No Answer - No Voicemail
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox7-4" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox7-4"
-                            value="call dropped - called the customer back - Call Could Not be Complete #DROPPED_NOT_REACHABLE - ">Call
-                        Could Not be Completed
-                        <span class="checkmark"></span>
-                    </label>
-                    <br>
-                    <label for="mainCheckbox7-5" class="custom-checkbox">
-                        <input type="checkbox" name="checkbox" id="mainCheckbox7-5"
-                            value="call dropped - called the customer back - Line Busy #DROPPED_LINE_BUSY - ">Line Busy
-                        <span class="checkmark"></span>
-                    </label>
+                    <div class="selectionStyle">
+                        <label for="mainCheckbox7" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" value="" id="mainCheckbox7"
+                                onchange="togglemainCheckbox7Options()"> Dropped Call Actions
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="sub-options" id="mainCheckbox7Options" style="display: none;">
+                        <label for="mainCheckbox7-1" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox7-1"
+                                value="call dropped - called the customer back - Answered #DROPPED_CONNECTED - "> Called
+                            back - Connected
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox7-2" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox7-2"
+                                value="call dropped - called the customer back - No Answer - Left a Voicemail #DROPPED_NO_ANSWER - ">
+                            No Answer - Left Voicemail
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox7-3" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox7-3"
+                                value="call dropped - called the customer back - No Answer - No Voicemail #DROPPED_NOT_REACHABLE - ">
+                            No Answer - No Voicemail
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox7-4" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox7-4"
+                                value="call dropped - called the customer back - Call Could Not be Complete #DROPPED_NOT_REACHABLE - ">Call
+                            Could Not be Completed
+                            <span class="checkmark"></span>
+                        </label>
+                        <br>
+                        <label for="mainCheckbox7-5" class="custom-checkbox">
+                            <input type="checkbox" name="checkbox" id="mainCheckbox7-5"
+                                value="call dropped - called the customer back - Line Busy #DROPPED_LINE_BUSY - ">Line
+                            Busy
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
                 </div>
             </div>
+
+            <br>
+
+            <div>
+                <button id="newCallBtn" onclick="reloadPage()">New Call</button>
+                <button id="copyBtn" onclick="copyToClipboard()">Copy Text</button>
+            </div>
+
+            <br>
+            <div id="alertMessage">Your Note successfully Copied.</div>
+            <br>
+            <textarea id="sentence" rows="12" cols="50" readonly></textarea>
+
+            <br>
+
+            <a href="./stayAwake.html" target="_blank">
+                <button id="controlButton"></button>
+            </a>
+
+            <button id="chatBotButton" onclick="toggleIframe()">Chat With Bot 🤖</button>
+
+            <div id="iframeContainer2">
+                <iframe id="chatbotIframe" src="./ChatBotIndex.html" width="600" height="450" frameborder="0"
+                    scrolling="no"></iframe>
+            </div>
+
+            <div class="footer">
+                <p>&copy;<a id="footerSpanBold" href="https://msalahah.github.io/R4/" target="_blank">Mohammed Melok</a>
+                    | All Rights Reserved.</p>
+            </div>
         </div>
+        <script src="https://raw.githubusercontent.com/MSALAHAH/checkmate/main/javaScript/typo.js" defer></script>
 
-        <br>
-
-        <div>
-            <button id="newCallBtn" onclick="reloadPage()">New Call</button>
-            <button id="copyBtn" onclick="copyToClipboard()">Copy Text</button>
-        </div>
-
-        <br>
-        <div id="alertMessage">Your Note successfully Copied.</div>
-        <br>
-        <textarea id="sentence" rows="12" cols="50" readonly></textarea>
-
-        <br>
-
-        <a href="./stayAwake.html" target="_blank">
-        <button id="controlButton" ></button>
-        </a>
-
-        <button id="chatBotButton" onclick="toggleIframe()">Chat With Bot 🤖</button>
-
-        <div id="iframeContainer2">
-            <iframe id="chatbotIframe" src="./ChatBotIndex.html" width="600" height="450" frameborder="0" scrolling="no"></iframe>
-        </div>
-
-        <div class="footer">
-            <p>&copy;<a id="footerSpanBold" href="https://msalahah.github.io/R4/" target="_blank">Mohammed Melok</a> | All Rights Reserved.</p>
-        </div>
-    </div>
-    <script src="https://raw.githubusercontent.com/MSALAHAH/checkmate/main/javaScript/typo.js" defer></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="./javaScript/docScript.js" defer></script>
+        <!--=============== MAIN JS ===============-->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="./javaScript/docScript.js" defer></script>
 </body>
 
 </html>
