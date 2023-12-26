@@ -261,8 +261,8 @@
             .subSelectionStyle {
                 margin-top: 5px;
                 padding: 7px;
-                box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.377);
-                background: #ffffff5c;
+                box-shadow: 1px 1px 11px 1px rgb(0 0 0 / 19%);
+                background: #ffffff29;
                 border-radius: 2px 15px 2px 15px;
             }
 
