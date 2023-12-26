@@ -249,10 +249,17 @@
             }
 
             .selectionStyle {
-                padding: 6px;
-                box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.48);
+                padding: 7px;
+                box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.568);
                 background: #ffffff5c;
                 border-radius: 6px;
+            }
+
+            .subSelectionStyle {
+                padding: 7px;
+                box-shadow: 1px 1px 11px 1px rgba(0, 0, 0, 0.377);
+                background: #ffffff5c;
+                border-radius: 2px 15px 2px 15px;
             }
 
             input[type="checkbox"]:checked+.checkmark {
@@ -271,16 +278,6 @@
                 border-radius: 6px;
             }
 
-            #subMainCheckbox2For04,
-            #subMainCheckbox3For04
-             {
-                text-align: left;
-                margin-top: 5px;
-                margin-bottom: 2px;
-                padding: 1px;
-                box-shadow: inset 1px 1px 4px 1px rgba(0, 0, 0, 0.48);
-                border-radius: 6px;
-            }
 
             #mainCheckbox01Options,
             #mainCheckbox02Options,
@@ -297,6 +294,7 @@
             #subMainCheckbox3For03Options,
             #subMainCheckbox4For03Options,
             #subMainCheckbox0For04Options,
+            #subMainCheckbox1For04Options,
             #subMainCheckbox2For04Options,
             #subMainCheckbox3For04Options
              {
