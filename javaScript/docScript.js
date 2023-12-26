@@ -115,13 +115,13 @@ function togglemainCheckbox01Options() {
 
 // MAIN BOX 02 FUNCTION [Call Flow]
 function togglemainCheckbox02Options() {
-    var mainCheckbox2Checkbox = document.getElementById('mainCheckbox2');
-    var mainCheckbox2Options = document.getElementById('mainCheckbox2Options');
+    var mainCheckbox02Checkbox = document.getElementById('mainCheckbox2');
+    var mainCheckbox02Options = document.getElementById('mainCheckbox2Options');
 
-    if (mainCheckbox2Checkbox.checked) {
-        mainCheckbox2Options.style.display = 'block';
+    if (mainCheckbox02Checkbox.checked) {
+        mainCheckbox02Options.style.display = 'block';
     } else {
-        mainCheckbox2Options.style.display = 'none';
+        mainCheckbox02Options.style.display = 'none';
     }
     updateSentence();
 }
