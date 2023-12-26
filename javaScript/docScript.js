@@ -115,8 +115,8 @@ function togglemainCheckbox01Options() {
 
 // MAIN BOX 02 FUNCTION [Call Flow]
 function togglemainCheckbox02Options() {
-    var mainCheckbox02Checkbox = document.getElementById('mainCheckbox2');
-    var mainCheckbox02Options = document.getElementById('mainCheckbox2Options');
+    var mainCheckbox02Checkbox = document.getElementById('mainCheckbox02');
+    var mainCheckbox02Options = document.getElementById('mainCheckbox02Options');
 
     if (mainCheckbox02Checkbox.checked) {
         mainCheckbox02Options.style.display = 'block';
