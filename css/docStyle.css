@@ -271,22 +271,23 @@
                 border-radius: 6px;
             }
 
-            #mainCheckbox00Options,
-            #mainCheckbox1Options,
-            #mainCheckbox2Options,
-            #mainCheckbox3Options,
-            #mainCheckbox4Options,
-            #mainCheckbox5Options,
-            #mainCheckbox6Options,
-            #mainCheckbox7Options,
-            #mainCheckbox8Options,
-            #subMainCheckbox0Options,
-            #subMainCheckbox1Options,
-            #subMainCheckbox2Options,
-            #subMainCheckbox0of2Options,
-            #subMainCheckbox3Options,
-            #subMainCheckbox4Options,
-            #subMainCheckbox5Options
+            #mainCheckbox01Options,
+            #mainCheckbox02Options,
+            #mainCheckbox03Options,
+            #mainCheckbox04Options,
+            #mainCheckbox05Options,
+            #mainCheckbox06Options,
+            #mainCheckbox07Options,
+            #mainCheckbox08Options,
+            #mainCheckbox09Options,
+            #subMainCheckbox0For03Options,
+            #subMainCheckbox1For03Options,
+            #subMainCheckbox2For03Options,
+            #subMainCheckbox3For03Options,
+            #subMainCheckbox4For03Options,
+            #subMainCheckbox0For04Options,
+            #subMainCheckbox2For04Options,
+            #subMainCheckbox3For04Options
              {
                 margin-left: 22px;
             }
