@@ -73,7 +73,7 @@ $(document).ready(function () {
 function toggleIframe() { //chatbot iframe
     var iframeContainer = document.getElementById('iframeContainer2');
     iframeContainer.style.display = (iframeContainer.style.display === 'none' || iframeContainer.style.display === '') ? 'block' : 'none';
-  }
+}
 
 // =============the main two buttons and the alert message JS=============
 

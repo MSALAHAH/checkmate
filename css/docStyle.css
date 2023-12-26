@@ -2,10 +2,12 @@
             /* وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا */
             @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;800&display=swap');
 
-            *, ::before, ::after {
+            *,
+            ::before,
+            ::after {
                 box-sizing: border-box;
             }
-            
+
             body {
                 background: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/blob.svg');
                 background-repeat: no-repeat;
@@ -201,7 +203,8 @@
                 overflow: hidden;
             }
 
-            #updateButton, #clearButton {
+            #updateButton,
+            #clearButton {
                 padding: 5px 8px;
                 font-family: 'Roboto Slab';
                 font-size: 13px;
@@ -297,8 +300,7 @@
             #subMainCheckbox0For04Options,
             #subMainCheckbox1For04Options,
             #subMainCheckbox2For04Options,
-            #subMainCheckbox3For04Options
-             {
+            #subMainCheckbox3For04Options {
                 margin: 5px 0px 0px 22px;
             }
 
@@ -434,14 +436,15 @@
                 bottom: -260px;
                 animation: fadeIn 0.5s ease-out;
             }
-          
+
             @keyframes fadeIn {
-              from {
-                opacity: 0;
-              }
-              to {
-                opacity: 1;
-              }
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
             }
 
             #chatbotIframe {
@@ -504,7 +507,7 @@
                 }
 
                 #chatBotButton {
-                    visibility: visible; 
+                    visibility: visible;
                 }
             }
 
@@ -517,7 +520,8 @@
                     width: 320px;
                 }
 
-                #updateButton, #clearButton {
+                #updateButton,
+                #clearButton {
                     font-size: 11px;
                 }
 
@@ -532,7 +536,7 @@
                 }
 
                 #chatBotButton {
-                    visibility: visible; 
+                    visibility: visible;
                 }
             }
 
@@ -557,6 +561,6 @@
                 }
 
                 #chatBotButton {
-                    visibility: visible; 
+                    visibility: visible;
                 }
             }
