@@ -271,6 +271,17 @@
                 border-radius: 6px;
             }
 
+            #subMainCheckbox2For04,
+            #subMainCheckbox3For04
+             {
+                text-align: left;
+                margin-top: 5px;
+                margin-bottom: 2px;
+                padding: 1px;
+                box-shadow: inset 1px 1px 4px 1px rgba(0, 0, 0, 0.48);
+                border-radius: 6px;
+            }
+
             #mainCheckbox01Options,
             #mainCheckbox02Options,
             #mainCheckbox03Options,
