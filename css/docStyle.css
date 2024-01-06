@@ -9,11 +9,12 @@
             }
 
             body {
+                display: flex;
                 background: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/blob.svg');
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
-                background-color: #aac8f5;
+                background-color: #618eaf;
                 /* background-image: linear-gradient(to right top, #051937, #057abf, #00a1af, #00d173a8, #057abf); */
                 margin: 0;
                 font-family: "Regular", sans-serif;
@@ -21,6 +22,10 @@
                 font-size: 1rem;
                 transition: .5s;
                 scroll-behavior: smooth;
+                align-items: center;
+                justify-content: center;
+                /* align-content: center; */
+                flex-direction: column;
             }
 
             @font-face {
@@ -68,11 +73,20 @@
 
 
             #docToolSectionBody {
+                background: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/attach/blob.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                background-color: #f0f2fc;
+                /* background-image: linear-gradient(to right top, #051937, #057abf, #00a1af, #00d173a8, #057abf); */
                 display: flex;
+                width: 550px;
                 height: 100%;
                 text-align: center;
                 flex-direction: column;
                 align-items: center;
+                border-radius: 20px;
+                box-shadow: 0px 0px 12px 0px #50586f;
             }
 
             #headSubject {
