@@ -15,35 +15,35 @@
 
             @font-face {
                 font-family: "Regular";
-                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Light.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Light.woff2') format('woff2');
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta/main/fonts/Regular-Light.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta/main/fonts/Regular-Light.woff2') format('woff2');
                 font-weight: 300;
                 font-style: normal;
             }
 
             @font-face {
                 font-family: "Regular";
-                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Regular.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Regular.woff2') format('woff2');
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta/main/fonts/Regular-Regular.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta/main/fonts/Regular-Regular.woff2') format('woff2');
                 font-weight: 400;
                 font-style: normal;
             }
 
             @font-face {
                 font-family: "Regular";
-                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Medium.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Medium.woff2') format('woff2');
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta/main/fonts/Regular-Medium.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta/main/fonts/Regular-Medium.woff2') format('woff2');
                 font-weight: 500;
                 font-style: normal;
             }
 
             @font-face {
                 font-family: "Regular";
-                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Bold.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate/main/fonts/Regular-Bold.woff2') format('woff2');
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta/main/fonts/Regular-Bold.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta/main/fonts/Regular-Bold.woff2') format('woff2');
                 font-weight: 700;
                 font-style: normal;
             }
 
             html {
                 font-size: 62.5%;
-                background: url('https://raw.githubusercontent.com/MSALAHAH/checkmate/0bf0a910738b5d9d6b14bccc6e2fba1ffa9cf635/attach/blob.svg');
+                background: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta/0bf0a910738b5d9d6b14bccc6e2fba1ffa9cf635/attach/blob.svg');
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
