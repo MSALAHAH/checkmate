@@ -28,33 +28,66 @@
                 flex-direction: column;
             }
 
-            @font-face {
+
+                    /* OPTIMUM_FONT */
+            /* @font-face {
                 font-family: "Regular";
-                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta.beta/main/fonts/Regular-Light.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta.beta/main/fonts/Regular-Light.woff2') format('woff2');
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta/main/fonts/Regular-Light.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta/main/fonts/Regular-Light.woff2') format('woff2');
                 font-weight: 300;
                 font-style: normal;
             }
 
             @font-face {
                 font-family: "Regular";
-                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta.beta/main/fonts/Regular-Regular.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta.beta/main/fonts/Regular-Regular.woff2') format('woff2');
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta/main/fonts/Regular-Regular.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta/main/fonts/Regular-Regular.woff2') format('woff2');
                 font-weight: 400;
                 font-style: normal;
             }
 
             @font-face {
                 font-family: "Regular";
-                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta.beta/main/fonts/Regular-Medium.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta.beta/main/fonts/Regular-Medium.woff2') format('woff2');
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta/main/fonts/Regular-Medium.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta/main/fonts/Regular-Medium.woff2') format('woff2');
                 font-weight: 500;
                 font-style: normal;
             }
 
             @font-face {
                 font-family: "Regular";
-                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta.beta/main/fonts/Regular-Bold.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta.beta/main/fonts/Regular-Bold.woff2') format('woff2');
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta/main/fonts/Regular-Bold.woff') format('woff'), url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta/main/fonts/Regular-Bold.woff2') format('woff2');
+                font-weight: 700;
+                font-style: normal;
+            } */
+
+                    /* JETBRAINES_FONT */
+            @font-face {
+                font-family: "JetBrains Mono";
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta/main/fonts/JetBrainsMono-Light.woff2') format('woff2');
+                font-weight: 300;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: "JetBrains Mono";
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta/main/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: "JetBrains Mono";
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta/main/fonts/JetBrainsMono-Medium.woff2') format('woff2');
+                font-weight: 500;
+                font-style: normal;
+            }
+
+            @font-face {
+                font-family: "JetBrains Mono";
+                src: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta/main/fonts/JetBrainsMono-Bold.woff2') format('woff2');
                 font-weight: 700;
                 font-style: normal;
             }
+
+
 
             h1 {
                 margin: 0;
