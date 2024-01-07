@@ -1,6 +1,7 @@
             /* بِسْم اللَّه الرَّحْمن الرَّحِيم */
             /* وَعَلَّمَكَ مَا لَمْ تَكُن تَعْلَمُ ۚ وَكَانَ فَضْلُ ٱللَّهِ عَلَيْكَ عَظِيمًۭا */
             @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;800&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;800&display=swap');
 
             *,
             ::before,
@@ -17,7 +18,7 @@
                 background-color: #618eaf;
                 /* background-image: linear-gradient(to right top, #051937, #057abf, #00a1af, #00d173a8, #057abf); */
                 margin: 0;
-                font-family: "Regular", sans-serif;
+                font-family: "JetBrains Mono", sans-serif;
                 font-weight: 500;
                 font-size: 1rem;
                 transition: .5s;
@@ -106,7 +107,7 @@
 
 
             #docToolSectionBody {
-                background: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta.beta.beta/main/attach/blob.svg');
+                background: url('https://raw.githubusercontent.com/MSALAHAH/checkmate.beta/main/attach/blob.svg');
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center center;
@@ -237,7 +238,7 @@
             #userInput {
                 font-size: 14px;
                 font-weight: bold;
-                font-family: "Regular", sans-serif;
+                font-family: "JetBrains Mono", sans-serif;
                 text-transform: unset;
                 margin-bottom: 3%;
                 border-radius: 8px;
@@ -436,7 +437,7 @@
 
             #sentence {
                 font-size: 12px;
-                font-family: "Regular", sans-serif;
+                font-family: "JetBrains Mono", sans-serif;
                 font-weight: bold;
                 text-transform: none;
                 border-width: 5px;
